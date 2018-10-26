@@ -8,8 +8,7 @@
 
 import UIKit
 
-@IBDesignable
-class shapedButton: UIButton {
+@IBDesignable class shapedButton: bounceButton  {
 
     @IBInspectable var cornerRadius: CGFloat = 0 {
         didSet {

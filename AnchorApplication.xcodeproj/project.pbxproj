@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6B60F0A72183C3F30004EE3E /* bounceButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B60F0A62183C3F30004EE3E /* bounceButton.swift */; };
 		6BB4A6162182852000EF6829 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB4A6152182852000EF6829 /* AppDelegate.swift */; };
 		6BB4A6182182852000EF6829 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB4A6172182852000EF6829 /* ViewController.swift */; };
 		6BB4A61B2182852000EF6829 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BB4A6192182852000EF6829 /* Main.storyboard */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6B60F0A62183C3F30004EE3E /* bounceButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bounceButton.swift; sourceTree = "<group>"; };
 		6BB4A6122182852000EF6829 /* AnchorApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnchorApplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BB4A6152182852000EF6829 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6BB4A6172182852000EF6829 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 			children = (
 				6BB4A6152182852000EF6829 /* AppDelegate.swift */,
 				6BB4A6172182852000EF6829 /* ViewController.swift */,
+				6B60F0A62183C3F30004EE3E /* bounceButton.swift */,
 				6BB4A6192182852000EF6829 /* Main.storyboard */,
 				6BB4A61C2182852100EF6829 /* Assets.xcassets */,
 				6BB4A61E2182852100EF6829 /* LaunchScreen.storyboard */,
@@ -260,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6BB4A6182182852000EF6829 /* ViewController.swift in Sources */,
+				6B60F0A72183C3F30004EE3E /* bounceButton.swift in Sources */,
 				6BB4A6442182883300EF6829 /* shapedButton.swift in Sources */,
 				6BB4A6162182852000EF6829 /* AppDelegate.swift in Sources */,
 			);

@@ -18,8 +18,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="awa-Ye-O28" customClass="shapedButton" customModule="AnchorApplication">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="awa-Ye-O28" customClass="shapedButton" customModule="AnchorApplication" customModuleProvider="target">
                                 <rect key="frame" x="20" y="141" width="335" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="20"/>
                                 <size key="titleShadowOffset" width="12" height="9"/>
                                 <state key="normal" title=" Decision Survey" image="surveyIcon">
@@ -37,8 +38,9 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ol0-zl-1sO" customClass="shapedButton" customModule="AnchorApplication" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ol0-zl-1sO" customClass="shapedButton" customModule="AnchorApplication" customModuleProvider="target">
                                 <rect key="frame" x="20" y="249" width="335" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title=" Adjustment Survey" image="surveyIcon">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -52,8 +54,9 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DIs-1X-3bA" customClass="shapedButton" customModule="AnchorApplication" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DIs-1X-3bA" customClass="shapedButton" customModule="AnchorApplication" customModuleProvider="target">
                                 <rect key="frame" x="20" y="360" width="335" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title=" Drug Information" image="drugIcon">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -69,9 +72,16 @@
                                         <real key="value" value="3"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="RlQ-Fo-xwm" kind="show" id="noS-a2-QbL"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wf4-xc-6Pg" customClass="shapedButton" customModule="AnchorApplication" customModuleProvider="target">
-                                <rect key="frame" x="20" y="476" width="335" height="80"/>
+                                <rect key="frame" x="20" y="481" width="335" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="335" id="QHg-LY-nsh"/>
+                                    <constraint firstAttribute="height" constant="80" id="huJ-Yo-hcc"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title=" Progress Monitor" image="progressMonitorIcon">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -110,17 +120,8 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="DIs-1X-3bA" firstAttribute="top" secondItem="Ol0-zl-1sO" secondAttribute="bottom" constant="40" id="5bw-Ww-dkd"/>
-                            <constraint firstItem="DIs-1X-3bA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="6S1-y1-Noq"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wf4-xc-6Pg" secondAttribute="trailing" constant="20" id="BN1-t0-7Eh"/>
-                            <constraint firstItem="wf4-xc-6Pg" firstAttribute="top" secondItem="DIs-1X-3bA" secondAttribute="bottom" constant="40" id="RBA-lo-Bb7"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ol0-zl-1sO" secondAttribute="trailing" constant="20" id="STw-GY-5zW"/>
-                            <constraint firstItem="Ol0-zl-1sO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="SxK-Lf-8dT"/>
-                            <constraint firstItem="awa-Ye-O28" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="cmH-Pu-68P"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DIs-1X-3bA" secondAttribute="trailing" constant="20" id="mwz-FS-8xI"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="awa-Ye-O28" secondAttribute="trailing" constant="20" id="nJx-9r-sSy"/>
-                            <constraint firstItem="wf4-xc-6Pg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="xjC-Vo-rOO"/>
-                            <constraint firstItem="Ol0-zl-1sO" firstAttribute="top" secondItem="awa-Ye-O28" secondAttribute="bottom" constant="40" id="xr6-SR-BD2"/>
+                            <constraint firstItem="wf4-xc-6Pg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="G2o-9V-Vg3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wf4-xc-6Pg" secondAttribute="trailing" constant="20" id="gxI-1P-xGS"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
