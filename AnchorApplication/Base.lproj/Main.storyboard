@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Home View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AnchorApplication" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="AnchorApplication" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -102,6 +102,9 @@
                                         <real key="value" value="25"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="jCS-2y-mXc" kind="show" id="gIa-p1-QGD"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ol0-zl-1sO" customClass="shapedButton" customModule="AnchorApplication" customModuleProvider="target">
                                 <rect key="frame" x="20" y="237" width="335" height="80"/>
@@ -120,6 +123,11 @@
                                         <real key="value" value="3"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gx4-kG-ILv">
+                                <rect key="frame" x="43" y="157" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -154,10 +162,10 @@
             </objects>
             <point key="canvasLocation" x="-234.40000000000001" y="31.934032983508249"/>
         </scene>
-        <!--View Controller-->
+        <!--ProgressMonitor-->
         <scene sceneID="CRs-fA-BhG">
             <objects>
-                <viewController id="jCS-2y-mXc" sceneMemberID="viewController">
+                <viewController title="ProgressMonitor" id="jCS-2y-mXc" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4uE-sn-FME">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -194,12 +202,203 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="34E-8a-JrX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-234" y="709"/>
+            <point key="canvasLocation" x="-234.40000000000001" y="708.39580209895053"/>
         </scene>
-        <!--View Controller-->
+        <!--UnilateralResult-->
+        <scene sceneID="jN4-ay-gOR">
+            <objects>
+                <viewController title="UnilateralResult" id="gOc-BJ-ihs" customClass="UnilateralResult" customModule="AnchorApplication" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Cza-ne-VTl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Result" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9HQ-cd-AdA">
+                                <rect key="frame" x="140" y="77" width="95" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="No medication are required Please continue to monitor the progress        " textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Q5i-sh-BYK">
+                                <rect key="frame" x="92" y="231" width="191" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="25A-hK-SKO">
+                                <rect key="frame" x="229" y="575" width="99" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Home" image="homeIcon">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="BackHome:" destination="gOc-BJ-ihs" eventType="touchUpInside" id="dDw-5K-8eQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="8O1-ej-HB9"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tdi-uv-BUr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1271" y="-1426"/>
+        </scene>
+        <!--DecisionQ1-->
+        <scene sceneID="Nje-sG-kGK">
+            <objects>
+                <viewController title="DecisionQ1" id="gbA-kH-WqZ" customClass="DecisionQ1" customModule="AnchorApplication" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Fdt-B6-C3L">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uDZ-UO-W4S">
+                                <rect key="frame" x="118" y="65" width="139" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Do you have Unilateral or Bilateral Tremor?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cAW-6p-cDb">
+                                <rect key="frame" x="25" y="204" width="325" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="ZBl-Zs-69o"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SYU-Qq-18r">
+                                <rect key="frame" x="118" y="341" width="127" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Unilateral" image="checkmark">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="dfdf:" destination="gbA-kH-WqZ" eventType="touchUpInside" id="794-Tq-r0Y"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xIP-gX-dVQ">
+                                <rect key="frame" x="124" y="466" width="115" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Bilateral" image="checkmark">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="uDZ-UO-W4S" firstAttribute="leading" secondItem="LMl-AR-uV1" secondAttribute="leading" constant="118" id="00V-eD-XMj"/>
+                            <constraint firstItem="uDZ-UO-W4S" firstAttribute="centerX" secondItem="Fdt-B6-C3L" secondAttribute="centerX" id="DU1-ef-STH"/>
+                            <constraint firstItem="uDZ-UO-W4S" firstAttribute="top" secondItem="LMl-AR-uV1" secondAttribute="top" constant="45" id="RcJ-jt-56b"/>
+                            <constraint firstItem="uDZ-UO-W4S" firstAttribute="centerX" secondItem="cAW-6p-cDb" secondAttribute="centerX" id="XQ4-38-ynJ"/>
+                            <constraint firstItem="LMl-AR-uV1" firstAttribute="bottom" secondItem="cAW-6p-cDb" secondAttribute="bottom" constant="442" id="daC-zv-8hy"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="LMl-AR-uV1"/>
+                    </view>
+                    <connections>
+                        <outlet property="UnilateralPressed" destination="SYU-Qq-18r" id="Ix9-Jm-0g7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ML1-fY-iDA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1270" y="-695"/>
+        </scene>
+        <!--Decision Survey-->
+        <scene sceneID="Zra-yz-rMO">
+            <objects>
+                <viewController storyboardIdentifier="DecisionSurvey" id="337-aB-GYf" customClass="DecisionSurvey" customModule="AnchorApplication" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="B35-JN-Mqe">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Decision Survey" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XeP-zH-OjI">
+                                <rect key="frame" x="36" y="58" width="208" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ufF-Md-VQu">
+                                <rect key="frame" x="36" y="556" width="117" height="50"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                <state key="normal" title="Back" image="backIcon">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="BackButtonPressed:" destination="337-aB-GYf" eventType="touchUpInside" id="X2K-Ux-jsU"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Disclaimer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cBi-co-QN0">
+                                <rect key="frame" x="36" y="115" width="114" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="4TC-F0-uKA">
+                                <rect key="frame" x="36" y="166" width="303" height="143"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="143" id="oNW-5e-Wey"/>
+                                </constraints>
+                                <string key="text">This Decision survey is for education purposes only as well as to give you general information and a general understanding of blahblahblah.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Purpose of this Survey" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cuR-n3-sfz">
+                                <rect key="frame" x="36" y="269" width="241" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="The purpose of the Decision Survey is blahblahblah" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="QEq-T4-acL">
+                                <rect key="frame" x="36" y="325" width="303" height="143"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="143" id="2hd-D5-FvC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AdI-SB-XK1">
+                                <rect key="frame" x="198" y="556" width="161" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                <state key="normal" title="Proceed" image="forward">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="ProceedButtonPressed:" destination="337-aB-GYf" eventType="touchUpInside" id="Y94-ko-DhV"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="4TC-F0-uKA" firstAttribute="centerX" secondItem="B35-JN-Mqe" secondAttribute="centerX" id="5w6-Je-28D"/>
+                            <constraint firstItem="ufF-Md-VQu" firstAttribute="top" secondItem="QEq-T4-acL" secondAttribute="bottom" constant="88" id="6VE-f3-sH9"/>
+                            <constraint firstItem="QEq-T4-acL" firstAttribute="top" secondItem="B35-JN-Mqe" secondAttribute="top" constant="325" id="7e7-sF-W3G"/>
+                            <constraint firstItem="QEq-T4-acL" firstAttribute="top" secondItem="4TC-F0-uKA" secondAttribute="bottom" constant="16" id="9cy-2U-MMp"/>
+                            <constraint firstItem="XeP-zH-OjI" firstAttribute="leading" secondItem="8Sv-cV-MF5" secondAttribute="leading" constant="36" id="EbY-q8-Ft7"/>
+                            <constraint firstItem="4TC-F0-uKA" firstAttribute="top" secondItem="cBi-co-QN0" secondAttribute="bottom" constant="21" id="Mcz-XU-Etv"/>
+                            <constraint firstItem="4TC-F0-uKA" firstAttribute="leading" secondItem="QEq-T4-acL" secondAttribute="leading" id="Rzw-Cn-2EP"/>
+                            <constraint firstItem="cBi-co-QN0" firstAttribute="leading" secondItem="cuR-n3-sfz" secondAttribute="leading" id="Wov-fa-lcc"/>
+                            <constraint firstItem="4TC-F0-uKA" firstAttribute="leading" secondItem="cuR-n3-sfz" secondAttribute="leading" id="bTP-a9-8W6"/>
+                            <constraint firstItem="cuR-n3-sfz" firstAttribute="leading" secondItem="ufF-Md-VQu" secondAttribute="leading" id="cVe-Xc-cDg"/>
+                            <constraint firstItem="XeP-zH-OjI" firstAttribute="top" secondItem="8Sv-cV-MF5" secondAttribute="top" constant="38" id="rAl-a5-zzf"/>
+                            <constraint firstItem="QEq-T4-acL" firstAttribute="top" secondItem="cuR-n3-sfz" secondAttribute="bottom" constant="26" id="rPO-RJ-Ke4"/>
+                            <constraint firstItem="4TC-F0-uKA" firstAttribute="trailing" secondItem="QEq-T4-acL" secondAttribute="trailing" id="uab-yR-WUB"/>
+                            <constraint firstItem="XeP-zH-OjI" firstAttribute="leading" secondItem="cBi-co-QN0" secondAttribute="leading" id="w1F-E7-8Ie"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="8Sv-cV-MF5"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hez-ac-eND" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1270" y="32"/>
+        </scene>
+        <!--AdjustmentSurvey-->
         <scene sceneID="7vf-mc-Xuh">
             <objects>
-                <viewController id="kM0-7H-7dL" sceneMemberID="viewController">
+                <viewController title="AdjustmentSurvey" id="kM0-7H-7dL" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4F9-1Q-ndq">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -225,9 +424,6 @@
                                 <state key="normal" title="Back" image="backIcon">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="zB2-Yn-XhK"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -236,12 +432,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CdX-6A-tZh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-218.40000000000001" y="-680.5097451274363"/>
+            <point key="canvasLocation" x="-50" y="-805"/>
         </scene>
-        <!--View Controller-->
+        <!--DrugClass-->
         <scene sceneID="SbU-FA-0p1">
             <objects>
-                <viewController id="RlQ-Fo-xwm" sceneMemberID="viewController">
+                <viewController title="DrugClass" id="RlQ-Fo-xwm" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gLD-eK-XpY">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -318,12 +514,11 @@
     <resources>
         <image name="anchorIcon" width="288" height="110"/>
         <image name="backIcon" width="50" height="50"/>
+        <image name="checkmark" width="50" height="50"/>
         <image name="drugIcon" width="25" height="25"/>
+        <image name="forward" width="50" height="50"/>
         <image name="homeIcon" width="50" height="50"/>
         <image name="progressMonitorIcon" width="25" height="25"/>
         <image name="surveyIcon" width="25" height="25"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="Ndn-7X-fDI"/>
-    </inferredMetricsTieBreakers>
 </document>
