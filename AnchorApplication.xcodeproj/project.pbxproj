@@ -66,6 +66,12 @@
 		D645E1B82187A546000BB2BC /* CollapsibleTableViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CollapsibleTableViewController2.swift; path = ../../cmpt275/AnchorApplication/CollapsibleTableViewController2.swift; sourceTree = "<group>"; };
 		D645E1B92187A546000BB2BC /* CollapsibleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CollapsibleTableViewCell.swift; path = ../../cmpt275/AnchorApplication/CollapsibleTableViewCell.swift; sourceTree = "<group>"; };
 		D645E1BF2187A7E5000BB2BC /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = ../../cmpt275/AnchorApplication/Extensions.swift; sourceTree = "<group>"; };
+		D645E1B52187A546000BB2BC /* drugTableData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = drugTableData.swift; sourceTree = "<group>"; };
+		D645E1B62187A546000BB2BC /* CollapsibleTableViewHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollapsibleTableViewHeader.swift; sourceTree = "<group>"; };
+		D645E1B72187A546000BB2BC /* CollapsibleTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollapsibleTableViewController.swift; sourceTree = "<group>"; };
+		D645E1B82187A546000BB2BC /* CollapsibleTableViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollapsibleTableViewController2.swift; sourceTree = "<group>"; };
+		D645E1B92187A546000BB2BC /* CollapsibleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollapsibleTableViewCell.swift; sourceTree = "<group>"; };
+		D645E1BF2187A7E5000BB2BC /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		E93DE02B2183E5F700931BA7 /* DataTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
