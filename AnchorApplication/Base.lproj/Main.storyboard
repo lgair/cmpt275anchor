@@ -563,17 +563,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Result" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rAX-EF-pBc">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Result" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rAX-EF-pBc">
                                 <rect key="frame" x="147" y="91" width="81" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Result: dopamine agonists" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Ta-V7-hpu">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Result: dopamine agonists" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Ta-V7-hpu">
                                 <rect key="frame" x="24" y="277" width="327" height="133"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="133" id="dYW-6C-6ND"/>
+                                    <constraint firstAttribute="height" constant="133" id="aFw-ip-0Ti"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -592,9 +591,11 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="28C-6D-9K8" firstAttribute="trailing" secondItem="8Ta-V7-hpu" secondAttribute="trailing" constant="39" id="WWM-Kt-dpc"/>
-                            <constraint firstItem="8Ta-V7-hpu" firstAttribute="leading" secondItem="28C-6D-9K8" secondAttribute="leading" constant="9" id="ciY-SD-xgl"/>
-                            <constraint firstItem="28C-6D-9K8" firstAttribute="bottom" secondItem="8Ta-V7-hpu" secondAttribute="bottom" constant="255" id="k9v-uI-Rie"/>
+                            <constraint firstItem="rAX-EF-pBc" firstAttribute="centerX" secondItem="8Ta-V7-hpu" secondAttribute="centerX" id="07x-Nq-vgQ"/>
+                            <constraint firstItem="rAX-EF-pBc" firstAttribute="top" secondItem="28C-6D-9K8" secondAttribute="top" constant="71" id="YCT-kv-g7b"/>
+                            <constraint firstItem="8Ta-V7-hpu" firstAttribute="centerX" secondItem="bPQ-pr-0Fq" secondAttribute="centerX" id="ime-1t-0XZ"/>
+                            <constraint firstItem="8Ta-V7-hpu" firstAttribute="leading" secondItem="28C-6D-9K8" secondAttribute="leading" constant="24" id="t9J-2N-yzG"/>
+                            <constraint firstItem="8Ta-V7-hpu" firstAttribute="top" secondItem="bPQ-pr-0Fq" secondAttribute="top" constant="277" id="teN-Wd-HNS"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="28C-6D-9K8"/>
                     </view>
@@ -611,17 +612,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Result" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RaM-mw-w3u">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Result" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RaM-mw-w3u">
                                 <rect key="frame" x="147" y="72" width="81" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="yql-oF-BQU"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Result: levodopa" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ceL-29-DAg">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Result: levodopa" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ceL-29-DAg">
                                 <rect key="frame" x="24" y="235" width="327" height="133"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="133" id="CpV-4V-Zcc"/>
+                                    <constraint firstAttribute="height" constant="133" id="Qdg-me-Rvl"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -639,6 +642,13 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ceL-29-DAg" firstAttribute="top" secondItem="w0I-j2-h1E" secondAttribute="top" constant="235" id="3Qj-IA-Jpv"/>
+                            <constraint firstItem="RaM-mw-w3u" firstAttribute="top" secondItem="Mfd-0r-2Sa" secondAttribute="top" constant="52" id="O7e-Y3-Zik"/>
+                            <constraint firstItem="RaM-mw-w3u" firstAttribute="centerX" secondItem="ceL-29-DAg" secondAttribute="centerX" id="VZe-OL-1ra"/>
+                            <constraint firstItem="ceL-29-DAg" firstAttribute="centerX" secondItem="w0I-j2-h1E" secondAttribute="centerX" id="njb-2k-YC0"/>
+                            <constraint firstItem="ceL-29-DAg" firstAttribute="leading" secondItem="Mfd-0r-2Sa" secondAttribute="leading" constant="24" id="vLm-wn-2dt"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Mfd-0r-2Sa"/>
                     </view>
                 </viewController>
@@ -956,6 +966,6 @@
     <inferredMetricsTieBreakers>
         <segue reference="EMX-bG-VPh"/>
         <segue reference="U1P-yE-Goa"/>
-        <segue reference="htK-8m-kx1"/>
+        <segue reference="sLm-by-G3w"/>
     </inferredMetricsTieBreakers>
 </document>
