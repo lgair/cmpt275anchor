@@ -5,6 +5,11 @@
 //  Created by Keith Leung on 10/26/18.
 //  Copyright © 2018 Keith Leung. All rights reserved.
 //
+// Team Siwash - Group 12
+// CMPT 275
+//
+// bounceButton.swift adds bounce animation to all buttons under the class shapedButton
+// NOTE: bounceButton is a subclass of shapedButton, hence shapedButton provides the bounce animation effect using this code.
 
 import UIKit
 

@@ -20,17 +20,9 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="anchorIcon" translatesAutoresizingMaskIntoConstraints="NO" id="WmD-F5-ZxN">
                                 <rect key="frame" x="44" y="279" width="288" height="110"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="110" id="4hY-jC-Qhf"/>
-                                    <constraint firstAttribute="width" constant="288" id="baU-L8-e38"/>
-                                </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Proactive and Reactive." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="09i-iv-ENe">
                                 <rect key="frame" x="97" y="390" width="181" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="181" id="XhO-5n-tbA"/>
-                                    <constraint firstAttribute="height" constant="21" id="bLa-LC-uCd"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -38,13 +30,10 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="09i-iv-ENe" secondAttribute="trailing" constant="97" id="KIo-oX-vaI"/>
-                            <constraint firstItem="09i-iv-ENe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="97" id="Qk9-tD-6h0"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="09i-iv-ENe" secondAttribute="bottom" constant="256" id="R4F-rb-M4D"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WmD-F5-ZxN" secondAttribute="trailing" constant="43" id="TKb-Go-agc"/>
-                            <constraint firstItem="WmD-F5-ZxN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="259" id="ZrW-l6-MtK"/>
-                            <constraint firstItem="WmD-F5-ZxN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="44" id="hWl-Sm-gun"/>
-                            <constraint firstItem="09i-iv-ENe" firstAttribute="top" secondItem="WmD-F5-ZxN" secondAttribute="bottom" constant="1" id="uUL-61-30V"/>
+                            <constraint firstItem="WmD-F5-ZxN" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="LXn-LQ-C0B"/>
+                            <constraint firstItem="09i-iv-ENe" firstAttribute="top" secondItem="WmD-F5-ZxN" secondAttribute="bottom" constant="1" id="R21-3w-PhY"/>
+                            <constraint firstItem="WmD-F5-ZxN" firstAttribute="centerX" secondItem="09i-iv-ENe" secondAttribute="centerX" id="RkS-hZ-BxJ"/>
+                            <constraint firstItem="WmD-F5-ZxN" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Rvf-3t-mtn"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
