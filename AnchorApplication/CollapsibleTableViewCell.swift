@@ -5,6 +5,13 @@
 //  Created by Yong Su on 7/17/17.
 //  Copyright © 2017 Yong Su. All rights reserved.
 //
+// Team Siwash - Group 12
+// CMPT 275
+//
+// forked from: https://github.com/jeantimex/ios-swift-collapsible-table-section
+//
+// CollapsibleTableViewCell.swift is used in the Drug Information module for both Levodopa and Dopamine Agonists tables.
+// It modifies the table view cell object from Xcode to enable collapsing table ability.
 
 import UIKit
 

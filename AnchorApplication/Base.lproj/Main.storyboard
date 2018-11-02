@@ -68,12 +68,6 @@
                                     <segue destination="RlQ-Fo-xwm" kind="show" id="K1c-D4-AL9"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PAL-Dl-gC7">
-                                <rect key="frame" x="97" y="54" width="108" height="48"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="40"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="homeIcon" translatesAutoresizingMaskIntoConstraints="NO" id="Ved-Zn-BWc">
                                 <rect key="frame" x="39" y="54" width="50" height="48"/>
                                 <constraints>
@@ -131,6 +125,12 @@
                                     <segue destination="kM0-7H-7dL" kind="show" id="zJW-rc-TT7"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PAL-Dl-gC7">
+                                <rect key="frame" x="97" y="54" width="108" height="48"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -172,14 +172,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Decision Survey" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UW4-qM-Brh">
-                                <rect key="frame" x="16" y="40" width="218.5" height="36"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Disclaimer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a0U-YA-F4m">
-                                <rect key="frame" x="27" y="132" width="114" height="30"/>
+                                <rect key="frame" x="27" y="144" width="114" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="114" id="0hT-Hs-3I9"/>
                                     <constraint firstAttribute="height" constant="30" id="Mfd-Jh-i1W"/>
@@ -189,7 +183,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About the Survey" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PET-xy-mys">
-                                <rect key="frame" x="27" y="395" width="186" height="30"/>
+                                <rect key="frame" x="27" y="407" width="186" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="186" id="K52-fT-g2r"/>
                                     <constraint firstAttribute="height" constant="30" id="UBB-9L-V0f"/>
@@ -198,21 +192,21 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="z5v-1G-aWa">
-                                <rect key="frame" x="20" y="170" width="335" height="200"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z5v-1G-aWa">
+                                <rect key="frame" x="20" y="182" width="335" height="200"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="r0h-8m-aEJ"/>
                                     <constraint firstAttribute="width" constant="335" id="yNW-Lu-VKD"/>
                                 </constraints>
-                                <mutableString key="text">The application's medical surveys are derived from the algorithms provided in the Canadian Compendium of Therapeutic Choices (CTC) of 2018. The initial pharmacologic management of PD and management of Levodopa-associated motor complications algorithms may not produce sophisticated results to PD survey participants for their minimal set of evaluating factors on PD symptoms.  Survey results provided from Anchor, including therapeutic decisions, treatment adjustments, and drug product may be provided in summary form that may not be received as authentic medical advice. Anchor discourages any application user to consider information on this application as a substitution for advice from a healthcare practitioner. Anchor strongly opposes self-management of health issues and encourages application users to seek a healthcare professional promptly for any health-related concerns. Users should never disregard or delay medical advice based on information interpreted from this application.
-</mutableString>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <string key="text">The application's medical surveys are derived from the algorithms provided in the Canadian Compendium of Therapeutic Choices (CTC) of 2018. The initial pharmacologic management of PD and management of Levodopa-associated motor complications algorithms may not produce sophisticated results to PD survey participants for their minimal set of evaluating factors on PD symptoms.  Survey results provided from Anchor, including therapeutic decisions, treatment adjustments, and drug product may be provided in summary form that may not be received as authentic medical advice. Anchor discourages any application user to consider information on this application as a substitution for advice from a healthcare practitioner. Anchor strongly opposes self-management of health issues and encourages application users to seek a healthcare professional promptly for any health-related concerns. Users should never disregard or delay medical advice based on information interpreted from this application.
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CFF-aU-ZfG">
-                                <rect key="frame" x="10" y="566" width="124" height="50"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                <rect key="frame" x="27" y="566" width="98" height="50"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title=" Back" image="backIcon">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -221,12 +215,12 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RbM-Gu-u6U">
-                                <rect key="frame" x="201" y="566" width="164" height="50"/>
+                                <rect key="frame" x="220" y="566" width="135" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="hzj-DU-FBl"/>
-                                    <constraint firstAttribute="width" constant="164" id="yb2-mb-lPf"/>
+                                    <constraint firstAttribute="width" constant="135" id="3cG-Vf-LnJ"/>
+                                    <constraint firstAttribute="height" constant="50" id="Cxf-gX-VED"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Proceed " image="forward">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -234,38 +228,44 @@
                                     <segue destination="Vrq-M8-EtW" kind="show" id="Nx1-BL-7rX"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="D1h-mE-f8Z">
-                                <rect key="frame" x="20" y="433" width="335" height="106"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D1h-mE-f8Z">
+                                <rect key="frame" x="20" y="445" width="335" height="113"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="106" id="6yb-Ga-Tp0"/>
+                                    <constraint firstAttribute="height" constant="113" id="6yb-Ga-Tp0"/>
                                     <constraint firstAttribute="width" constant="335" id="l8K-v9-007"/>
                                 </constraints>
                                 <string key="text">The decision survey is derived from the initial pharmacologic management algorithm from the Compendium of Therapeutic Choice 2018. The survey determines the proper therapy based on the survey participant's functional impairment and age. Questions will be of formats Yes/No and multiple choice.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Decision Survey" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UW4-qM-Brh">
+                                <rect key="frame" x="16" y="61" width="290" height="48"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="PET-xy-mys" firstAttribute="top" secondItem="z5v-1G-aWa" secondAttribute="bottom" constant="25" id="0Cn-dn-c1C"/>
                             <constraint firstItem="pag-RL-8N3" firstAttribute="trailing" secondItem="z5v-1G-aWa" secondAttribute="trailing" constant="20" id="2ET-zd-t7c"/>
                             <constraint firstItem="UW4-qM-Brh" firstAttribute="leading" secondItem="nR7-oP-01D" secondAttribute="leadingMargin" id="4AV-9l-Pns"/>
-                            <constraint firstItem="UW4-qM-Brh" firstAttribute="top" secondItem="pag-RL-8N3" secondAttribute="top" constant="20" id="79e-Zr-hZ6"/>
+                            <constraint firstItem="UW4-qM-Brh" firstAttribute="top" secondItem="pag-RL-8N3" secondAttribute="top" constant="41" id="79e-Zr-hZ6"/>
                             <constraint firstItem="PET-xy-mys" firstAttribute="leading" secondItem="pag-RL-8N3" secondAttribute="leading" constant="27" id="8Qp-ll-BtP"/>
                             <constraint firstItem="D1h-mE-f8Z" firstAttribute="top" secondItem="PET-xy-mys" secondAttribute="bottom" constant="8" id="8w8-5d-yeG"/>
+                            <constraint firstItem="pag-RL-8N3" firstAttribute="trailing" secondItem="RbM-Gu-u6U" secondAttribute="trailing" constant="20" id="BtV-aY-xAu"/>
                             <constraint firstItem="D1h-mE-f8Z" firstAttribute="leading" secondItem="pag-RL-8N3" secondAttribute="leading" constant="20" id="E0s-i0-6Hw"/>
-                            <constraint firstItem="pag-RL-8N3" firstAttribute="trailing" secondItem="RbM-Gu-u6U" secondAttribute="trailing" constant="10" id="Exh-EH-RK9"/>
                             <constraint firstItem="pag-RL-8N3" firstAttribute="trailing" secondItem="a0U-YA-F4m" secondAttribute="trailing" constant="234" id="FAW-VV-bll"/>
                             <constraint firstItem="pag-RL-8N3" firstAttribute="trailing" secondItem="D1h-mE-f8Z" secondAttribute="trailing" constant="20" id="KoZ-KZ-Hi3"/>
-                            <constraint firstItem="pag-RL-8N3" firstAttribute="bottom" secondItem="RbM-Gu-u6U" secondAttribute="bottom" constant="51" id="Snu-Vo-i70"/>
                             <constraint firstItem="pag-RL-8N3" firstAttribute="trailing" secondItem="PET-xy-mys" secondAttribute="trailing" constant="162" id="dO0-gD-wMw"/>
                             <constraint firstItem="pag-RL-8N3" firstAttribute="bottom" secondItem="CFF-aU-ZfG" secondAttribute="bottom" constant="51" id="f4D-Ho-VZP"/>
                             <constraint firstItem="a0U-YA-F4m" firstAttribute="leading" secondItem="pag-RL-8N3" secondAttribute="leading" constant="27" id="fZK-MB-0BI"/>
-                            <constraint firstItem="CFF-aU-ZfG" firstAttribute="leading" secondItem="pag-RL-8N3" secondAttribute="leading" constant="10" id="i5i-if-PaP"/>
+                            <constraint firstItem="CFF-aU-ZfG" firstAttribute="leading" secondItem="pag-RL-8N3" secondAttribute="leading" constant="27" id="i5i-if-PaP"/>
                             <constraint firstItem="z5v-1G-aWa" firstAttribute="top" secondItem="a0U-YA-F4m" secondAttribute="bottom" constant="8" id="o7S-IQ-Ds5"/>
-                            <constraint firstItem="a0U-YA-F4m" firstAttribute="top" secondItem="UW4-qM-Brh" secondAttribute="bottom" constant="56" id="rOW-2h-LbP"/>
+                            <constraint firstItem="a0U-YA-F4m" firstAttribute="top" secondItem="UW4-qM-Brh" secondAttribute="bottom" constant="35" id="rOW-2h-LbP"/>
                             <constraint firstItem="z5v-1G-aWa" firstAttribute="leading" secondItem="pag-RL-8N3" secondAttribute="leading" constant="20" id="vIV-Qe-OWL"/>
+                            <constraint firstItem="pag-RL-8N3" firstAttribute="bottom" secondItem="RbM-Gu-u6U" secondAttribute="bottom" constant="51" id="yQ2-Av-cUb"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="pag-RL-8N3"/>
                     </view>
@@ -289,9 +289,9 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6WP-Hy-3fO">
-                                <rect key="frame" x="34" y="567" width="132" height="50"/>
-                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
-                                <state key="normal" title="Unilateral" image="checkmark">
+                                <rect key="frame" x="34" y="567" width="127" height="50"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title=" Unilateral" image="checkmark">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -299,9 +299,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mLt-R8-dhX">
-                                <rect key="frame" x="221" y="567" width="120" height="50"/>
-                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
-                                <state key="normal" title="Bilateral" image="checkmark">
+                                <rect key="frame" x="225" y="567" width="116" height="50"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title=" Bilateral" image="checkmark">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -309,12 +309,12 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Are your Parkinson's symptoms affecting one side of your body (Unilateral) or both sides of your body (Bilateral)?" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Wa-yb-2qu">
-                                <rect key="frame" x="39" y="222" width="296" height="193"/>
+                                <rect key="frame" x="39" y="237" width="296" height="193"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="296" id="8uO-lz-sCA"/>
                                     <constraint firstAttribute="height" constant="193" id="SXu-wD-26h"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -327,7 +327,7 @@
                             <constraint firstItem="B4s-Ow-x0s" firstAttribute="bottom" secondItem="mLt-R8-dhX" secondAttribute="bottom" constant="50" id="J2o-UK-y0F"/>
                             <constraint firstItem="B4s-Ow-x0s" firstAttribute="bottom" secondItem="6WP-Hy-3fO" secondAttribute="bottom" constant="50" id="VQc-77-SLG"/>
                             <constraint firstItem="6WP-Hy-3fO" firstAttribute="leading" secondItem="B4s-Ow-x0s" secondAttribute="leading" constant="34" id="aIY-zV-WXA"/>
-                            <constraint firstItem="5Wa-yb-2qu" firstAttribute="top" secondItem="pD9-rQ-pwe" secondAttribute="bottom" constant="86" id="s1n-NP-Bln"/>
+                            <constraint firstItem="5Wa-yb-2qu" firstAttribute="top" secondItem="pD9-rQ-pwe" secondAttribute="bottom" constant="101" id="s1n-NP-Bln"/>
                             <constraint firstItem="5Wa-yb-2qu" firstAttribute="leading" secondItem="B4s-Ow-x0s" secondAttribute="leading" constant="39" id="xK2-NG-by0"/>
                             <constraint firstItem="B4s-Ow-x0s" firstAttribute="trailing" secondItem="5Wa-yb-2qu" secondAttribute="trailing" constant="40" id="yp2-fS-V4u"/>
                         </constraints>
@@ -353,8 +353,8 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XG2-5y-Pgv">
-                                <rect key="frame" x="34" y="567" width="89" height="50"/>
-                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
+                                <rect key="frame" x="34" y="567" width="86" height="50"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title=" YES" image="checkmark">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -363,8 +363,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Awk-FN-bBA">
-                                <rect key="frame" x="258" y="567" width="83" height="50"/>
-                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
+                                <rect key="frame" x="261" y="567" width="80" height="50"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title=" NO" image="noButton">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -373,12 +373,12 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Do you have the ability to make rapid, automatic, and voluntary adjustments necessary to prevent falling?" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ts0-WD-lTK">
-                                <rect key="frame" x="48" y="302" width="272" height="137"/>
+                                <rect key="frame" x="51" y="265" width="272" height="137"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="137" id="jet-JY-aBu"/>
                                     <constraint firstAttribute="width" constant="272" id="v3a-m7-aeH"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -390,10 +390,10 @@
                             <constraint firstItem="ZN9-lP-xSL" firstAttribute="top" secondItem="mqr-vA-kvR" secondAttribute="top" constant="80" id="LAx-Ec-gCq"/>
                             <constraint firstItem="mqr-vA-kvR" firstAttribute="bottom" secondItem="Awk-FN-bBA" secondAttribute="bottom" constant="50" id="QUs-ud-Ron"/>
                             <constraint firstItem="mqr-vA-kvR" firstAttribute="trailing" secondItem="Awk-FN-bBA" secondAttribute="trailing" constant="34" id="TfH-CY-Pnm"/>
-                            <constraint firstItem="mqr-vA-kvR" firstAttribute="trailing" secondItem="Ts0-WD-lTK" secondAttribute="trailing" constant="55" id="Xs5-ip-tFc"/>
+                            <constraint firstItem="mqr-vA-kvR" firstAttribute="trailing" secondItem="Ts0-WD-lTK" secondAttribute="trailing" constant="52" id="Xs5-ip-tFc"/>
                             <constraint firstItem="mqr-vA-kvR" firstAttribute="bottom" secondItem="XG2-5y-Pgv" secondAttribute="bottom" constant="50" id="dZY-0d-ThY"/>
-                            <constraint firstItem="Ts0-WD-lTK" firstAttribute="leading" secondItem="mqr-vA-kvR" secondAttribute="leading" constant="48" id="ewW-gq-tjZ"/>
-                            <constraint firstItem="Ts0-WD-lTK" firstAttribute="top" secondItem="ZN9-lP-xSL" secondAttribute="bottom" constant="166" id="vbN-bC-hzD"/>
+                            <constraint firstItem="Ts0-WD-lTK" firstAttribute="leading" secondItem="mqr-vA-kvR" secondAttribute="leading" constant="51" id="ewW-gq-tjZ"/>
+                            <constraint firstItem="Ts0-WD-lTK" firstAttribute="top" secondItem="ZN9-lP-xSL" secondAttribute="bottom" constant="129" id="vbN-bC-hzD"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="mqr-vA-kvR"/>
                     </view>
@@ -411,9 +411,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CYV-JD-ODO">
-                                <rect key="frame" x="34" y="567" width="106" height="50"/>
-                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="20"/>
-                                <state key="normal" title=" &gt; 60" image="checkmark">
+                                <rect key="frame" x="34" y="567" width="136" height="50"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title=" below 60" image="checkmark">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -421,9 +421,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qoP-yJ-nB7">
-                                <rect key="frame" x="235" y="567" width="106" height="50"/>
-                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="20"/>
-                                <state key="normal" title=" &lt; 60" image="yesButton">
+                                <rect key="frame" x="219" y="567" width="122" height="50"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title=" over 60" image="yesButton">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -436,27 +436,27 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Are you aged over 60 or below 60?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dUx-Xl-END">
-                                <rect key="frame" x="16" y="221" width="342" height="69"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Are you over or below 60 years old?" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dUx-Xl-END">
+                                <rect key="frame" x="30" y="299" width="315" height="69"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="69" id="Rlg-jw-8e8"/>
-                                    <constraint firstAttribute="width" constant="342" id="gVG-HE-MO7"/>
+                                    <constraint firstAttribute="width" constant="315" id="gVG-HE-MO7"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="bE8-3T-HTe" firstAttribute="trailing" secondItem="dUx-Xl-END" secondAttribute="trailing" constant="17" id="4Fg-mI-SuP"/>
+                            <constraint firstItem="bE8-3T-HTe" firstAttribute="trailing" secondItem="dUx-Xl-END" secondAttribute="trailing" constant="30" id="4Fg-mI-SuP"/>
                             <constraint firstItem="CYV-JD-ODO" firstAttribute="leading" secondItem="bE8-3T-HTe" secondAttribute="leading" constant="34" id="8AE-k9-iUD"/>
                             <constraint firstItem="EdS-1N-RIS" firstAttribute="centerX" secondItem="x02-Ku-Mdv" secondAttribute="centerX" id="EMg-Zh-i5z"/>
-                            <constraint firstItem="dUx-Xl-END" firstAttribute="top" secondItem="EdS-1N-RIS" secondAttribute="bottom" constant="85" id="IRl-QS-acw"/>
+                            <constraint firstItem="dUx-Xl-END" firstAttribute="top" secondItem="EdS-1N-RIS" secondAttribute="bottom" constant="163" id="IRl-QS-acw"/>
                             <constraint firstItem="bE8-3T-HTe" firstAttribute="bottom" secondItem="CYV-JD-ODO" secondAttribute="bottom" constant="50" id="MaI-eF-rm5"/>
                             <constraint firstItem="EdS-1N-RIS" firstAttribute="top" secondItem="bE8-3T-HTe" secondAttribute="top" constant="80" id="QgF-Gf-dJv"/>
                             <constraint firstItem="bE8-3T-HTe" firstAttribute="trailing" secondItem="qoP-yJ-nB7" secondAttribute="trailing" constant="34" id="rMu-Ee-FGI"/>
-                            <constraint firstItem="dUx-Xl-END" firstAttribute="leading" secondItem="bE8-3T-HTe" secondAttribute="leading" constant="16" id="tfe-FQ-TAE"/>
+                            <constraint firstItem="dUx-Xl-END" firstAttribute="leading" secondItem="bE8-3T-HTe" secondAttribute="leading" constant="30" id="tfe-FQ-TAE"/>
                             <constraint firstItem="bE8-3T-HTe" firstAttribute="bottom" secondItem="qoP-yJ-nB7" secondAttribute="bottom" constant="50" id="z6S-gl-mph"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="bE8-3T-HTe"/>
@@ -481,8 +481,8 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Inj-gZ-UHC">
-                                <rect key="frame" x="34" y="567" width="96" height="50"/>
-                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="20"/>
+                                <rect key="frame" x="34" y="567" width="91" height="50"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title=" YES" image="checkmark">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -491,22 +491,22 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="19d-1D-mu6">
-                                <rect key="frame" x="258" y="567" width="83" height="50"/>
-                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
+                                <rect key="frame" x="261" y="567" width="80" height="50"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title=" NO" image="noButton">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="WnX-LZ-BQP" kind="show" id="Dns-Ho-h9w"/>
+                                    <segue destination="thA-ei-EWe" kind="show" id="5DD-l5-H7Z"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Are you able to live alone and be fully independent in daily activities, such as dressing, hygiene, and eating?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rlO-fM-YlV">
-                                <rect key="frame" x="27" y="169" width="321" height="254"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Are you able to live alone and be fully independent in daily activities, such as dressing, hygiene, and eating?" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rlO-fM-YlV">
+                                <rect key="frame" x="27" y="206" width="321" height="254"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="254" id="ICr-v3-tGf"/>
                                     <constraint firstAttribute="width" constant="321" id="fRH-5G-tJV"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -516,7 +516,7 @@
                             <constraint firstItem="dZ8-5C-Upw" firstAttribute="centerX" secondItem="Kbo-WG-yka" secondAttribute="centerX" id="J72-e5-YTa"/>
                             <constraint firstItem="dZ8-5C-Upw" firstAttribute="top" secondItem="SsV-6s-KMI" secondAttribute="top" constant="80" id="JVM-C0-3qq"/>
                             <constraint firstItem="SsV-6s-KMI" firstAttribute="trailing" secondItem="rlO-fM-YlV" secondAttribute="trailing" constant="27" id="Swf-2g-r0d"/>
-                            <constraint firstItem="rlO-fM-YlV" firstAttribute="top" secondItem="dZ8-5C-Upw" secondAttribute="bottom" constant="33" id="gBn-Bf-UMN"/>
+                            <constraint firstItem="rlO-fM-YlV" firstAttribute="top" secondItem="dZ8-5C-Upw" secondAttribute="bottom" constant="70" id="gBn-Bf-UMN"/>
                             <constraint firstItem="SsV-6s-KMI" firstAttribute="trailing" secondItem="19d-1D-mu6" secondAttribute="trailing" constant="34" id="iuN-Y9-wwQ"/>
                             <constraint firstItem="rlO-fM-YlV" firstAttribute="leading" secondItem="SsV-6s-KMI" secondAttribute="leading" constant="27" id="k76-Fv-Uia"/>
                             <constraint firstItem="SsV-6s-KMI" firstAttribute="bottom" secondItem="Inj-gZ-UHC" secondAttribute="bottom" constant="50" id="mVF-VW-NxS"/>
@@ -528,57 +528,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gS4-p0-xVe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-461.60000000000002" y="2485.9070464767619"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="etF-lg-PeF">
-            <objects>
-                <viewController id="WnX-LZ-BQP" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="hWQ-yE-vSr">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Result" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bLT-5H-c0p">
-                                <rect key="frame" x="147" y="100" width="81" height="36"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="heC-jH-P9t">
-                                <rect key="frame" x="242" y="567" width="99" height="50"/>
-                                <state key="normal" title="Home" image="homeIcon">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="htK-8m-kx1"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Levodopa, regardless of age" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JNp-mA-WwX">
-                                <rect key="frame" x="79.5" y="306" width="216.5" height="55"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="216.5" id="Cju-Bu-Ixu"/>
-                                    <constraint firstAttribute="height" constant="55" id="mpm-TB-vKb"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="MrI-Dn-4Zz" firstAttribute="bottom" secondItem="heC-jH-P9t" secondAttribute="bottom" constant="50" id="Dwg-dw-xr5"/>
-                            <constraint firstItem="bLT-5H-c0p" firstAttribute="centerX" secondItem="hWQ-yE-vSr" secondAttribute="centerX" id="OM4-JM-oip"/>
-                            <constraint firstItem="JNp-mA-WwX" firstAttribute="centerX" secondItem="hWQ-yE-vSr" secondAttribute="centerX" id="Ryg-fY-MVz"/>
-                            <constraint firstItem="JNp-mA-WwX" firstAttribute="centerY" secondItem="hWQ-yE-vSr" secondAttribute="centerY" id="dbQ-ve-glp"/>
-                            <constraint firstItem="MrI-Dn-4Zz" firstAttribute="trailing" secondItem="heC-jH-P9t" secondAttribute="trailing" constant="34" id="uYe-MU-ATG"/>
-                            <constraint firstItem="bLT-5H-c0p" firstAttribute="top" secondItem="MrI-Dn-4Zz" secondAttribute="top" constant="80" id="xLQ-PJ-Hm6"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="MrI-Dn-4Zz"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="wEq-G9-wLm" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-452" y="3154.2728635682161"/>
+            <point key="canvasLocation" x="-916" y="2568"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="HhM-Y0-Wg9">
@@ -595,40 +545,51 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OIG-Qx-dz2">
-                                <rect key="frame" x="242" y="567" width="99" height="50"/>
-                                <state key="normal" title="Home" image="homeIcon">
+                                <rect key="frame" x="234" y="567" width="107" height="50"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title=" Home" image="homeIcon">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="show" id="sLm-by-G3w"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Result: dopamine agonists" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Ta-V7-hpu">
-                                <rect key="frame" x="87" y="323.5" width="201.5" height="20.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Result:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Ta-V7-hpu">
+                                <rect key="frame" x="74" y="321" width="60" height="24"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="20.5" id="TLg-u4-A2S"/>
-                                    <constraint firstAttribute="width" constant="201.5" id="Usf-Qa-Yry"/>
+                                    <constraint firstAttribute="height" constant="24" id="TLg-u4-A2S"/>
+                                    <constraint firstAttribute="width" constant="60" id="Usf-Qa-Yry"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8kZ-9y-d2W">
+                                <rect key="frame" x="142" y="315" width="170" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Dopamine Agonists"/>
+                                <connections>
+                                    <segue destination="MbY-Ce-Pgy" kind="show" id="oXg-9r-b1M"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="28C-6D-9K8" firstAttribute="trailing" secondItem="OIG-Qx-dz2" secondAttribute="trailing" constant="34" id="1Oa-Gb-uYy"/>
-                            <constraint firstItem="8Ta-V7-hpu" firstAttribute="centerY" secondItem="bPQ-pr-0Fq" secondAttribute="centerY" id="1Re-06-7FV"/>
+                            <constraint firstItem="8Ta-V7-hpu" firstAttribute="centerY" secondItem="bPQ-pr-0Fq" secondAttribute="centerY" constant="-0.5" id="1Re-06-7FV"/>
                             <constraint firstItem="rAX-EF-pBc" firstAttribute="top" secondItem="28C-6D-9K8" secondAttribute="top" constant="80" id="C07-pG-sFd"/>
-                            <constraint firstItem="8Ta-V7-hpu" firstAttribute="centerX" secondItem="bPQ-pr-0Fq" secondAttribute="centerX" id="DIj-vH-Vj9"/>
+                            <constraint firstItem="8Ta-V7-hpu" firstAttribute="centerX" secondItem="bPQ-pr-0Fq" secondAttribute="centerX" constant="-83.5" id="DIj-vH-Vj9"/>
+                            <constraint firstItem="8kZ-9y-d2W" firstAttribute="leading" secondItem="8Ta-V7-hpu" secondAttribute="trailing" constant="8" symbolic="YES" id="Fzj-r0-FaZ"/>
                             <constraint firstItem="rAX-EF-pBc" firstAttribute="centerX" secondItem="bPQ-pr-0Fq" secondAttribute="centerX" id="XpQ-PX-UTl"/>
                             <constraint firstItem="28C-6D-9K8" firstAttribute="bottom" secondItem="OIG-Qx-dz2" secondAttribute="bottom" constant="50" id="afB-j2-xeC"/>
+                            <constraint firstItem="8kZ-9y-d2W" firstAttribute="baseline" secondItem="8Ta-V7-hpu" secondAttribute="baseline" id="jjO-e9-iiY"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="28C-6D-9K8"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nlu-a4-Ihr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="378.39999999999998" y="2639.7301349325339"/>
+            <point key="canvasLocation" x="1758" y="2075"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="vEZ-Ix-oDZ">
@@ -645,31 +606,42 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i77-eh-WNQ">
-                                <rect key="frame" x="242" y="567" width="99" height="50"/>
-                                <state key="normal" title="Home" image="homeIcon">
+                                <rect key="frame" x="234" y="567" width="107" height="50"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title=" Home" image="homeIcon">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="show" id="sBe-hY-oNG"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Result: levodopa" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ceL-29-DAg">
-                                <rect key="frame" x="124.5" y="323.5" width="126.5" height="20.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Result:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ceL-29-DAg">
+                                <rect key="frame" x="111" y="324" width="60" height="24"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="20.5" id="NhK-Ft-9Fy"/>
-                                    <constraint firstAttribute="width" constant="126.5" id="X9p-Xd-kks"/>
+                                    <constraint firstAttribute="height" constant="24" id="NhK-Ft-9Fy"/>
+                                    <constraint firstAttribute="width" constant="60" id="X9p-Xd-kks"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dZH-E2-XSX">
+                                <rect key="frame" x="179" y="318" width="87" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Levodopa"/>
+                                <connections>
+                                    <segue destination="alL-GR-f6N" kind="show" id="B8d-TE-cR3"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="dZH-E2-XSX" firstAttribute="leading" secondItem="ceL-29-DAg" secondAttribute="trailing" constant="8" symbolic="YES" id="IkS-Fe-oXW"/>
                             <constraint firstItem="Mfd-0r-2Sa" firstAttribute="trailing" secondItem="i77-eh-WNQ" secondAttribute="trailing" constant="34" id="N8E-ny-lfj"/>
                             <constraint firstItem="Mfd-0r-2Sa" firstAttribute="bottom" secondItem="i77-eh-WNQ" secondAttribute="bottom" constant="50" id="Td4-IA-Z45"/>
-                            <constraint firstItem="ceL-29-DAg" firstAttribute="centerY" secondItem="w0I-j2-h1E" secondAttribute="centerY" id="asR-4d-lvr"/>
-                            <constraint firstItem="ceL-29-DAg" firstAttribute="centerX" secondItem="w0I-j2-h1E" secondAttribute="centerX" id="gST-0p-UNn"/>
+                            <constraint firstItem="ceL-29-DAg" firstAttribute="centerY" secondItem="w0I-j2-h1E" secondAttribute="centerY" constant="2" id="asR-4d-lvr"/>
+                            <constraint firstItem="dZH-E2-XSX" firstAttribute="baseline" secondItem="ceL-29-DAg" secondAttribute="baseline" id="ceF-qj-2vp"/>
+                            <constraint firstItem="ceL-29-DAg" firstAttribute="centerX" secondItem="w0I-j2-h1E" secondAttribute="centerX" constant="-46.5" id="gST-0p-UNn"/>
                             <constraint firstItem="RaM-mw-w3u" firstAttribute="top" secondItem="Mfd-0r-2Sa" secondAttribute="top" constant="80" id="jdj-nQ-K1i"/>
                             <constraint firstItem="RaM-mw-w3u" firstAttribute="centerX" secondItem="w0I-j2-h1E" secondAttribute="centerX" id="wxB-CA-fzS"/>
                         </constraints>
@@ -678,7 +650,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o0g-jf-eG7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1085.5999999999999" y="2629.835082458771"/>
+            <point key="canvasLocation" x="3134" y="1327"/>
         </scene>
         <!--ProgressMonitor-->
         <scene sceneID="CRs-fA-BhG">
@@ -689,9 +661,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3zU-OE-Qex">
-                                <rect key="frame" x="34" y="567" width="117" height="50"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
-                                <state key="normal" title="Back" image="backIcon">
+                                <rect key="frame" x="34" y="567" width="98" height="50"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title=" Back" image="backIcon">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -892,8 +864,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jji-pe-wCW">
-                                <rect key="frame" x="23" y="582" width="110" height="50"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <rect key="frame" x="23" y="582" width="98" height="50"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title=" Back" image="backIcon">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -902,8 +874,8 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select a drug class:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="64T-fU-X6O">
-                                <rect key="frame" x="32" y="136" width="150" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="32" y="133" width="169" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -1026,8 +998,11 @@
         <image name="yesButton" width="50" height="50"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="oXg-9r-b1M"/>
+        <segue reference="B8d-TE-cR3"/>
         <segue reference="K1c-D4-AL9"/>
+        <segue reference="5DD-l5-H7Z"/>
         <segue reference="U1P-yE-Goa"/>
-        <segue reference="klk-Rg-uVC"/>
+        <segue reference="sBe-hY-oNG"/>
     </inferredMetricsTieBreakers>
 </document>

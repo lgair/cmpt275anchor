@@ -5,7 +5,15 @@
 //  Created by Yong Su on 5/30/16.
 //  Copyright © 2016 Yong Su. All rights reserved.
 //
-
+// Team Siwash - Group 12
+// CMPT 275
+//
+// forked from: https://github.com/jeantimex/ios-swift-collapsible-table-section
+//
+// CollapsibleTableViewController2.swift converts the ViewController object from Xcode into a collapsing table ViewController.
+// Specifically, this file fetches data of the drug Levodopa from drugTableData.swift.
+//
+// Modified by: Joon
 import UIKit
 
 //
@@ -13,6 +21,7 @@ import UIKit
 //
 class CollapsibleTableViewController2: UITableViewController {
     
+    // sectionData2 links to the data for Levodopa from drugTableData.swift
     var sections = sectionsData2
     
     override func viewDidLoad() {
