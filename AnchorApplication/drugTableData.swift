@@ -1,11 +1,20 @@
 //
-//  ExampleData.swift
+//  drugTableData.swift
 //  ios-swift-collapsible-table-section
 //
 //  Created by Yong Su on 8/1/17.
 //  Copyright © 2017 Yong Su. All rights reserved.
 //
-
+// Team Siwash - Group 12
+// CMPT 275
+//
+// forked from: https://github.com/jeantimex/ios-swift-collapsible-table-section
+//
+// drugTableData.swift stores Levodopa and Dopamine Agonists drug information into the following user defined data structures:
+// 1) Item - the cells within a collapsible table
+// 2) Section - the cell seperated between each header
+//
+// Modified: Joon
 import Foundation
 
 //

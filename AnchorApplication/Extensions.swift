@@ -5,7 +5,12 @@
 //  Created by Yong Su on 9/28/16.
 //  Copyright © 2016 Yong Su. All rights reserved.
 //
-
+// Team Siwash - Group 12
+// CMPT 275
+//
+// forked from: https://github.com/jeantimex/ios-swift-collapsible-table-section
+//
+// Extensions.swift allows animation and/or color consistent changes to any TableViewControllers using the class CollapsibleTableViewController
 import UIKit
 
 extension UIColor {

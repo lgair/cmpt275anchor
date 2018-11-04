@@ -5,7 +5,16 @@
 //  Created by Yong Su on 5/30/16.
 //  Copyright © 2016 Yong Su. All rights reserved.
 //
-
+//
+//
+// Team Siwash - Group 12
+// CMPT 275
+//
+// forked from: https://github.com/jeantimex/ios-swift-collapsible-table-section
+//
+// CollapsibleTableViewController.swift enables the header of each collapsible table to be retractable and expandable by tap motion.
+//
+//
 import UIKit
 
 protocol CollapsibleTableViewHeaderDelegate {

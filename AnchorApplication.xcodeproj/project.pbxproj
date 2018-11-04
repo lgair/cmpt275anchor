@@ -60,12 +60,6 @@
 		6BB4A6372182852200EF6829 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6BB4A6432182883300EF6829 /* shapedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shapedButton.swift; sourceTree = "<group>"; };
 		C39DF9BF2184F04100A35C88 /* DecisionSurvey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecisionSurvey.swift; sourceTree = "<group>"; };
-		D645E1B52187A546000BB2BC /* drugTableData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = drugTableData.swift; path = ../../cmpt275/AnchorApplication/drugTableData.swift; sourceTree = "<group>"; };
-		D645E1B62187A546000BB2BC /* CollapsibleTableViewHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CollapsibleTableViewHeader.swift; path = ../../cmpt275/AnchorApplication/CollapsibleTableViewHeader.swift; sourceTree = "<group>"; };
-		D645E1B72187A546000BB2BC /* CollapsibleTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CollapsibleTableViewController.swift; path = ../../cmpt275/AnchorApplication/CollapsibleTableViewController.swift; sourceTree = "<group>"; };
-		D645E1B82187A546000BB2BC /* CollapsibleTableViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CollapsibleTableViewController2.swift; path = ../../cmpt275/AnchorApplication/CollapsibleTableViewController2.swift; sourceTree = "<group>"; };
-		D645E1B92187A546000BB2BC /* CollapsibleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CollapsibleTableViewCell.swift; path = ../../cmpt275/AnchorApplication/CollapsibleTableViewCell.swift; sourceTree = "<group>"; };
-		D645E1BF2187A7E5000BB2BC /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = ../../cmpt275/AnchorApplication/Extensions.swift; sourceTree = "<group>"; };
 		D645E1B52187A546000BB2BC /* drugTableData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = drugTableData.swift; sourceTree = "<group>"; };
 		D645E1B62187A546000BB2BC /* CollapsibleTableViewHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollapsibleTableViewHeader.swift; sourceTree = "<group>"; };
 		D645E1B72187A546000BB2BC /* CollapsibleTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollapsibleTableViewController.swift; sourceTree = "<group>"; };
@@ -126,13 +120,13 @@
 				6BB4A6152182852000EF6829 /* AppDelegate.swift */,
 				6BB4A6172182852000EF6829 /* HomeViewController.swift */,
 				C39DF9BF2184F04100A35C88 /* DecisionSurvey.swift */,
-				6B60F0A62183C3F30004EE3E /* bounceButton.swift */,
 				E93DE02B2183E5F700931BA7 /* DataTableViewController.swift */,
 				6BB4A6192182852000EF6829 /* Main.storyboard */,
 				6BB4A61C2182852100EF6829 /* Assets.xcassets */,
 				6BB4A61E2182852100EF6829 /* LaunchScreen.storyboard */,
 				6BB4A6212182852100EF6829 /* Info.plist */,
 				6BB4A6432182883300EF6829 /* shapedButton.swift */,
+				6B60F0A62183C3F30004EE3E /* bounceButton.swift */,
 				D645E1B92187A546000BB2BC /* CollapsibleTableViewCell.swift */,
 				D645E1B72187A546000BB2BC /* CollapsibleTableViewController.swift */,
 				D645E1B82187A546000BB2BC /* CollapsibleTableViewController2.swift */,
@@ -477,6 +471,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9V2K728WK9;
 				INFOPLIST_FILE = AnchorApplication/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -494,6 +489,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9V2K728WK9;
 				INFOPLIST_FILE = AnchorApplication/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

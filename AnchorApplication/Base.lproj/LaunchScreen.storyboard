@@ -30,10 +30,10 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="09i-iv-ENe" firstAttribute="centerX" secondItem="WmD-F5-ZxN" secondAttribute="centerX" id="ACp-mw-at5"/>
-                            <constraint firstItem="09i-iv-ENe" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="DNr-lD-Rkc"/>
-                            <constraint firstItem="09i-iv-ENe" firstAttribute="top" secondItem="WmD-F5-ZxN" secondAttribute="bottom" constant="1" id="Lmk-am-04v"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="09i-iv-ENe" secondAttribute="bottom" constant="256" id="fnT-6q-ZxF"/>
+                            <constraint firstItem="WmD-F5-ZxN" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="LXn-LQ-C0B"/>
+                            <constraint firstItem="09i-iv-ENe" firstAttribute="top" secondItem="WmD-F5-ZxN" secondAttribute="bottom" constant="1" id="R21-3w-PhY"/>
+                            <constraint firstItem="WmD-F5-ZxN" firstAttribute="centerX" secondItem="09i-iv-ENe" secondAttribute="centerX" id="RkS-hZ-BxJ"/>
+                            <constraint firstItem="WmD-F5-ZxN" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Rvf-3t-mtn"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
