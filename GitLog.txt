@@ -1,0 +1,125 @@
+*   6593ab5 (HEAD -> master, origin/master, origin/HEAD) Merge branch 'master' of https://github.com/lgair/CMPT275anchor
+|\  
+| *   ecdee14 Merge pull request #9 from lgair/fix2
+| |\  
+| | * 86e03e1 refixed the orientation issues but no time to fix homepage orientation :(
+| |/  
+| *   78f8e29 Merge pull request #8 from lgair/test
+| |\  
+| | * d40d0c8 (origin/test) Added comments, fixed constraints, linked survey result page to drug tables
+| |/  
+| *   f0f4db7 Merge pull request #7 from lgair/test
+| |\  
+| | * 500bc20 completed disclaimer page and modified questions wording, still have some constraints to fix
+| |/  
+* | e54cd78 .
+|/  
+*   a20858c Merge pull request #6 from lgair/orientationfix1
+|\  
+| * 9067a57 (origin/orientationfix1) fixed orientation issues for Decision survey
+|/  
+*   203955c Merge pull request #5 from lgair/fixinglayout
+|\  
+| * 6d8bb81 Fixed transition on home page, improved layout in decision survey
+|/  
+| * f9489ef (origin/Production, Production) Revert "Merge branch 'master' of github.com:lindajang94/cmpt275anchor"
+| *   7958b25 Merge branch 'master' of github.com:lindajang94/cmpt275anchor
+| |\  
+| | * 8731c5b Revert "verified Joon's code"
+| | *   078c301 Merge pull request #3 from lgair/lindaversion2
+| | |\  
+| | | *   11fef62 Merge branch 'master' into lindaversion2
+| | | |\  
+| | | |/  
+| | |/|   
+| | * | 0469512 verified Joon's code
+| | * |   df2ecce Merge pull request #4 from nojonono/test
+| | |\ \  
+| | | * | 6340b35 added missing fils for drug table
+| | | * | 241c7b6 added drug table
+| | |/ /  
+| | * |   f46cf6e Merge pull request #2 from lgair/keith
+| | |\ \  
+| | | * | 04be095 (origin/keith) corrected button seque
+| | |/ /  
+| * | | b0c43d6 corrected button seque
+|/ / /  
+* | | c23e889 (origin/DrugTable, DrugTable) verified Joon's code
+* | | 91b0a36 added missing fils for drug table
+* | | eff6b21 added drug table
+* | | 5dcca00 corrected button seque
+* | | d340ccc Re-pushing requested by Luke
+| |/  
+|/|   
+* | f8189b6 Finished Decision Survey and added App Icon
+|/  
+*   75374ef Merge pull request #1 from lgair/lindaversion2
+|\  
+| * ede184f Made Couple pages for Decision Survey
+|/  
+*   bd839e4 Merge branch 'test'
+|\  
+| * d48632c alignment complete
+* |   7f231c5 Merge branch 'test'
+|\ \  
+| |/  
+| * 750c865 alignment semi complete
+* | 71530f1 Added ViewController for Progress Monitor and Survey2
+|/  
+* 6fe36a0 test commit to see if master is protected
+* 4cd9f79 adding button, wierd file generation stuff Squashed commit of the following:
+* 4ae7173 adding a readme
+* 0924712 DecisionSurvey in Progress
+* 313294c first commit
+* 0fa5f2a Initial Commit
+*   6593ab5 (HEAD -> Production, origin/master, origin/HEAD, master) Merge branch 'master' of https://github.com/lgair/CMPT275anchor
+|\  
+| *   ecdee14 Merge pull request #9 from lgair/fix2
+| |\  
+| | * 86e03e1 refixed the orientation issues but no time to fix homepage orientation :(
+| |/  
+| *   78f8e29 Merge pull request #8 from lgair/test
+| |\  
+| | * d40d0c8 (origin/test, test) Added comments, fixed constraints, linked survey result page to drug tables
+| |/  
+| *   f0f4db7 Merge pull request #7 from lgair/test
+| |\  
+| | * 500bc20 completed disclaimer page and modified questions wording, still have some constraints to fix
+| |/  
+* | e54cd78 .
+|/  
+*   a20858c Merge pull request #6 from lgair/orientationfix1
+|\  
+| * 9067a57 (origin/orientationfix1) fixed orientation issues for Decision survey
+|/  
+*   203955c Merge pull request #5 from lgair/fixinglayout
+|\  
+| * 6d8bb81 Fixed transition on home page, improved layout in decision survey
+|/  
+* c23e889 (origin/DrugTable, DrugTable) verified Joon's code
+* 91b0a36 added missing fils for drug table
+* eff6b21 added drug table
+* 5dcca00 corrected button seque
+* d340ccc Re-pushing requested by Luke
+* f8189b6 Finished Decision Survey and added App Icon
+| * 04be095 (origin/keith) corrected button seque
+|/  
+*   75374ef Merge pull request #1 from lgair/lindaversion2
+|\  
+| * ede184f Made Couple pages for Decision Survey
+|/  
+*   bd839e4 Merge branch 'test'
+|\  
+| * d48632c alignment complete
+* |   7f231c5 Merge branch 'test'
+|\ \  
+| |/  
+| * 750c865 alignment semi complete
+* | 71530f1 Added ViewController for Progress Monitor and Survey2
+|/  
+* 6fe36a0 test commit to see if master is protected
+* 4cd9f79 adding button, wierd file generation stuff Squashed commit of the following:
+* 4ae7173 adding a readme
+* 0924712 DecisionSurvey in Progress
+* 313294c first commit
+* 0fa5f2a Initial Commit
