@@ -10,7 +10,7 @@
 import XCTest
 
 class AnchorApplicationUITests: XCTestCase {
-        
+    
     override func setUp() {
         super.setUp()
         continueAfterFailure = false
@@ -32,7 +32,7 @@ class AnchorApplicationUITests: XCTestCase {
         app.buttons[" Adjustment Survey"].tap()
         app.buttons[" Back"].tap()
         app.buttons[" Progress Monitor"].tap()
-        app.buttons["Back"].tap()
+        app.buttons[" Back"].tap()
     }
     
     func testDrugInformation() {
@@ -79,16 +79,17 @@ class AnchorApplicationUITests: XCTestCase {
     func testDecisionSurvey() {
         let app = XCUIApplication()
         let decisionSurveyButton = app.buttons[" Decision Survey"]
-        let proceedButton = app.buttons["Proceed"]
-        let bilateralButton = app.buttons["Bilateral"]
-        let noButton = app.buttons["NO"]
+        let proceedButton = app.buttons["Proceed "]
+        let bilateralButton = app.buttons[" Bilateral"]
+        let noButton = app.buttons[" NO"]
         let homeButton = app.buttons["Home"]
-        let yesButton = app.buttons["YES"]
+        let yesButton = app.buttons[" YES"]
         let textView = app.children(matching: .window).element(boundBy: 0).children(matching: .other).element(boundBy: 2).children(matching: .other).element.children(matching: .textView).element
         
         decisionSurveyButton.tap()
         proceedButton.tap()
-        app.buttons["Unilateral"].tap()
+        app.buttons[" Unilateral"].tap()
+        
         XCTAssertTrue(textView.exists)
         homeButton.tap()
         
@@ -96,43 +97,43 @@ class AnchorApplicationUITests: XCTestCase {
         proceedButton.tap()
         bilateralButton.tap()
         noButton.tap()
-        noButton.tap()
-        XCTAssertTrue(app.staticTexts["Result: levodopa"].exists)
-        homeButton.tap()
+        app.buttons[" over 60"].tap()
+        XCTAssertTrue(app.buttons["Levodopa"].exists)
+        app.buttons[" Home"].tap()
         
         decisionSurveyButton.tap()
         proceedButton.tap()
         bilateralButton.tap()
         noButton.tap()
-        yesButton.tap()
-        XCTAssertTrue(app.staticTexts["Result: dopamine agonists"].exists)
-        homeButton.tap()
-        
-        decisionSurveyButton.tap()
-        proceedButton.tap()
-        bilateralButton.tap()
-        yesButton.tap()
-        yesButton.tap()
-        yesButton.tap()
-        XCTAssertTrue(app.staticTexts["Result: dopamine agonists"].exists)
-        homeButton.tap()
+        app.buttons[" below 60"].tap()
+        XCTAssertTrue(app.buttons["Dopamine Agonists"].exists)
+        app.buttons[" Home"].tap()
         
         decisionSurveyButton.tap()
         proceedButton.tap()
         bilateralButton.tap()
         yesButton.tap()
         yesButton.tap()
-        noButton.tap()
-        XCTAssertTrue(app.staticTexts["Result: levodopa"].exists)
-        homeButton.tap()
+        app.buttons[" below 60"].tap()
+        XCTAssertTrue(app.buttons["Dopamine Agonists"].exists)
+        app.buttons[" Home"].tap()
+        
+        decisionSurveyButton.tap()
+        proceedButton.tap()
+        bilateralButton.tap()
+        yesButton.tap()
+        yesButton.tap()
+        app.buttons[" over 60"].tap()
+        XCTAssertTrue(app.buttons["Levodopa"].exists)
+        app.buttons[" Home"].tap()
         
         decisionSurveyButton.tap()
         proceedButton.tap()
         bilateralButton.tap()
         yesButton.tap()
         noButton.tap()
-        XCTAssertTrue(app.staticTexts["Levodopa, regardless of age"].exists)
-        homeButton.tap()
+        XCTAssertTrue(app.buttons["Levodopa"].exists)
+        app.buttons[" Home"].tap()
     }
     
 }
