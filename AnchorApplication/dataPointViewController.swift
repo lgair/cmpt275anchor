@@ -15,6 +15,18 @@
 
 import UIKit
 
+extension UIViewController {
+    func hideKeyboardWhenTappedAround() {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+    
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
+    }
+}
+
 class dataPointViewController: UIViewController {
 
     @IBOutlet weak var dosageText: UILabel!
@@ -39,6 +51,14 @@ class dataPointViewController: UIViewController {
         mgPerTabletInput.isHidden = true
         // Disable button to next page before formulation and dosage input are completed
         nextPageButton.isEnabled = false
+        
+        //Looks for single or multiple taps.
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
+        
+        //Uncomment the line below if you want the tap not not interfere and cancel other interactions.
+        //tap.cancelsTouchesInView = false
+        
+        view.addGestureRecognizer(tap)
         }
         
     
@@ -94,7 +114,6 @@ class dataPointViewController: UIViewController {
             nextPageButton.isEnabled = true
         }
     }
-    
     
     
 }

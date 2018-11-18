@@ -2,6 +2,9 @@
 //  ViewController.swift
 //  IOS-Swift-CoreMotionAccelerometer
 //
+//  Created by Aigerim Omirbekova on 11/16/18.
+//  Copyright © 2018 Aigerim Omirbekova. All rights reserved.
+//
 
 import UIKit
 import CoreMotion

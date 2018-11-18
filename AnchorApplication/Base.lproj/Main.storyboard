@@ -68,7 +68,7 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="homeIcon" translatesAutoresizingMaskIntoConstraints="NO" id="Ved-Zn-BWc">
-                                <rect key="frame" x="39" y="54" width="50" height="48"/>
+                                <rect key="frame" x="39" y="54" width="37" height="48"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="wF3-1d-0pF"/>
                                 </constraints>
@@ -125,7 +125,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PAL-Dl-gC7">
-                                <rect key="frame" x="97" y="54" width="108" height="48"/>
+                                <rect key="frame" x="84" y="54" width="108" height="48"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="40"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -228,7 +228,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CFF-aU-ZfG">
-                                <rect key="frame" x="27" y="588" width="98" height="50"/>
+                                <rect key="frame" x="27" y="601" width="85" height="37"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title=" Back" image="backIcon">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -310,7 +310,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6WP-Hy-3fO">
-                                <rect key="frame" x="34" y="567" width="127" height="50"/>
+                                <rect key="frame" x="34" y="580" width="114" height="37"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title=" Unilateral" image="checkmark">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -320,7 +320,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mLt-R8-dhX">
-                                <rect key="frame" x="225" y="567" width="116" height="50"/>
+                                <rect key="frame" x="238" y="580" width="103" height="37"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title=" Bilateral" image="checkmark">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -468,7 +468,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CYV-JD-ODO">
-                                <rect key="frame" x="34" y="567" width="136" height="50"/>
+                                <rect key="frame" x="34" y="580" width="123" height="37"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title=" below 60" image="checkmark">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -478,7 +478,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qoP-yJ-nB7">
-                                <rect key="frame" x="219" y="567" width="122" height="50"/>
+                                <rect key="frame" x="232" y="580" width="109" height="37"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title=" over 60" image="yesButton">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -537,7 +537,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Inj-gZ-UHC">
-                                <rect key="frame" x="34" y="567" width="91" height="50"/>
+                                <rect key="frame" x="34" y="580" width="78" height="37"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title=" YES" image="checkmark">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -547,7 +547,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="19d-1D-mu6">
-                                <rect key="frame" x="261" y="567" width="80" height="50"/>
+                                <rect key="frame" x="274" y="580" width="67" height="37"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title=" NO" image="noButton">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -600,7 +600,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OIG-Qx-dz2">
-                                <rect key="frame" x="234" y="567" width="107" height="50"/>
+                                <rect key="frame" x="247" y="580" width="94" height="37"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title=" Home" image="homeIcon">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -661,7 +661,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i77-eh-WNQ">
-                                <rect key="frame" x="234" y="567" width="107" height="50"/>
+                                <rect key="frame" x="247" y="580" width="94" height="37"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title=" Home" image="homeIcon">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -716,7 +716,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3zU-OE-Qex">
-                                <rect key="frame" x="34" y="567" width="98" height="50"/>
+                                <rect key="frame" x="34" y="580" width="85" height="37"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title=" Back" image="backIcon">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -770,7 +770,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fqa-I9-Fgr">
-                                <rect key="frame" x="242" y="567" width="99" height="50"/>
+                                <rect key="frame" x="255" y="580" width="86" height="37"/>
                                 <state key="normal" title="Home" image="homeIcon">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -828,7 +828,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cqy-TN-JT6">
-                                <rect key="frame" x="260" y="597" width="99" height="50"/>
+                                <rect key="frame" x="260" y="610" width="99" height="37"/>
                                 <state key="normal" title="Home" image="homeIcon">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -865,7 +865,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ox-Nx-6Oj">
-                                <rect key="frame" x="260" y="597" width="99" height="50"/>
+                                <rect key="frame" x="273" y="610" width="86" height="37"/>
                                 <state key="normal" title="Home" image="homeIcon">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -915,7 +915,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Decrease Levodopa dosage" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yat-pK-Qmr">
-                                <rect key="frame" x="59" y="311" width="257" height="21"/>
+                                <rect key="frame" x="59" y="324" width="257" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="EkZ-2P-9oE"/>
                                     <constraint firstAttribute="width" constant="257" id="Z8N-bW-FVW"/>
@@ -925,7 +925,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bV2-vh-ufL">
-                                <rect key="frame" x="260" y="583" width="99" height="50"/>
+                                <rect key="frame" x="260" y="596" width="99" height="37"/>
                                 <state key="normal" title="Home" image="homeIcon">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -1044,7 +1044,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vME-At-s3l" customClass="bounceButton" customModule="AnchorApplication" customModuleProvider="target">
-                                <rect key="frame" x="307" y="592" width="50" height="50"/>
+                                <rect key="frame" x="307" y="605" width="37" height="37"/>
                                 <state key="normal" image="forward"/>
                                 <connections>
                                     <segue destination="eK8-Nu-qUp" kind="show" id="f6B-rn-evT"/>
@@ -1096,7 +1096,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YWi-Jb-wzX">
-                                <rect key="frame" x="21" y="574.5" width="98" height="50"/>
+                                <rect key="frame" x="21" y="581" width="85" height="37"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title=" Back" image="backIcon">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1165,7 +1165,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="DuM-L1-HDY" kind="show" id="6ei-XW-hVd"/>
+                                    <segue destination="mi9-8e-3jl" kind="show" id="rS5-kh-oMH"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I understand" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SXQ-Lj-Laj">
@@ -1278,7 +1278,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jji-pe-wCW">
-                                <rect key="frame" x="23" y="582" width="98" height="50"/>
+                                <rect key="frame" x="23" y="595" width="85" height="37"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title=" Back" image="backIcon">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1644,6 +1644,9 @@
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="114" id="l0q-lB-6Sp"/>
                                 </constraints>
                                 <state key="normal" image="forward"/>
+                                <connections>
+                                    <segue destination="DuM-L1-HDY" kind="show" id="xFN-RY-HIj"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1929,7 +1932,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KAK-zZ-Ozs">
-                                <rect key="frame" x="16" y="597" width="121" height="50"/>
+                                <rect key="frame" x="16" y="610" width="121" height="37"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title=" Back" image="backIcon">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2119,7 +2122,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h1N-70-Dy1">
-                                <rect key="frame" x="16" y="597" width="121" height="50"/>
+                                <rect key="frame" x="16" y="610" width="121" height="37"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title=" Back" image="backIcon">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2259,7 +2262,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NfB-CI-tpB">
-                                <rect key="frame" x="16" y="597" width="121" height="50"/>
+                                <rect key="frame" x="16" y="610" width="121" height="37"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title=" Back" image="backIcon">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2513,7 +2516,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vmb-YS-AQI">
-                                <rect key="frame" x="16" y="597" width="121" height="50"/>
+                                <rect key="frame" x="16" y="610" width="121" height="37"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title=" Back" image="backIcon">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2653,7 +2656,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ecj-Ym-BwW">
-                                <rect key="frame" x="16" y="597" width="121" height="50"/>
+                                <rect key="frame" x="16" y="610" width="121" height="37"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title=" Back" image="backIcon">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2793,7 +2796,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QMD-lU-W9E">
-                                <rect key="frame" x="16" y="597" width="121" height="50"/>
+                                <rect key="frame" x="16" y="610" width="121" height="37"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title=" Back" image="backIcon">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2933,7 +2936,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cRC-cC-U50">
-                                <rect key="frame" x="16" y="597" width="121" height="50"/>
+                                <rect key="frame" x="16" y="610" width="121" height="37"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title=" Back" image="backIcon">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2987,15 +2990,15 @@
     </scenes>
     <resources>
         <image name="anchorIcon" width="288" height="110"/>
-        <image name="backIcon" width="50" height="50"/>
-        <image name="checkmark" width="50" height="50"/>
-        <image name="drugIcon" width="25" height="25"/>
-        <image name="forward" width="50" height="50"/>
-        <image name="homeIcon" width="50" height="50"/>
-        <image name="noButton" width="50" height="50"/>
-        <image name="progressMonitorIcon" width="25" height="25"/>
-        <image name="surveyIcon" width="25" height="25"/>
-        <image name="yesButton" width="50" height="50"/>
+        <image name="backIcon" width="37.5" height="37.5"/>
+        <image name="checkmark" width="37.5" height="37.5"/>
+        <image name="drugIcon" width="37.5" height="37.5"/>
+        <image name="forward" width="37.5" height="37.5"/>
+        <image name="homeIcon" width="37.5" height="37.5"/>
+        <image name="noButton" width="37.5" height="37.5"/>
+        <image name="progressMonitorIcon" width="37.5" height="37.5"/>
+        <image name="surveyIcon" width="37.5" height="37.5"/>
+        <image name="yesButton" width="37.5" height="37.5"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="G8x-rj-DGG"/>
@@ -3006,13 +3009,13 @@
         <segue reference="dQs-Ma-WBb"/>
         <segue reference="G5h-hj-ZVl"/>
         <segue reference="egM-uY-Ipb"/>
-        <segue reference="IFV-5U-8Vg"/>
-        <segue reference="1c0-a5-YK8"/>
+        <segue reference="eSa-Ff-H7M"/>
+        <segue reference="UaG-cJ-BTu"/>
         <segue reference="f6B-rn-evT"/>
-        <segue reference="6ei-XW-hVd"/>
+        <segue reference="tHa-u7-ToX"/>
         <segue reference="oXg-9r-b1M"/>
         <segue reference="B8d-TE-cR3"/>
-        <segue reference="oPL-hB-4rm"/>
+        <segue reference="K1c-D4-AL9"/>
         <segue reference="4OT-9g-Stl"/>
         <segue reference="U1P-yE-Goa"/>
         <segue reference="5HF-U4-E7n"/>

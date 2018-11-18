@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1918A6D221A1F89D0052CAA3 /* GyroscopeAccelerometer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1918A6D121A1F89D0052CAA3 /* GyroscopeAccelerometer.swift */; };
 		5345E161219D78720024DEE7 /* disclaimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5345E160219D78720024DEE7 /* disclaimerViewController.swift */; };
 		53CF2A6F219E3A4D00B6381B /* dataPointViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53CF2A6E219E3A4D00B6381B /* dataPointViewController.swift */; };
 		53CF2A71219E92B300B6381B /* decisionSurveyQ2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53CF2A70219E92B300B6381B /* decisionSurveyQ2ViewController.swift */; };
@@ -58,6 +59,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1918A6D121A1F89D0052CAA3 /* GyroscopeAccelerometer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GyroscopeAccelerometer.swift; sourceTree = "<group>"; };
 		5345E160219D78720024DEE7 /* disclaimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = disclaimerViewController.swift; sourceTree = "<group>"; };
 		53CF2A6E219E3A4D00B6381B /* dataPointViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dataPointViewController.swift; sourceTree = "<group>"; };
 		53CF2A70219E92B300B6381B /* decisionSurveyQ2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = decisionSurveyQ2ViewController.swift; sourceTree = "<group>"; };
@@ -181,6 +183,7 @@
 		6BB4A6142182852000EF6829 /* AnchorApplication */ = {
 			isa = PBXGroup;
 			children = (
+				1918A6D121A1F89D0052CAA3 /* GyroscopeAccelerometer.swift */,
 				53F538EC21A1593B00229536 /* Decision Survey */,
 				53F538EB21A1590100229536 /* Button Enhancement */,
 				53F538DE21A149F700229536 /* Adjustment Survey */,
@@ -362,6 +365,7 @@
 				53F538E021A14B2C00229536 /* adjustmentSurveyQ3ViewController.swift in Sources */,
 				53F538E421A1526A00229536 /* adjustmentSurveyQ5ViewController.swift in Sources */,
 				E93DE02C2183E5F700931BA7 /* DataTableViewController.swift in Sources */,
+				1918A6D221A1F89D0052CAA3 /* GyroscopeAccelerometer.swift in Sources */,
 				D645E1BD2187A546000BB2BC /* CollapsibleTableViewController2.swift in Sources */,
 				53F538F021A15A9000229536 /* adjustmentSurveyQ10ViewController.swift in Sources */,
 				6BB4A6182182852000EF6829 /* HomeViewController.swift in Sources */,
