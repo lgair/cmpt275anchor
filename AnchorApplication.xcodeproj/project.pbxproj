@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		19114BC1219F97F700F66A44 /* Gyroscope&Accelerometer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19114BC0219F97F700F66A44 /* Gyroscope&Accelerometer.swift */; };
 		5345E161219D78720024DEE7 /* disclaimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5345E160219D78720024DEE7 /* disclaimerViewController.swift */; };
 		53CF2A6F219E3A4D00B6381B /* dataPointViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53CF2A6E219E3A4D00B6381B /* dataPointViewController.swift */; };
 		53CF2A71219E92B300B6381B /* decisionSurveyQ2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53CF2A70219E92B300B6381B /* decisionSurveyQ2ViewController.swift */; };
@@ -47,6 +48,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		19114BC0219F97F700F66A44 /* Gyroscope&Accelerometer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Gyroscope&Accelerometer.swift"; sourceTree = "<group>"; };
 		5345E160219D78720024DEE7 /* disclaimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = disclaimerViewController.swift; sourceTree = "<group>"; };
 		53CF2A6E219E3A4D00B6381B /* dataPointViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dataPointViewController.swift; sourceTree = "<group>"; };
 		53CF2A70219E92B300B6381B /* decisionSurveyQ2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = decisionSurveyQ2ViewController.swift; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 				C39DF9BF2184F04100A35C88 /* DecisionSurvey.swift */,
 				E93DE02B2183E5F700931BA7 /* DataTableViewController.swift */,
 				6BB4A6192182852000EF6829 /* Main.storyboard */,
+				19114BC0219F97F700F66A44 /* Gyroscope&Accelerometer.swift */,
 				53CF2A70219E92B300B6381B /* decisionSurveyQ2ViewController.swift */,
 				53CF2A6E219E3A4D00B6381B /* dataPointViewController.swift */,
 				5345E160219D78720024DEE7 /* disclaimerViewController.swift */,
@@ -299,6 +302,7 @@
 				D645E1BC2187A546000BB2BC /* CollapsibleTableViewController.swift in Sources */,
 				53CF2A6F219E3A4D00B6381B /* dataPointViewController.swift in Sources */,
 				D645E1BB2187A546000BB2BC /* CollapsibleTableViewHeader.swift in Sources */,
+				19114BC1219F97F700F66A44 /* Gyroscope&Accelerometer.swift in Sources */,
 				D645E1BE2187A546000BB2BC /* CollapsibleTableViewCell.swift in Sources */,
 				E93DE02C2183E5F700931BA7 /* DataTableViewController.swift in Sources */,
 				D645E1BD2187A546000BB2BC /* CollapsibleTableViewController2.swift in Sources */,
@@ -483,13 +487,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9V2K728WK9;
+				DEVELOPMENT_TEAM = 97A7GMG722;
 				INFOPLIST_FILE = AnchorApplication/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Group12.AnchorApplication;
+				PRODUCT_BUNDLE_IDENTIFIER = "Group12-AnchorApplication";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -501,13 +505,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9V2K728WK9;
+				DEVELOPMENT_TEAM = 97A7GMG722;
 				INFOPLIST_FILE = AnchorApplication/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Group12.AnchorApplication;
+				PRODUCT_BUNDLE_IDENTIFIER = "Group12-AnchorApplication";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
