@@ -10,7 +10,7 @@
 import XCTest
 
 class AnchorApplicationUITests: XCTestCase {
-        
+    
     override func setUp() {
         super.setUp()
         continueAfterFailure = false
@@ -29,10 +29,8 @@ class AnchorApplicationUITests: XCTestCase {
         XCTAssertTrue(app.buttons[" Adjustment Survey"].exists)
         XCTAssertTrue(app.buttons[" Drug Information"].exists)
         XCTAssertTrue(app.buttons[" Progress Monitor"].exists)
-        app.buttons[" Adjustment Survey"].tap()
-        app.buttons[" Back"].tap()
         app.buttons[" Progress Monitor"].tap()
-                app.buttons[" Back"].tap()
+        app.buttons[" Back"].tap()
     }
     
     func testDrugInformation() {
@@ -80,19 +78,21 @@ class AnchorApplicationUITests: XCTestCase {
         let app = XCUIApplication()
         let decisionSurveyButton = app.buttons[" Decision Survey"]
         let proceedButton = app.buttons["Proceed "]
-                let bilateralButton = app.buttons[" Bilateral"]
+        let bilateralButton = app.buttons[" Bilateral"]
         let noButton = app.buttons[" NO"]
         let homeButton = app.buttons["Home"]
         let yesButton = app.buttons[" YES"]
         let textView = app.children(matching: .window).element(boundBy: 0).children(matching: .other).element(boundBy: 2).children(matching: .other).element.children(matching: .textView).element
         
         decisionSurveyButton.tap()
+        app.switches.element(boundBy: 0).tap()
         proceedButton.tap()
         app.buttons[" Unilateral"].tap()
         XCTAssertTrue(textView.exists)
         homeButton.tap()
         
         decisionSurveyButton.tap()
+        app.switches.element(boundBy: 0).tap()
         proceedButton.tap()
         bilateralButton.tap()
         noButton.tap()
@@ -101,6 +101,7 @@ class AnchorApplicationUITests: XCTestCase {
         app.buttons[" Home"].tap()
         
         decisionSurveyButton.tap()
+        app.switches.element(boundBy: 0).tap()
         proceedButton.tap()
         bilateralButton.tap()
         noButton.tap()
@@ -109,6 +110,7 @@ class AnchorApplicationUITests: XCTestCase {
         app.buttons[" Home"].tap()
         
         decisionSurveyButton.tap()
+        app.switches.element(boundBy: 0).tap()
         proceedButton.tap()
         bilateralButton.tap()
         yesButton.tap()
@@ -118,6 +120,7 @@ class AnchorApplicationUITests: XCTestCase {
         app.buttons[" Home"].tap()
         
         decisionSurveyButton.tap()
+        app.switches.element(boundBy: 0).tap()
         proceedButton.tap()
         bilateralButton.tap()
         yesButton.tap()
@@ -127,6 +130,7 @@ class AnchorApplicationUITests: XCTestCase {
         app.buttons[" Home"].tap()
         
         decisionSurveyButton.tap()
+        app.switches.element(boundBy: 0).tap()
         proceedButton.tap()
         bilateralButton.tap()
         yesButton.tap()

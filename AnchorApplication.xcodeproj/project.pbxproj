@@ -7,6 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1918A6D221A1F89D0052CAA3 /* GyroscopeAccelerometer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1918A6D121A1F89D0052CAA3 /* GyroscopeAccelerometer.swift */; };
+		5345E161219D78720024DEE7 /* disclaimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5345E160219D78720024DEE7 /* disclaimerViewController.swift */; };
+		53CF2A6F219E3A4D00B6381B /* dataPointViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53CF2A6E219E3A4D00B6381B /* dataPointViewController.swift */; };
+		53CF2A71219E92B300B6381B /* decisionSurveyQ2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53CF2A70219E92B300B6381B /* decisionSurveyQ2ViewController.swift */; };
+		53F538DB21A1408B00229536 /* adjustmentSurveyQ1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F538DA21A1408B00229536 /* adjustmentSurveyQ1ViewController.swift */; };
+		53F538DD21A1440600229536 /* adjustmentSurveyQ2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F538DC21A1440600229536 /* adjustmentSurveyQ2ViewController.swift */; };
+		53F538E021A14B2C00229536 /* adjustmentSurveyQ3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F538DF21A14B2C00229536 /* adjustmentSurveyQ3ViewController.swift */; };
+		53F538E221A14D5700229536 /* adjustmentSurveyQ4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F538E121A14D5700229536 /* adjustmentSurveyQ4ViewController.swift */; };
+		53F538E421A1526A00229536 /* adjustmentSurveyQ5ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F538E321A1526A00229536 /* adjustmentSurveyQ5ViewController.swift */; };
+		53F538E621A155B400229536 /* adjustmentSurveyQ6ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F538E521A155B400229536 /* adjustmentSurveyQ6ViewController.swift */; };
+		53F538E821A156C000229536 /* adjustmentSurveyQ7ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F538E721A156C000229536 /* adjustmentSurveyQ7ViewController.swift */; };
+		53F538EA21A1579B00229536 /* adjustmentSurveyQ8ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F538E921A1579B00229536 /* adjustmentSurveyQ8ViewController.swift */; };
+		53F538EE21A1596000229536 /* adjustmentSurveyQ9ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F538ED21A1596000229536 /* adjustmentSurveyQ9ViewController.swift */; };
+		53F538F021A15A9000229536 /* adjustmentSurveyQ10ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F538EF21A15A9000229536 /* adjustmentSurveyQ10ViewController.swift */; };
+		53F538F221A15C2500229536 /* adjustmentSurveyQ11ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F538F121A15C2500229536 /* adjustmentSurveyQ11ViewController.swift */; };
+		65DC7BA721A2A5890034005B /* SurveyTwoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DC7BA621A2A5890034005B /* SurveyTwoTests.swift */; };
 		6B60F0A72183C3F30004EE3E /* bounceButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B60F0A62183C3F30004EE3E /* bounceButton.swift */; };
 		6BB4A6162182852000EF6829 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB4A6152182852000EF6829 /* AppDelegate.swift */; };
 		6BB4A6182182852000EF6829 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB4A6172182852000EF6829 /* HomeViewController.swift */; };
@@ -44,6 +60,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1918A6D121A1F89D0052CAA3 /* GyroscopeAccelerometer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GyroscopeAccelerometer.swift; sourceTree = "<group>"; };
+		5345E160219D78720024DEE7 /* disclaimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = disclaimerViewController.swift; sourceTree = "<group>"; };
+		53CF2A6E219E3A4D00B6381B /* dataPointViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dataPointViewController.swift; sourceTree = "<group>"; };
+		53CF2A70219E92B300B6381B /* decisionSurveyQ2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = decisionSurveyQ2ViewController.swift; sourceTree = "<group>"; };
+		53F538DA21A1408B00229536 /* adjustmentSurveyQ1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = adjustmentSurveyQ1ViewController.swift; sourceTree = "<group>"; };
+		53F538DC21A1440600229536 /* adjustmentSurveyQ2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = adjustmentSurveyQ2ViewController.swift; sourceTree = "<group>"; };
+		53F538DF21A14B2C00229536 /* adjustmentSurveyQ3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = adjustmentSurveyQ3ViewController.swift; sourceTree = "<group>"; };
+		53F538E121A14D5700229536 /* adjustmentSurveyQ4ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = adjustmentSurveyQ4ViewController.swift; sourceTree = "<group>"; };
+		53F538E321A1526A00229536 /* adjustmentSurveyQ5ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = adjustmentSurveyQ5ViewController.swift; sourceTree = "<group>"; };
+		53F538E521A155B400229536 /* adjustmentSurveyQ6ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = adjustmentSurveyQ6ViewController.swift; sourceTree = "<group>"; };
+		53F538E721A156C000229536 /* adjustmentSurveyQ7ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = adjustmentSurveyQ7ViewController.swift; sourceTree = "<group>"; };
+		53F538E921A1579B00229536 /* adjustmentSurveyQ8ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = adjustmentSurveyQ8ViewController.swift; sourceTree = "<group>"; };
+		53F538ED21A1596000229536 /* adjustmentSurveyQ9ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = adjustmentSurveyQ9ViewController.swift; sourceTree = "<group>"; };
+		53F538EF21A15A9000229536 /* adjustmentSurveyQ10ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = adjustmentSurveyQ10ViewController.swift; sourceTree = "<group>"; };
+		53F538F121A15C2500229536 /* adjustmentSurveyQ11ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = adjustmentSurveyQ11ViewController.swift; sourceTree = "<group>"; };
+		65DC7BA621A2A5890034005B /* SurveyTwoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyTwoTests.swift; sourceTree = "<group>"; };
 		6B60F0A62183C3F30004EE3E /* bounceButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bounceButton.swift; sourceTree = "<group>"; };
 		6BB4A6122182852000EF6829 /* AnchorApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnchorApplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BB4A6152182852000EF6829 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -94,6 +126,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		53F538DE21A149F700229536 /* Adjustment Survey */ = {
+			isa = PBXGroup;
+			children = (
+				53F538DA21A1408B00229536 /* adjustmentSurveyQ1ViewController.swift */,
+				53F538DC21A1440600229536 /* adjustmentSurveyQ2ViewController.swift */,
+				53F538DF21A14B2C00229536 /* adjustmentSurveyQ3ViewController.swift */,
+				53F538E121A14D5700229536 /* adjustmentSurveyQ4ViewController.swift */,
+				53F538E321A1526A00229536 /* adjustmentSurveyQ5ViewController.swift */,
+				53F538E521A155B400229536 /* adjustmentSurveyQ6ViewController.swift */,
+				53F538E721A156C000229536 /* adjustmentSurveyQ7ViewController.swift */,
+				53F538E921A1579B00229536 /* adjustmentSurveyQ8ViewController.swift */,
+				53F538ED21A1596000229536 /* adjustmentSurveyQ9ViewController.swift */,
+				53F538EF21A15A9000229536 /* adjustmentSurveyQ10ViewController.swift */,
+				53F538F121A15C2500229536 /* adjustmentSurveyQ11ViewController.swift */,
+			);
+			path = "Adjustment Survey";
+			sourceTree = "<group>";
+		};
+		53F538EB21A1590100229536 /* Button Enhancement */ = {
+			isa = PBXGroup;
+			children = (
+				6BB4A6432182883300EF6829 /* shapedButton.swift */,
+				6B60F0A62183C3F30004EE3E /* bounceButton.swift */,
+			);
+			path = "Button Enhancement";
+			sourceTree = "<group>";
+		};
+		53F538EC21A1593B00229536 /* Decision Survey */ = {
+			isa = PBXGroup;
+			children = (
+				C39DF9BF2184F04100A35C88 /* DecisionSurvey.swift */,
+				53CF2A70219E92B300B6381B /* decisionSurveyQ2ViewController.swift */,
+			);
+			path = "Decision Survey";
+			sourceTree = "<group>";
+		};
 		6BB4A6092182852000EF6829 = {
 			isa = PBXGroup;
 			children = (
@@ -117,16 +185,19 @@
 		6BB4A6142182852000EF6829 /* AnchorApplication */ = {
 			isa = PBXGroup;
 			children = (
+				1918A6D121A1F89D0052CAA3 /* GyroscopeAccelerometer.swift */,
+				53F538EC21A1593B00229536 /* Decision Survey */,
+				53F538EB21A1590100229536 /* Button Enhancement */,
+				53F538DE21A149F700229536 /* Adjustment Survey */,
 				6BB4A6152182852000EF6829 /* AppDelegate.swift */,
 				6BB4A6172182852000EF6829 /* HomeViewController.swift */,
-				C39DF9BF2184F04100A35C88 /* DecisionSurvey.swift */,
 				E93DE02B2183E5F700931BA7 /* DataTableViewController.swift */,
 				6BB4A6192182852000EF6829 /* Main.storyboard */,
+				53CF2A6E219E3A4D00B6381B /* dataPointViewController.swift */,
+				5345E160219D78720024DEE7 /* disclaimerViewController.swift */,
 				6BB4A61C2182852100EF6829 /* Assets.xcassets */,
 				6BB4A61E2182852100EF6829 /* LaunchScreen.storyboard */,
 				6BB4A6212182852100EF6829 /* Info.plist */,
-				6BB4A6432182883300EF6829 /* shapedButton.swift */,
-				6B60F0A62183C3F30004EE3E /* bounceButton.swift */,
 				D645E1B92187A546000BB2BC /* CollapsibleTableViewCell.swift */,
 				D645E1B72187A546000BB2BC /* CollapsibleTableViewController.swift */,
 				D645E1B82187A546000BB2BC /* CollapsibleTableViewController2.swift */,
@@ -151,6 +222,7 @@
 			children = (
 				6BB4A6352182852200EF6829 /* AnchorApplicationUITests.swift */,
 				6BB4A6372182852200EF6829 /* Info.plist */,
+				65DC7BA621A2A5890034005B /* SurveyTwoTests.swift */,
 			);
 			path = AnchorApplicationUITests;
 			sourceTree = "<group>";
@@ -286,18 +358,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53CF2A71219E92B300B6381B /* decisionSurveyQ2ViewController.swift in Sources */,
 				D645E1BC2187A546000BB2BC /* CollapsibleTableViewController.swift in Sources */,
+				53CF2A6F219E3A4D00B6381B /* dataPointViewController.swift in Sources */,
 				D645E1BB2187A546000BB2BC /* CollapsibleTableViewHeader.swift in Sources */,
 				D645E1BE2187A546000BB2BC /* CollapsibleTableViewCell.swift in Sources */,
+				53F538F221A15C2500229536 /* adjustmentSurveyQ11ViewController.swift in Sources */,
+				53F538E221A14D5700229536 /* adjustmentSurveyQ4ViewController.swift in Sources */,
+				53F538E021A14B2C00229536 /* adjustmentSurveyQ3ViewController.swift in Sources */,
+				53F538E421A1526A00229536 /* adjustmentSurveyQ5ViewController.swift in Sources */,
 				E93DE02C2183E5F700931BA7 /* DataTableViewController.swift in Sources */,
+				1918A6D221A1F89D0052CAA3 /* GyroscopeAccelerometer.swift in Sources */,
 				D645E1BD2187A546000BB2BC /* CollapsibleTableViewController2.swift in Sources */,
+				53F538F021A15A9000229536 /* adjustmentSurveyQ10ViewController.swift in Sources */,
 				6BB4A6182182852000EF6829 /* HomeViewController.swift in Sources */,
+				53F538E821A156C000229536 /* adjustmentSurveyQ7ViewController.swift in Sources */,
+				5345E161219D78720024DEE7 /* disclaimerViewController.swift in Sources */,
+				53F538DB21A1408B00229536 /* adjustmentSurveyQ1ViewController.swift in Sources */,
+				53F538DD21A1440600229536 /* adjustmentSurveyQ2ViewController.swift in Sources */,
 				6B60F0A72183C3F30004EE3E /* bounceButton.swift in Sources */,
 				C39DF9C02184F04100A35C88 /* DecisionSurvey.swift in Sources */,
 				6BB4A6442182883300EF6829 /* shapedButton.swift in Sources */,
+				53F538E621A155B400229536 /* adjustmentSurveyQ6ViewController.swift in Sources */,
 				D645E1BA2187A546000BB2BC /* drugTableData.swift in Sources */,
 				D645E1C02187A7E5000BB2BC /* Extensions.swift in Sources */,
 				6BB4A6162182852000EF6829 /* AppDelegate.swift in Sources */,
+				53F538EA21A1579B00229536 /* adjustmentSurveyQ8ViewController.swift in Sources */,
+				53F538EE21A1596000229536 /* adjustmentSurveyQ9ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,6 +400,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65DC7BA721A2A5890034005B /* SurveyTwoTests.swift in Sources */,
 				6BB4A6362182852200EF6829 /* AnchorApplicationUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -471,13 +559,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9V2K728WK9;
+				DEVELOPMENT_TEAM = 97A7GMG722;
 				INFOPLIST_FILE = AnchorApplication/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Group12.AnchorApplication;
+				PRODUCT_BUNDLE_IDENTIFIER = "Group12-AnchorApplication";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -489,13 +577,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9V2K728WK9;
+				DEVELOPMENT_TEAM = 97A7GMG722;
 				INFOPLIST_FILE = AnchorApplication/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Group12.AnchorApplication;
+				PRODUCT_BUNDLE_IDENTIFIER = "Group12-AnchorApplication";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
