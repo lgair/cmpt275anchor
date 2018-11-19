@@ -1494,18 +1494,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Increase frequency of Levodopa but smaller doses" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="v5c-KS-3lu">
-                                <rect key="frame" x="28.5" y="284" width="318" height="87"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="87" id="5fZ-6x-nKn"/>
-                                    <constraint firstAttribute="width" constant="318" id="Gwz-r8-BTD"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y72-xA-PKS">
-                                <rect key="frame" x="247" y="597" width="99" height="50"/>
+                                <rect key="frame" x="247" y="610" width="99" height="37"/>
                                 <state key="normal" title="Home" image="homeIcon">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -1513,21 +1503,29 @@
                                     <segue destination="BYZ-38-t0r" kind="show" id="qd4-zW-9gx"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ISp-cr-83S">
-                                <rect key="frame" x="162" y="370" width="51" height="36"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Increase frequency of Levodopa but smaller doses" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="v5c-KS-3lu">
+                                <rect key="frame" x="41" y="247" width="318" height="87"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="36" id="O5I-VR-a76"/>
+                                    <constraint firstAttribute="height" constant="87" id="P5g-Zg-ooZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="OR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ISp-cr-83S">
+                                <rect key="frame" x="175" y="333" width="51" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="AOT-ws-4g2"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Decrease dosage of Levodopa and add Dopamine Agonists" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="RXc-1Q-fAA">
-                                <rect key="frame" x="28" y="430" width="318" height="87"/>
+                                <rect key="frame" x="41" y="393" width="318" height="87"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="87" id="650-Ci-wHL"/>
-                                    <constraint firstAttribute="width" constant="318" id="BG3-87-OhI"/>
+                                    <constraint firstAttribute="height" constant="87" id="Z0b-Mq-KXi"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -1535,19 +1533,20 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="v5c-KS-3lu" firstAttribute="leading" secondItem="RXc-1Q-fAA" secondAttribute="leading" id="42Y-IR-Ik7"/>
                             <constraint firstItem="y72-xA-PKS" firstAttribute="leading" secondItem="oOG-uW-AEa" secondAttribute="leading" constant="247" id="4VF-LJ-Rfh"/>
-                            <constraint firstItem="RXc-1Q-fAA" firstAttribute="top" secondItem="ISp-cr-83S" secondAttribute="bottom" constant="24" id="4xV-hI-WF7"/>
-                            <constraint firstItem="y72-xA-PKS" firstAttribute="top" secondItem="v5c-KS-3lu" secondAttribute="bottom" constant="226" id="5nc-ep-jQY"/>
+                            <constraint firstItem="v5c-KS-3lu" firstAttribute="centerX" secondItem="ISp-cr-83S" secondAttribute="centerX" id="5uk-bC-8W3"/>
                             <constraint firstItem="oOG-uW-AEa" firstAttribute="trailing" secondItem="y72-xA-PKS" secondAttribute="trailing" constant="29" id="6C6-eu-hyF"/>
-                            <constraint firstItem="oOG-uW-AEa" firstAttribute="bottom" secondItem="ISp-cr-83S" secondAttribute="bottom" constant="261" id="Bkq-wg-19h"/>
+                            <constraint firstItem="v5c-KS-3lu" firstAttribute="top" secondItem="fQL-u2-L84" secondAttribute="top" constant="247" id="89k-JP-yYr"/>
                             <constraint firstItem="oOG-uW-AEa" firstAttribute="bottom" secondItem="y72-xA-PKS" secondAttribute="bottom" constant="20" id="DFP-e9-pTf"/>
-                            <constraint firstItem="ISp-cr-83S" firstAttribute="centerX" secondItem="v5c-KS-3lu" secondAttribute="centerX" id="GaH-SJ-eKw"/>
+                            <constraint firstItem="RXc-1Q-fAA" firstAttribute="top" secondItem="ISp-cr-83S" secondAttribute="bottom" constant="24" id="OVg-uo-QAL"/>
+                            <constraint firstItem="v5c-KS-3lu" firstAttribute="trailing" secondItem="RXc-1Q-fAA" secondAttribute="trailing" id="Pjw-Zn-EDp"/>
                             <constraint firstItem="xhZ-4Y-3ha" firstAttribute="top" secondItem="oOG-uW-AEa" secondAttribute="top" constant="76" id="YF2-xj-a5j"/>
-                            <constraint firstItem="RXc-1Q-fAA" firstAttribute="trailing" secondItem="y72-xA-PKS" secondAttribute="trailing" id="aD4-9p-UWh"/>
+                            <constraint firstItem="ISp-cr-83S" firstAttribute="leading" secondItem="oOG-uW-AEa" secondAttribute="leading" constant="175" id="cMh-Oj-T9F"/>
                             <constraint firstItem="xhZ-4Y-3ha" firstAttribute="centerX" secondItem="fQL-u2-L84" secondAttribute="centerX" id="fOE-ii-rwt"/>
-                            <constraint firstItem="v5c-KS-3lu" firstAttribute="top" secondItem="xhZ-4Y-3ha" secondAttribute="bottom" constant="152" id="hXV-T2-RGi"/>
-                            <constraint firstItem="ISp-cr-83S" firstAttribute="leading" secondItem="oOG-uW-AEa" secondAttribute="leading" constant="162" id="sf4-Fy-ZuG"/>
-                            <constraint firstItem="v5c-KS-3lu" firstAttribute="centerX" secondItem="fQL-u2-L84" secondAttribute="centerX" id="vOp-bo-wSv"/>
+                            <constraint firstItem="RXc-1Q-fAA" firstAttribute="top" secondItem="v5c-KS-3lu" secondAttribute="bottom" constant="59" id="fbd-kL-rdY"/>
+                            <constraint firstItem="v5c-KS-3lu" firstAttribute="leading" secondItem="oOG-uW-AEa" secondAttribute="leading" constant="41" id="mDW-WS-XAp"/>
+                            <constraint firstItem="v5c-KS-3lu" firstAttribute="trailing" secondItem="fQL-u2-L84" secondAttribute="trailingMargin" id="vEn-5P-Haq"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="oOG-uW-AEa"/>
                     </view>
@@ -3187,6 +3186,6 @@
         <segue reference="K1c-D4-AL9"/>
         <segue reference="5DD-l5-H7Z"/>
         <segue reference="eXH-tz-EEz"/>
-        <segue reference="xnZ-ve-gzd"/>
+        <segue reference="qd4-zW-9gx"/>
     </inferredMetricsTieBreakers>
 </document>
