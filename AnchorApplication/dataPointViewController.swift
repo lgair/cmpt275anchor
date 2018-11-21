@@ -44,6 +44,7 @@ class dataPointViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        assignbackground()
         print("Data point View Loaded")
         // Hides dosage per tablet input prior to choosing a levodopa formulation
         dosageText.isHidden = true
@@ -113,6 +114,23 @@ class dataPointViewController: UIViewController {
         else {
             nextPageButton.isEnabled = true
         }
+    }
+    func assignbackground(){
+        //Importing Main Background
+        let background = UIImage(named: "background2")
+        var imageView : UIImageView!
+        //Setting the background within the bounds
+        imageView = UIImageView(frame: view.bounds)
+        //Setting the background to fill the whole screen
+        imageView.contentMode =  UIViewContentMode.scaleAspectFill
+        //A boolean value that determines whether subviews are confined to the bounds
+        imageView.clipsToBounds = true
+        imageView.image = background
+        //Center Aligning the Background image
+        imageView.center = view.center
+        view.addSubview(imageView)
+        //Setting Background Image to the Back
+        self.view.sendSubview(toBack: imageView)
     }
     
     

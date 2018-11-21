@@ -27,6 +27,7 @@ class CollapsibleTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        assignbackground()
         
         // Auto resizing the height of the cell
         tableView.estimatedRowHeight = 44.0
@@ -87,6 +88,23 @@ extension CollapsibleTableViewController {
     
     override func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
         return 1.0
+    }
+    func assignbackground(){
+        //Importing Main Background
+        let background = UIImage(named: "background2")
+        var imageView : UIImageView!
+        //Setting the background within the bounds
+        imageView = UIImageView(frame: view.bounds)
+        //Setting the background to fill the whole screen
+        imageView.contentMode =  UIViewContentMode.scaleAspectFill
+        //A boolean value that determines whether subviews are confined to the bounds
+        imageView.clipsToBounds = true
+        imageView.image = background
+        //Center Aligning the Background image
+        imageView.center = view.center
+        view.addSubview(imageView)
+        //Setting Background Image to the Back
+        self.view.sendSubview(toBack: imageView)
     }
 
 }
