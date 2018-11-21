@@ -16,6 +16,7 @@ class disclaimerViewController: UIViewController {
     @IBOutlet weak var proceedButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
+        assignbackground()
         print("Disclaimer View Loaded")
         
         // proceedButton is initially disabled until the switch is switched on
@@ -31,4 +32,22 @@ class disclaimerViewController: UIViewController {
     }
     
 
+    //This function sets the background image
+    func assignbackground(){
+        //Importing Main Background
+        let background = UIImage(named: "background2")
+        var imageView : UIImageView!
+        //Setting the background within the bounds
+        imageView = UIImageView(frame: view.bounds)
+        //Setting the background to fill the whole screen
+        imageView.contentMode =  UIViewContentMode.scaleAspectFill
+        //A boolean value that determines whether subviews are confined to the bounds
+        imageView.clipsToBounds = true
+        imageView.image = background
+        //Center Aligning the Background image
+        imageView.center = view.center
+        view.addSubview(imageView)
+        //Setting Background Image to the Back
+        self.view.sendSubview(toBack: imageView)
+    }
 }

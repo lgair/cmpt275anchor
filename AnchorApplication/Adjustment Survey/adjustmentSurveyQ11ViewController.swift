@@ -16,6 +16,7 @@ class adjustmentSurveyQ11ViewController: UIViewController {
     override func viewDidLoad() {
         print("On adjustmentSurveyQ11")
         super.viewDidLoad()
+        assignbackground()
 
         // Do any additional setup after loading the view.
     }
@@ -39,6 +40,24 @@ class adjustmentSurveyQ11ViewController: UIViewController {
             print("No adjustments")
             performSegue(withIdentifier: "toResultFour", sender: self)
         }
+    }
+    //This function sets the background image
+    func assignbackground(){
+        //Importing Main Background
+        let background = UIImage(named: "background2")
+        var imageView : UIImageView!
+        //Setting the background within the bounds
+        imageView = UIImageView(frame: view.bounds)
+        //Setting the background to fill the whole screen
+        imageView.contentMode =  UIViewContentMode.scaleAspectFill
+        //A boolean value that determines whether subviews are confined to the bounds
+        imageView.clipsToBounds = true
+        imageView.image = background
+        //Center Aligning the Background image
+        imageView.center = view.center
+        view.addSubview(imageView)
+        //Setting Background Image to the Back
+        self.view.sendSubview(toBack: imageView)
     }
     
 

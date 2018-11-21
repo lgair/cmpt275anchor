@@ -21,6 +21,7 @@ class decisionSurveyQ2ViewController: UIViewController {
     @IBOutlet weak var helpButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
+        assignbackground()
         // Rounded corners for the popupView
         popupView.layer.cornerRadius = 10
         popupView.layer.masksToBounds = true
@@ -55,6 +56,24 @@ class decisionSurveyQ2ViewController: UIViewController {
             // background is configured as a button and is unmasked from the question
             self.backgroundButton.alpha = 0
         })
+    }
+    
+    func assignbackground(){
+        //Importing Main Background
+        let background = UIImage(named: "background2")
+        var imageView : UIImageView!
+        //Setting the background within the bounds
+        imageView = UIImageView(frame: view.bounds)
+        //Setting the background to fill the whole screen
+        imageView.contentMode =  UIViewContentMode.scaleAspectFill
+        //A boolean value that determines whether subviews are confined to the bounds
+        imageView.clipsToBounds = true
+        imageView.image = background
+        //Center Aligning the Background image
+        imageView.center = view.center
+        view.addSubview(imageView)
+        //Setting Background Image to the Back
+        self.view.sendSubview(toBack: imageView)
     }
     
     
