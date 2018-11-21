@@ -26,7 +26,7 @@ class CollapsibleTableViewController2: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        assignbackground()
+        //assignbackground()
         
         // Auto resizing the height of the cell
         tableView.estimatedRowHeight = 44.0

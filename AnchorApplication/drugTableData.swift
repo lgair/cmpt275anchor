@@ -16,6 +16,7 @@
 //
 // Modified: Joon
 import Foundation
+import UIKit
 
 //
 // MARK: - Section Data Structure
@@ -49,6 +50,7 @@ public var sectionsData: [Section] = [
         Item(name: "Dosage", detail: "Initial: 1.25 mg BID PO\nUsual: 5–10 mg TID PO"),
         Item(name: "Adverse Effect", detail: "Nausea, vomiting, orthostatic hypotension, hallucinations, psychosis, erythromelalgia (burning pain, warmth and redness of the extremities), pleural fibrosis (obtain a baseline chest x-ray before initiating therapy).\nRisk of parkinsonism-hyperpyrexia syndrome with abrupt discontinuation; taper gradually.\nDrug holidays not recommended."),
         Item(name: "Drug Interactions", detail: "Antihypertensives, diuretics, tricyclic antidepressants may increase hypotensive action.")
+        
     ]),
     Section(name: "Pramipexole", items: [
         Item(name: "Type", detail: "Mirapex, Pramipexole, other"),
@@ -103,3 +105,4 @@ public var sectionsData2: [Section] = [
         Item(name: "Drug Interactions", detail: "Antihypertensives, diuretics, tricyclic antidepressants may increase hypotensive action.")
         ])
 ]
+
