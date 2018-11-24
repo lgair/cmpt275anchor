@@ -10,29 +10,37 @@ import UIKit
 
 class adjustmentSurveyQ1ViewController: UIViewController {
     
-    var wearingOffQ1 : Int = 0
     
+        static var globalWearingOff: Int = 0
+        static var globalDyskinesia: Int = 0
+    
+    static var prevWearingOffQ1: Int = 0
+    static var prevDyskinesiaQ1: Int = 0
     
 
     override func viewDidLoad() {
         print("On adjustmentSurveyQ1...")
         super.viewDidLoad()
+        //print("Previous wearing off: ", 0)
+        //print("Previous dyskinesia: ", 0)
+        print("Current wearing off: ", adjustmentSurveyQ1ViewController.globalWearingOff)
+        print("Current dyskinesia: ", adjustmentSurveyQ1ViewController.globalDyskinesia)
         assignbackground()
 
         // Do any additional setup after loading the view.
     }
     
     @IBAction func yesClicked(_ sender: Any) {
-        wearingOffQ1 = wearingOffQ1 + 1
-        print("Current wearing off: ", wearingOffQ1)
+        
+        adjustmentSurveyQ1ViewController.globalWearingOff = adjustmentSurveyQ1ViewController.globalWearingOff + 1
         performSegue(withIdentifier: "toadjustmentSurveyQ2", sender: self)
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let vc = segue.destination as! adjustmentSurveyQ2ViewController
-        vc.wearingOffQ2 = self.wearingOffQ1
-        
-    }
+    
+    
+    //override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        //let vc = segue.destination as! adjustmentSurveyQ2ViewController
+    //}
     //This function sets the background image
     func assignbackground(){
         //Importing Main Background

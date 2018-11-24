@@ -10,11 +10,13 @@ import UIKit
 
 class adjustmentSurveyQ11ViewController: UIViewController {
 
-    var wearingOffQ11: Int = 0
-    var dyskinesiaQ11: Int = 0
+    static var prevWearingOffQ11 : Int = adjustmentSurveyQ10ViewController.prevWearingOffQ10
+    static var prevDyskinesiaQ11: Int = adjustmentSurveyQ10ViewController.prevDyskinesiaQ10
     
     override func viewDidLoad() {
         print("On adjustmentSurveyQ11")
+        print("Current wearing off: ", adjustmentSurveyQ1ViewController.globalWearingOff)
+        print("Current dyskinesia: ", adjustmentSurveyQ1ViewController.globalDyskinesia)
         super.viewDidLoad()
         assignbackground()
 
@@ -22,16 +24,16 @@ class adjustmentSurveyQ11ViewController: UIViewController {
     }
     
     @IBAction func answerClicked(_ sender: Any) {
-        if wearingOffQ11 == dyskinesiaQ11 && wearingOffQ11 != 0 && dyskinesiaQ11 != 0{
+        if adjustmentSurveyQ1ViewController.globalDyskinesia == adjustmentSurveyQ1ViewController.globalWearingOff && adjustmentSurveyQ1ViewController.globalWearingOff != 0 && adjustmentSurveyQ1ViewController.globalDyskinesia != 0{
             print("wearing off is same as dyskinesia")
             performSegue(withIdentifier: "toResultTwo", sender: self)
             
         }
-        else if dyskinesiaQ11 < wearingOffQ11 {
+        else if adjustmentSurveyQ1ViewController.globalDyskinesia < adjustmentSurveyQ1ViewController.globalWearingOff {
             print("dyskinesia less than wearing off")
             performSegue(withIdentifier: "toResultOne", sender: self)
         }
-        else if dyskinesiaQ11 > wearingOffQ11 {
+        else if adjustmentSurveyQ1ViewController.globalDyskinesia > adjustmentSurveyQ1ViewController.globalWearingOff {
             print("dyskinesia greater than wearing off")
             performSegue(withIdentifier: "toResultThree", sender: self)
             
@@ -41,6 +43,14 @@ class adjustmentSurveyQ11ViewController: UIViewController {
             performSegue(withIdentifier: "toResultFour", sender: self)
         }
     }
+    
+    @IBAction func backClicked(_ sender: Any) {
+        adjustmentSurveyQ1ViewController.globalWearingOff = adjustmentSurveyQ10ViewController.prevWearingOffQ10
+        adjustmentSurveyQ1ViewController.globalDyskinesia = adjustmentSurveyQ10ViewController.prevDyskinesiaQ10
+        performSegue(withIdentifier: "backToQ10", sender: self)
+    }
+    
+    
     //This function sets the background image
     func assignbackground(){
         //Importing Main Background

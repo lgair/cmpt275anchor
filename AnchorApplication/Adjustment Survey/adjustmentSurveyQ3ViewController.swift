@@ -10,40 +10,47 @@ import UIKit
 
 class adjustmentSurveyQ3ViewController: UIViewController {
     
-    var wearingOffQ3: Int = 0
-    var dyskinesiaQ3: Int = 0
+    static var prevWearingOffQ3: Int = adjustmentSurveyQ2ViewController.prevWearingOffQ2
+    static var prevDyskinesiaQ3: Int = adjustmentSurveyQ2ViewController.prevDyskinesiaQ2
+    
 
     override func viewDidLoad() {
         print("On adjustmentSurveyQ3...")
+        //print("Previous wearing off: ", adjustmentSurveyQ3ViewController.prevWearingOffQ3)
+        //print("Previous dyskinesia: ", adjustmentSurveyQ3ViewController.prevDyskinesiaQ3)
+        print("Current wearing off: ", adjustmentSurveyQ1ViewController.globalWearingOff)
+        print("Current dyskinesia: ", adjustmentSurveyQ1ViewController.globalDyskinesia)
         super.viewDidLoad()
         assignbackground()
 
         // Do any additional setup after loading the view.
     }
-    
+
 
     @IBAction func yesClicked(_ sender: Any) {
-        dyskinesiaQ3 = dyskinesiaQ3 + 1
-        wearingOffQ3 = wearingOffQ3 + 1
-        print("Current dyskinesia: ", dyskinesiaQ3)
-        print("Current wearing off: ", wearingOffQ3)
+        adjustmentSurveyQ3ViewController.prevDyskinesiaQ3 = adjustmentSurveyQ1ViewController.globalDyskinesia
+        adjustmentSurveyQ3ViewController.prevWearingOffQ3 = adjustmentSurveyQ1ViewController.globalWearingOff
+        adjustmentSurveyQ1ViewController.globalDyskinesia = adjustmentSurveyQ1ViewController.globalDyskinesia + 1
+        adjustmentSurveyQ1ViewController.globalWearingOff = adjustmentSurveyQ1ViewController.globalWearingOff + 1
         performSegue(withIdentifier: "toadjustmentSurveyQ4", sender: self)
     }
-    
-    
+
+
     @IBAction func noClicked(_ sender: Any) {
-        wearingOffQ3 = wearingOffQ3 + 1
-        print("Current dyskinesia: ", dyskinesiaQ3)
-        print("Current wearing off: ", wearingOffQ3)
+      adjustmentSurveyQ3ViewController.prevDyskinesiaQ3 = adjustmentSurveyQ1ViewController.globalDyskinesia
+      adjustmentSurveyQ3ViewController.prevWearingOffQ3 = adjustmentSurveyQ1ViewController.globalWearingOff
+        adjustmentSurveyQ1ViewController.globalWearingOff = adjustmentSurveyQ1ViewController.globalWearingOff + 1
+        print("Current dyskinesia: ", adjustmentSurveyQ1ViewController.globalDyskinesia)
+        print("Current wearing off: ", adjustmentSurveyQ1ViewController.globalWearingOff)
         performSegue(withIdentifier: "toadjustmentSurveyQ4", sender: self)
     }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let vc = segue.destination as! adjustmentSurveyQ4ViewController
-        vc.dyskinesiaQ4 = self.dyskinesiaQ3
-        vc.wearingOffQ4 = self.wearingOffQ3
-        
+
+    @IBAction func backClicked(_ sender: Any) {
+        adjustmentSurveyQ1ViewController.globalWearingOff = adjustmentSurveyQ2ViewController.prevWearingOffQ2
+        adjustmentSurveyQ1ViewController.globalDyskinesia = adjustmentSurveyQ2ViewController.prevDyskinesiaQ2
+        performSegue(withIdentifier: "backToQ2", sender: self)
     }
+    
     //This function sets the background image
     func assignbackground(){
         //Importing Main Background
