@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,18 +15,17 @@
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background2" translatesAutoresizingMaskIntoConstraints="NO" id="gdM-0y-8Su">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background2" translatesAutoresizingMaskIntoConstraints="NO" id="gdM-0y-8Su">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoWithColor" translatesAutoresizingMaskIntoConstraints="NO" id="WmD-F5-ZxN">
-                                <rect key="frame" x="106" y="304.5" width="163" height="58"/>
+                                <rect key="frame" x="125.5" y="419" width="163" height="58"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Proactive and Reactive." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="09i-iv-ENe">
-                                <rect key="frame" x="97" y="363.5" width="181" height="21"/>
+                                <rect key="frame" x="116.5" y="478" width="181" height="21"/>
                                 <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -34,17 +33,21 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="gdM-0y-8Su" firstAttribute="trailing" secondItem="vDS-hy-gen" secondAttribute="trailing" id="7K0-0M-40T"/>
                             <constraint firstItem="WmD-F5-ZxN" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="LXn-LQ-C0B"/>
+                            <constraint firstItem="gdM-0y-8Su" firstAttribute="leading" secondItem="vDS-hy-gen" secondAttribute="leading" id="OKW-ym-NaJ"/>
                             <constraint firstItem="09i-iv-ENe" firstAttribute="top" secondItem="WmD-F5-ZxN" secondAttribute="bottom" constant="1" id="R21-3w-PhY"/>
                             <constraint firstItem="WmD-F5-ZxN" firstAttribute="centerX" secondItem="09i-iv-ENe" secondAttribute="centerX" id="RkS-hZ-BxJ"/>
-                            <constraint firstItem="WmD-F5-ZxN" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Rvf-3t-mtn"/>
+                            <constraint firstItem="WmD-F5-ZxN" firstAttribute="centerX" secondItem="vDS-hy-gen" secondAttribute="centerX" id="Rvf-3t-mtn"/>
+                            <constraint firstItem="gdM-0y-8Su" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="bnm-An-Gw9"/>
+                            <constraint firstAttribute="bottom" secondItem="gdM-0y-8Su" secondAttribute="bottom" id="xgH-Rc-8Cq"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <viewLayoutGuide key="safeArea" id="vDS-hy-gen"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="52" y="374.66266866566718"/>
+            <point key="canvasLocation" x="50.724637681159422" y="374.33035714285711"/>
         </scene>
     </scenes>
     <resources>
