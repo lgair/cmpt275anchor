@@ -31,7 +31,8 @@ class adjustmentSurveyQ1ViewController: UIViewController {
     }
     
     @IBAction func yesClicked(_ sender: Any) {
-        
+        adjustmentSurveyQ1ViewController.prevDyskinesiaQ1 = adjustmentSurveyQ1ViewController.globalDyskinesia
+        adjustmentSurveyQ1ViewController.prevWearingOffQ1 = adjustmentSurveyQ1ViewController.globalWearingOff
         adjustmentSurveyQ1ViewController.globalWearingOff = adjustmentSurveyQ1ViewController.globalWearingOff + 1
         performSegue(withIdentifier: "toadjustmentSurveyQ2", sender: self)
     }
