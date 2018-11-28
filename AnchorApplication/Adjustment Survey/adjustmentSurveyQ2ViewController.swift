@@ -35,8 +35,8 @@ class adjustmentSurveyQ2ViewController: UIViewController {
     }
     
     @IBAction func backClicked(_ sender: Any) {
-        adjustmentSurveyQ1ViewController.globalWearingOff = 0
-        adjustmentSurveyQ1ViewController.globalDyskinesia = 0
+        adjustmentSurveyQ1ViewController.globalWearingOff = adjustmentSurveyQ1ViewController.prevWearingOffQ1
+        adjustmentSurveyQ1ViewController.globalDyskinesia = adjustmentSurveyQ1ViewController.prevDyskinesiaQ1
         performSegue(withIdentifier: "backToQ1", sender: self)
     }
 

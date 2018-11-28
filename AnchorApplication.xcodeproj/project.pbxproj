@@ -129,6 +129,7 @@
 		53F538DE21A149F700229536 /* Adjustment Survey */ = {
 			isa = PBXGroup;
 			children = (
+				1918A6D121A1F89D0052CAA3 /* deviceMotionViewController.swift */,
 				53F538DA21A1408B00229536 /* adjustmentSurveyQ1ViewController.swift */,
 				53F538DC21A1440600229536 /* adjustmentSurveyQ2ViewController.swift */,
 				53F538DF21A14B2C00229536 /* adjustmentSurveyQ3ViewController.swift */,
@@ -185,7 +186,6 @@
 		6BB4A6142182852000EF6829 /* AnchorApplication */ = {
 			isa = PBXGroup;
 			children = (
-				1918A6D121A1F89D0052CAA3 /* deviceMotionViewController.swift */,
 				53F538EC21A1593B00229536 /* Decision Survey */,
 				53F538EB21A1590100229536 /* Button Enhancement */,
 				53F538DE21A149F700229536 /* Adjustment Survey */,
