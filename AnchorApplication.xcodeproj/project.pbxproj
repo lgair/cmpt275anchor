@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1918A6D221A1F89D0052CAA3 /* deviceMotionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1918A6D121A1F89D0052CAA3 /* deviceMotionViewController.swift */; };
 		5345E161219D78720024DEE7 /* disclaimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5345E160219D78720024DEE7 /* disclaimerViewController.swift */; };
+		53C9178621AE6270002BD346 /* weeklyNotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C9178521AE6270002BD346 /* weeklyNotificationViewController.swift */; };
 		53CF2A6F219E3A4D00B6381B /* dataPointViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53CF2A6E219E3A4D00B6381B /* dataPointViewController.swift */; };
 		53CF2A71219E92B300B6381B /* decisionSurveyQ2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53CF2A70219E92B300B6381B /* decisionSurveyQ2ViewController.swift */; };
 		53F538DB21A1408B00229536 /* adjustmentSurveyQ1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F538DA21A1408B00229536 /* adjustmentSurveyQ1ViewController.swift */; };
@@ -62,6 +63,7 @@
 /* Begin PBXFileReference section */
 		1918A6D121A1F89D0052CAA3 /* deviceMotionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = deviceMotionViewController.swift; sourceTree = "<group>"; };
 		5345E160219D78720024DEE7 /* disclaimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = disclaimerViewController.swift; sourceTree = "<group>"; };
+		53C9178521AE6270002BD346 /* weeklyNotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = weeklyNotificationViewController.swift; sourceTree = "<group>"; };
 		53CF2A6E219E3A4D00B6381B /* dataPointViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dataPointViewController.swift; sourceTree = "<group>"; };
 		53CF2A70219E92B300B6381B /* decisionSurveyQ2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = decisionSurveyQ2ViewController.swift; sourceTree = "<group>"; };
 		53F538DA21A1408B00229536 /* adjustmentSurveyQ1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = adjustmentSurveyQ1ViewController.swift; sourceTree = "<group>"; };
@@ -130,6 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				1918A6D121A1F89D0052CAA3 /* deviceMotionViewController.swift */,
+				53C9178521AE6270002BD346 /* weeklyNotificationViewController.swift */,
 				53F538DA21A1408B00229536 /* adjustmentSurveyQ1ViewController.swift */,
 				53F538DC21A1440600229536 /* adjustmentSurveyQ2ViewController.swift */,
 				53F538DF21A14B2C00229536 /* adjustmentSurveyQ3ViewController.swift */,
@@ -366,6 +369,7 @@
 				53F538F221A15C2500229536 /* adjustmentSurveyQ11ViewController.swift in Sources */,
 				53F538E221A14D5700229536 /* adjustmentSurveyQ4ViewController.swift in Sources */,
 				53F538E021A14B2C00229536 /* adjustmentSurveyQ3ViewController.swift in Sources */,
+				53C9178621AE6270002BD346 /* weeklyNotificationViewController.swift in Sources */,
 				53F538E421A1526A00229536 /* adjustmentSurveyQ5ViewController.swift in Sources */,
 				E93DE02C2183E5F700931BA7 /* DataTableViewController.swift in Sources */,
 				1918A6D221A1F89D0052CAA3 /* deviceMotionViewController.swift in Sources */,

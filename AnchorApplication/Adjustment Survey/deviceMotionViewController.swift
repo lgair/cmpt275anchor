@@ -70,6 +70,7 @@ class deviceMotionViewController: UIViewController {
             // Computing absolute average of device motion arrays
             let avgAcc = abs(Float(sumAcc) / Float(accCount))
             let avgRot = abs(Float(sumRot) / Float(rotCount))
+            let avgDiff = abs(avgAcc - avgRot)
             print("Absolute average user acceleration: ", avgAcc)
             print("Absolute average rotation rate: ", avgRot)
             
@@ -83,7 +84,7 @@ class deviceMotionViewController: UIViewController {
             self.processInfo.textAlignment = .center
             
             // Delay analysis by 5 seconds
-            self.timer2 = Timer.scheduledTimer(withTimeInterval: 5.0, repeats: false, block: { (timer2) in
+            self.timer2 = Timer.scheduledTimer(withTimeInterval: 4.0, repeats: false, block: { (timer2) in
                 self.processImage.alpha = 0.0
                 self.processImage.image = UIImage(named: "analyze")
                 self.processInfo.text = "Analyzing data..."
@@ -91,24 +92,45 @@ class deviceMotionViewController: UIViewController {
                 
                 // Delay assessment results output by 5 seconds
                 self.timer3 = Timer.scheduledTimer(withTimeInterval: 5.0, repeats: false, block: { (timer3) in
-                    // Condition: absolute average of user accleration is greater than rotation rate
-                    if avgAcc > avgRot {
+                    // Condition: absolute average of user acceleration is greater than rotation rate
+                    // Result: Predominant dyskinesia
+                    // Action: +1 to globalDyskinesia
+                    if avgDiff > 0.01 {
                         adjustmentSurveyQ1ViewController.globalDyskinesia = adjustmentSurveyQ1ViewController.globalDyskinesia + 1
                         self.processImage.isHidden = true
                         self.processInfo.isHidden = true
-                        let alert = UIAlertController(title: "Assessment Result", message: "Predominant problem is dyskinesia", preferredStyle: .alert)
+                        self.startButton.isHidden = true
+                        let alert = UIAlertController(title: "Assessment Result", message: "Predominant problem is dyskinesia.", preferredStyle: .alert)
                         let toSurvey = UIAlertAction(title: "Continue to survey", style: .default, handler: { _ in
                             self.performSegue(withIdentifier: "toQ1", sender: nil)
                         })
                         alert.addAction(toSurvey)
                         self.present(alert, animated: true, completion: nil)
                     }
-                    // Condition: absolute averae rotation rate is greater than user acceleration
+                        // Condition: absolute average difference between user acceleration and rotation rate is lower than 0.01
+                        // Result: No predominant problem
+                        // Action: Keep globalDyskinesia and globalWearingOff as 0 
+                    else if avgDiff <= 0.01 {
+                        self.processImage.isHidden = true
+                        self.processInfo.isHidden = true
+                        self.startButton.isHidden = true
+                        let alert = UIAlertController(title: "Assessment Result", message: "No predominant problem is present.", preferredStyle: .alert)
+                        let toSurvey = UIAlertAction(title: "Continue to survey", style: .default, handler: { _ in
+                            self.performSegue(withIdentifier: "toQ1", sender: nil)
+                        })
+                        alert.addAction(toSurvey)
+                        self.present(alert, animated: true, completion: nil)
+                        
+                    }
+                    // Condition: absolute average rotation rate is greater than user acceleration
+                        // Result: Predominant wearing off
+                        // Action: +1 to globalWearingOff
                     else {
                         adjustmentSurveyQ1ViewController.globalWearingOff = adjustmentSurveyQ1ViewController.globalWearingOff + 1
                         self.processImage.isHidden = true
                         self.processInfo.isHidden = true
-                        let alert = UIAlertController(title: "Assessment Result", message: "Predominant problem is end-of-dose \"wearing off\"", preferredStyle: .alert)
+                        self.startButton.isHidden = true
+                        let alert = UIAlertController(title: "Assessment Result", message: "Predominant problem is end-of-dose \"wearing off\".", preferredStyle: .alert)
                         let toSurvey = UIAlertAction(title: "Continue to survey", style: .default, handler: { _ in
                             self.performSegue(withIdentifier: "toQ1", sender: nil)
                         })
