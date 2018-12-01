@@ -49,6 +49,7 @@ class deviceMotionViewController: UIViewController {
         
         // Start blinking animation of processImage
         UIImageView.animate(withDuration: 1, delay: 0.0, options: [.curveLinear, .repeat, .autoreverse], animations: {self.processImage.alpha = 0.0}, completion: nil)
+        
         startMotionManager()
         
         // Device motion data collection runtime of 10 seconds
@@ -109,7 +110,7 @@ class deviceMotionViewController: UIViewController {
                     }
                         // Condition: absolute average difference between user acceleration and rotation rate is lower than 0.01
                         // Result: No predominant problem
-                        // Action: Keep globalDyskinesia and globalWearingOff as 0 
+                        // Action: Keep globalDyskinesia and globalWearingOff as 0
                     else if avgDiff <= 0.01 {
                         self.processImage.isHidden = true
                         self.processInfo.isHidden = true
@@ -122,7 +123,7 @@ class deviceMotionViewController: UIViewController {
                         self.present(alert, animated: true, completion: nil)
                         
                     }
-                    // Condition: absolute average rotation rate is greater than user acceleration
+                        // Condition: absolute average rotation rate is greater than user acceleration
                         // Result: Predominant wearing off
                         // Action: +1 to globalWearingOff
                     else {
@@ -169,7 +170,7 @@ class deviceMotionViewController: UIViewController {
             print("Accelerometer is available.")
             samplingStarted = true
             motionManager.startDeviceMotionUpdates(to: OperationQueue.current!) { (motion, error) in
-                self.collectDataSamples(motion: motion, error: error! as NSError)
+                self.collectDataSamples(motion: motion, error: error as NSError?)
                 print("Collecting Device Motion data...")
             }
         }
