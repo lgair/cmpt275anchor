@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -46,7 +46,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DIs-1X-3bA" customClass="shapedButton" customModule="AnchorApplication" customModuleProvider="target">
                                 <rect key="frame" x="20" y="348" width="335" height="80"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="335" id="ZWh-WL-s8F"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="335" id="ZWh-WL-s8F"/>
                                     <constraint firstAttribute="height" constant="80" id="bVL-Iq-Zwj"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
@@ -69,7 +69,7 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="homeIcon" translatesAutoresizingMaskIntoConstraints="NO" id="Ved-Zn-BWc">
-                                <rect key="frame" x="39" y="54" width="37" height="48"/>
+                                <rect key="frame" x="39" y="54" width="50" height="48"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="wF3-1d-0pF"/>
                                 </constraints>
@@ -90,7 +90,7 @@
                                 <rect key="frame" x="20" y="452" width="335" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="Ep3-h4-1FO"/>
-                                    <constraint firstAttribute="width" constant="335" id="wnm-kJ-D5a"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="335" id="wnm-kJ-D5a"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title=" Progress Monitor" image="progressMonitorIcon">
@@ -111,7 +111,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ol0-zl-1sO" customClass="shapedButton" customModule="AnchorApplication" customModuleProvider="target">
                                 <rect key="frame" x="20" y="237" width="335" height="80"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="335" id="IlA-jb-JJz"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="335" id="IlA-jb-JJz"/>
                                     <constraint firstAttribute="height" constant="80" id="Pzi-TE-b7H"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
@@ -131,7 +131,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PAL-Dl-gC7">
-                                <rect key="frame" x="84" y="54" width="108" height="48"/>
+                                <rect key="frame" x="97" y="54" width="108" height="48"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="40"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -234,7 +234,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CFF-aU-ZfG">
-                                <rect key="frame" x="27" y="601" width="98" height="37"/>
+                                <rect key="frame" x="27" y="588" width="98" height="50"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title=" Back" image="backIcon">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -323,7 +323,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mLt-R8-dhX">
-                                <rect key="frame" x="238" y="580" width="103" height="37"/>
+                                <rect key="frame" x="225" y="567" width="116" height="50"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title=" Bilateral" image="checkmark">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -339,7 +339,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6WP-Hy-3fO">
-                                <rect key="frame" x="41" y="580" width="114" height="37"/>
+                                <rect key="frame" x="41" y="567" width="127" height="50"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title=" Unilateral" image="checkmark">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -396,7 +396,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XG2-5y-Pgv">
-                                <rect key="frame" x="34" y="580" width="73" height="37"/>
+                                <rect key="frame" x="34" y="567" width="86" height="50"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title=" YES" image="checkmark">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -406,7 +406,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Awk-FN-bBA">
-                                <rect key="frame" x="274" y="580" width="67" height="37"/>
+                                <rect key="frame" x="261" y="567" width="80" height="50"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title=" NO" image="noButton">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -499,7 +499,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CYV-JD-ODO">
-                                <rect key="frame" x="30" y="580" width="123" height="37"/>
+                                <rect key="frame" x="4" y="567" width="136" height="50"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title=" below 60" image="noButton">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -525,7 +525,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qoP-yJ-nB7">
-                                <rect key="frame" x="236" y="580" width="109" height="37"/>
+                                <rect key="frame" x="223" y="567" width="122" height="50"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title=" over 60" image="yesButton">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -573,7 +573,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Inj-gZ-UHC">
-                                <rect key="frame" x="34" y="580" width="78" height="37"/>
+                                <rect key="frame" x="34" y="580" width="91" height="37"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title=" YES" image="checkmark">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -583,7 +583,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="19d-1D-mu6">
-                                <rect key="frame" x="248" y="580" width="93" height="37"/>
+                                <rect key="frame" x="261" y="567" width="80" height="50"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title=" NO" image="noButton">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -643,7 +643,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OIG-Qx-dz2">
-                                <rect key="frame" x="234" y="580" width="94" height="37"/>
+                                <rect key="frame" x="234" y="567" width="107" height="50"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title=" Home" image="homeIcon">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -653,7 +653,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8kZ-9y-d2W">
-                                <rect key="frame" x="98" y="315" width="179" height="36"/>
+                                <rect key="frame" x="98" y="302" width="179" height="36"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                                 <state key="normal" title="Dopamine Agonists"/>
                                 <connections>
@@ -705,7 +705,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i77-eh-WNQ">
-                                <rect key="frame" x="256" y="595" width="94" height="37"/>
+                                <rect key="frame" x="243" y="595" width="107" height="50"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title=" Home" image="homeIcon">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -764,7 +764,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fqa-I9-Fgr">
-                                <rect key="frame" x="256" y="610" width="90" height="37"/>
+                                <rect key="frame" x="243" y="597" width="103" height="50"/>
                                 <state key="normal" title=" Home" image="homeIcon">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -907,7 +907,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ox-Nx-6Oj">
-                                <rect key="frame" x="273" y="610" width="86" height="37"/>
+                                <rect key="frame" x="260" y="597" width="99" height="50"/>
                                 <state key="normal" title="Home" image="homeIcon">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -956,7 +956,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bV2-vh-ufL">
-                                <rect key="frame" x="256" y="610" width="103" height="37"/>
+                                <rect key="frame" x="256" y="597" width="103" height="50"/>
                                 <state key="normal" title=" Home" image="homeIcon">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -993,7 +993,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I understand" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SXQ-Lj-Laj">
-                                <rect key="frame" x="22" y="571" width="151" height="24"/>
+                                <rect key="frame" x="22" y="558" width="151" height="24"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="24" id="a5c-8X-Fg4"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="151" id="sQk-eP-Xrd"/>
@@ -1019,7 +1019,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="etN-du-YNB">
-                                <rect key="frame" x="22" y="356" width="331" height="192"/>
+                                <rect key="frame" x="22" y="356" width="331" height="179"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text">The application's medical surveys are derived from the algorithms provided in the Canadian Compendium of Therapeutic Choices (CTC) of 2018. The initial pharmacologic management of PD and management of Levodopa-associated motor complications algorithms may not produce sophisticated results to PD survey participants for their minimal set of evaluating factors on PD symptoms.  Survey results provided from Anchor, including therapeutic decisions, treatment adjustments, and drug product may be provided in summary form that may not be received as authentic medical advice. Anchor discourages any application user to consider information on this application as a substitution for advice from a healthcare practitioner. Anchor strongly opposes self-management of health issues and encourages application users to seek a healthcare professional promptly for any health-related concerns. Users should never disregard or delay medical advice based on information interpreted from this application.
 </string>
@@ -1039,13 +1039,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="5xW-nw-Tyr">
-                                <rect key="frame" x="304" y="568" width="51" height="30"/>
+                                <rect key="frame" x="304" y="555" width="51" height="30"/>
                                 <connections>
                                     <action selector="agreeSwitched:" destination="kM0-7H-7dL" eventType="valueChanged" id="fDp-ee-bp0"/>
                                 </connections>
                             </switch>
                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YWi-Jb-wzX" customClass="shapedButton" customModule="AnchorApplication" customModuleProvider="target">
-                                <rect key="frame" x="16" y="610" width="85" height="37"/>
+                                <rect key="frame" x="16" y="597" width="98" height="50"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title=" Back" image="backIcon">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1055,7 +1055,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kDI-hS-KaI" customClass="shapedButton" customModule="AnchorApplication" customModuleProvider="target">
-                                <rect key="frame" x="215" y="610" width="138" height="37"/>
+                                <rect key="frame" x="215" y="597" width="138" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="138" id="KoI-Zm-3kD"/>
                                 </constraints>
@@ -1345,7 +1345,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y72-xA-PKS">
-                                <rect key="frame" x="256" y="610" width="103" height="37"/>
+                                <rect key="frame" x="256" y="597" width="103" height="50"/>
                                 <state key="normal" title=" Home" image="homeIcon">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -1413,7 +1413,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LEu-5f-3L6" customClass="shapedButton" customModule="AnchorApplication" customModuleProvider="target">
-                                <rect key="frame" x="60" y="466" width="73" height="37"/>
+                                <rect key="frame" x="60" y="453" width="86" height="50"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title=" Yes" image="checkmark">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1423,7 +1423,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KU5-e1-U8V" customClass="shapedButton" customModule="AnchorApplication" customModuleProvider="target">
-                                <rect key="frame" x="221" y="466" width="99" height="37"/>
+                                <rect key="frame" x="234" y="453" width="86" height="50"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title=" No" image="noButton">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1570,7 +1570,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D6c-vC-2v7" customClass="shapedButton" customModule="AnchorApplication" customModuleProvider="target">
-                                <rect key="frame" x="57" y="472" width="73" height="37"/>
+                                <rect key="frame" x="57" y="459" width="86" height="50"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title=" Yes" image="checkmark">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1589,7 +1589,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9BT-Y4-4Nc" customClass="shapedButton" customModule="AnchorApplication" customModuleProvider="target">
-                                <rect key="frame" x="214" y="472" width="99" height="37"/>
+                                <rect key="frame" x="227" y="459" width="86" height="50"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title=" No" image="noButton">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1637,7 +1637,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kov-pa-07Z" customClass="bounceButton" customModule="AnchorApplication" customModuleProvider="target">
-                                <rect key="frame" x="75.5" y="275" width="172" height="80"/>
+                                <rect key="frame" x="69" y="275" width="185" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="CYg-nG-Dn1"/>
                                 </constraints>
@@ -1661,7 +1661,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gkn-V8-4eg" customClass="bounceButton" customModule="AnchorApplication" customModuleProvider="target">
-                                <rect key="frame" x="75.5" y="451" width="224" height="80"/>
+                                <rect key="frame" x="69" y="451" width="237" height="80"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title=" No tremor post-dosing" image="noButton">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -1719,7 +1719,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M8d-9b-QPc" customClass="bounceButton" customModule="AnchorApplication" customModuleProvider="target">
-                                <rect key="frame" x="75.5" y="363" width="172" height="80"/>
+                                <rect key="frame" x="69" y="363" width="185" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="Z5z-3X-5vc"/>
                                 </constraints>
@@ -1799,7 +1799,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ssT-dY-LCW" customClass="shapedButton" customModule="AnchorApplication" customModuleProvider="target">
-                                <rect key="frame" x="89.5" y="392" width="123" height="80"/>
+                                <rect key="frame" x="83" y="392" width="136" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="1M6-db-bc2"/>
                                 </constraints>
@@ -1829,7 +1829,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="beF-wB-Iuf" customClass="shapedButton" customModule="AnchorApplication" customModuleProvider="target">
-                                <rect key="frame" x="89.5" y="480" width="236.5" height="80"/>
+                                <rect key="frame" x="83" y="480" width="243" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="idF-Z7-spj"/>
                                 </constraints>
@@ -1853,7 +1853,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JLN-d5-TQx" customClass="shapedButton" customModule="AnchorApplication" customModuleProvider="target">
-                                <rect key="frame" x="89.5" y="304" width="156" height="80"/>
+                                <rect key="frame" x="83" y="304" width="169" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="h6J-eL-jVw"/>
                                 </constraints>
@@ -1994,7 +1994,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y39-Ng-rOP" customClass="shapedButton" customModule="AnchorApplication" customModuleProvider="target">
-                                <rect key="frame" x="62" y="290" width="162" height="80"/>
+                                <rect key="frame" x="62" y="290" width="175" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="w8P-59-5x7"/>
                                 </constraints>
@@ -2083,7 +2083,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5wv-vJ-mA7" customClass="shapedButton" customModule="AnchorApplication" customModuleProvider="target">
-                                <rect key="frame" x="54.5" y="370" width="123" height="80"/>
+                                <rect key="frame" x="48" y="370" width="136" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="glv-MT-Chf"/>
                                 </constraints>
@@ -2113,7 +2113,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Ik-H0-LOz" customClass="shapedButton" customModule="AnchorApplication" customModuleProvider="target">
-                                <rect key="frame" x="54.5" y="282" width="162" height="80"/>
+                                <rect key="frame" x="48" y="282" width="175" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="w20-fW-ZJY"/>
                                 </constraints>
@@ -2137,7 +2137,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OLI-kx-WSs" customClass="shapedButton" customModule="AnchorApplication" customModuleProvider="target">
-                                <rect key="frame" x="54.5" y="458" width="280.5" height="80"/>
+                                <rect key="frame" x="48" y="458" width="293.5" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="PYI-Au-OpX"/>
                                 </constraints>
@@ -2161,7 +2161,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NfB-CI-tpB">
-                                <rect key="frame" x="16" y="597" width="85" height="50"/>
+                                <rect key="frame" x="16" y="597" width="98" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="0BH-pc-xtU"/>
                                 </constraints>
@@ -2302,7 +2302,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rUF-lo-3UA">
-                                <rect key="frame" x="16" y="610" width="121" height="37"/>
+                                <rect key="frame" x="16" y="597" width="121" height="50"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title=" Back" image="surveyBack">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2362,7 +2362,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kis-Jp-fe6" customClass="shapedButton" customModule="AnchorApplication" customModuleProvider="target">
-                                <rect key="frame" x="45" y="282" width="169" height="80"/>
+                                <rect key="frame" x="32" y="282" width="182" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="6c9-5p-duz"/>
                                 </constraints>
@@ -2386,7 +2386,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lG7-X5-xBq" customClass="shapedButton" customModule="AnchorApplication" customModuleProvider="target">
-                                <rect key="frame" x="45" y="370" width="138" height="80"/>
+                                <rect key="frame" x="32" y="370" width="151" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="xYx-Yr-01e"/>
                                 </constraints>
@@ -2410,7 +2410,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JaY-Og-xsr" customClass="shapedButton" customModule="AnchorApplication" customModuleProvider="target">
-                                <rect key="frame" x="45" y="458" width="300" height="80"/>
+                                <rect key="frame" x="32" y="458" width="313" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="YL4-X4-shO"/>
                                 </constraints>
@@ -2440,7 +2440,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vmb-YS-AQI">
-                                <rect key="frame" x="29" y="610" width="85" height="37"/>
+                                <rect key="frame" x="16" y="597" width="98" height="50"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title=" Back" image="surveyBack">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2500,7 +2500,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XKn-CT-JgX" customClass="shapedButton" customModule="AnchorApplication" customModuleProvider="target">
-                                <rect key="frame" x="56.5" y="282" width="172" height="80"/>
+                                <rect key="frame" x="50" y="282" width="185" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="uVE-13-abi"/>
                                 </constraints>
@@ -2524,7 +2524,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gAS-Hh-IaF" customClass="shapedButton" customModule="AnchorApplication" customModuleProvider="target">
-                                <rect key="frame" x="56.5" y="370" width="135" height="80"/>
+                                <rect key="frame" x="50" y="370" width="148" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="AcQ-pA-5Uw"/>
                                 </constraints>
@@ -2548,7 +2548,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="btg-Pu-aSy" customClass="shapedButton" customModule="AnchorApplication" customModuleProvider="target">
-                                <rect key="frame" x="56.5" y="458" width="280" height="80"/>
+                                <rect key="frame" x="50" y="458" width="293" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="NVT-2P-plV"/>
                                 </constraints>
@@ -2578,7 +2578,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ecj-Ym-BwW">
-                                <rect key="frame" x="22.5" y="610" width="112.5" height="37"/>
+                                <rect key="frame" x="16" y="597" width="119" height="50"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title=" Back" image="surveyBack">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2638,7 +2638,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hm9-3v-BXy" customClass="shapedButton" customModule="AnchorApplication" customModuleProvider="target">
-                                <rect key="frame" x="46" y="370" width="126" height="80"/>
+                                <rect key="frame" x="39.5" y="370" width="139" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="1ga-er-0WS"/>
                                 </constraints>
@@ -2662,7 +2662,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1G7-AJ-Z0H" customClass="shapedButton" customModule="AnchorApplication" customModuleProvider="target">
-                                <rect key="frame" x="46" y="458" width="282" height="80"/>
+                                <rect key="frame" x="39.5" y="458" width="295" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="MS8-t9-WTh"/>
                                 </constraints>
@@ -2692,7 +2692,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mVA-SK-cy0" customClass="shapedButton" customModule="AnchorApplication" customModuleProvider="target">
-                                <rect key="frame" x="46" y="282" width="162" height="80"/>
+                                <rect key="frame" x="39.5" y="282" width="175" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="nuP-C7-0GS"/>
                                 </constraints>
@@ -2716,7 +2716,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QMD-lU-W9E">
-                                <rect key="frame" x="22.5" y="610" width="107" height="37"/>
+                                <rect key="frame" x="16" y="597" width="113.5" height="50"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title=" Back" image="surveyBack">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2776,7 +2776,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2iD-uB-zBl" customClass="shapedButton" customModule="AnchorApplication" customModuleProvider="target">
-                                <rect key="frame" x="24.5" y="370" width="151" height="80"/>
+                                <rect key="frame" x="18" y="370" width="164" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="SUm-1q-SnK"/>
                                 </constraints>
@@ -2800,7 +2800,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lEz-uF-Ugp" customClass="shapedButton" customModule="AnchorApplication" customModuleProvider="target">
-                                <rect key="frame" x="24.5" y="458" width="325" height="80"/>
+                                <rect key="frame" x="18" y="458" width="338" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="tje-C4-T1k"/>
                                 </constraints>
@@ -2824,7 +2824,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cRC-cC-U50">
-                                <rect key="frame" x="8.5" y="610" width="128.5" height="37"/>
+                                <rect key="frame" x="2" y="597" width="135" height="50"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title=" Back" image="surveyBack">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2840,7 +2840,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lTQ-Wr-wOx" customClass="shapedButton" customModule="AnchorApplication" customModuleProvider="target">
-                                <rect key="frame" x="24.5" y="282" width="162" height="80"/>
+                                <rect key="frame" x="18" y="282" width="175" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="GtW-vM-LvS"/>
                                 </constraints>
@@ -2909,7 +2909,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kig-oh-V9T" customClass="shapedButton" customModule="AnchorApplication" customModuleProvider="target">
-                                <rect key="frame" x="55" y="607" width="85" height="37"/>
+                                <rect key="frame" x="71" y="594" width="98" height="50"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title=" Back" image="backIcon">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2920,18 +2920,18 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3ig-4V-Eoa" customClass="LineChartView" customModule="Charts" colorLabel="IBBuiltInLabel-Red">
-                                <rect key="frame" x="0.0" y="58" width="375" height="387"/>
+                                <rect key="frame" x="0.0" y="58" width="375" height="366"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MTD-lo-Hdl" customClass="shapedButton" customModule="AnchorApplication" customModuleProvider="target">
-                                <rect key="frame" x="270" y="607" width="64" height="37"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MTD-lo-Hdl" customClass="shapedButton" customModule="AnchorApplication" customModuleProvider="target">
+                                <rect key="frame" x="284" y="594" width="50" height="50"/>
                                 <state key="normal" image="save"/>
                                 <connections>
                                     <action selector="saveGraph:" destination="XpN-ob-qJ4" eventType="touchUpInside" id="m3D-1c-r3b"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wm0-lw-XZn" customClass="shapedButton" customModule="AnchorApplication" customModuleProvider="target">
-                                <rect key="frame" x="130" y="534" width="115" height="36"/>
+                                <rect key="frame" x="130" y="521" width="115" height="49"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <state key="normal" title="Generate"/>
                                 <userDefinedRuntimeAttributes>
@@ -2949,8 +2949,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zxe-oD-63E" customClass="shapedButton" customModule="AnchorApplication" customModuleProvider="target">
-                                <rect key="frame" x="221" y="472" width="138" height="22"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zxe-oD-63E" customClass="shapedButton" customModule="AnchorApplication" customModuleProvider="target">
+                                <rect key="frame" x="254" y="468" width="105" height="26"/>
                                 <state key="normal" title=" End Date" image="calendar">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -2963,8 +2963,8 @@
                                     <action selector="selectEndDate:" destination="XpN-ob-qJ4" eventType="touchUpInside" id="SKP-BK-Dp7"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" verticalHuggingPriority="249" horizontalCompressionResistancePriority="751" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GQL-kB-jQa" customClass="shapedButton" customModule="AnchorApplication" customModuleProvider="target">
-                                <rect key="frame" x="16" y="472" width="141" height="22"/>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" verticalHuggingPriority="249" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GQL-kB-jQa" customClass="shapedButton" customModule="AnchorApplication" customModuleProvider="target">
+                                <rect key="frame" x="16" y="468" width="113" height="26"/>
                                 <state key="normal" title=" Start Date" image="calendar">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -2985,17 +2985,17 @@
                             <constraint firstItem="c8Z-ck-HPy" firstAttribute="bottom" secondItem="Kig-oh-V9T" secondAttribute="bottom" constant="23" id="6wh-uX-L1S"/>
                             <constraint firstItem="c8Z-ck-HPy" firstAttribute="trailing" secondItem="MTD-lo-Hdl" secondAttribute="trailing" constant="41" id="8w6-RC-AnU"/>
                             <constraint firstItem="3ig-4V-Eoa" firstAttribute="top" secondItem="h4b-RW-VWj" secondAttribute="bottom" constant="8" symbolic="YES" id="Cr4-0L-bz9"/>
-                            <constraint firstItem="MTD-lo-Hdl" firstAttribute="leading" secondItem="Kig-oh-V9T" secondAttribute="trailing" constant="157" id="DUx-bX-mXk"/>
+                            <constraint firstItem="MTD-lo-Hdl" firstAttribute="leading" secondItem="Kig-oh-V9T" secondAttribute="trailing" constant="115" id="DUx-bX-mXk"/>
                             <constraint firstAttribute="trailing" secondItem="3ig-4V-Eoa" secondAttribute="trailing" id="GCT-BI-rGn"/>
-                            <constraint firstItem="Kig-oh-V9T" firstAttribute="top" secondItem="GQL-kB-jQa" secondAttribute="bottom" constant="113" id="HRr-lH-BNu"/>
-                            <constraint firstItem="Wm0-lw-XZn" firstAttribute="top" secondItem="zxe-oD-63E" secondAttribute="bottom" constant="40" id="J1d-OB-PeG"/>
-                            <constraint firstItem="zxe-oD-63E" firstAttribute="top" secondItem="3ig-4V-Eoa" secondAttribute="bottom" constant="27" id="RTf-HE-JRQ"/>
+                            <constraint firstItem="Kig-oh-V9T" firstAttribute="top" secondItem="GQL-kB-jQa" secondAttribute="bottom" constant="100" id="HRr-lH-BNu"/>
+                            <constraint firstItem="Wm0-lw-XZn" firstAttribute="top" secondItem="zxe-oD-63E" secondAttribute="bottom" constant="27" id="J1d-OB-PeG"/>
+                            <constraint firstItem="zxe-oD-63E" firstAttribute="top" secondItem="3ig-4V-Eoa" secondAttribute="bottom" constant="44" id="RTf-HE-JRQ"/>
                             <constraint firstItem="c8Z-ck-HPy" firstAttribute="bottom" secondItem="Wm0-lw-XZn" secondAttribute="bottom" constant="97" id="Vp0-dj-gfn"/>
                             <constraint firstItem="h4b-RW-VWj" firstAttribute="top" secondItem="c8Z-ck-HPy" secondAttribute="top" id="YVk-q3-zyc"/>
                             <constraint firstItem="3ig-4V-Eoa" firstAttribute="centerX" secondItem="Wm0-lw-XZn" secondAttribute="centerX" id="dlc-L1-7hE"/>
                             <constraint firstItem="Kig-oh-V9T" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="c8Z-ck-HPy" secondAttribute="leading" id="j18-qZ-90G"/>
                             <constraint firstItem="c8Z-ck-HPy" firstAttribute="trailing" secondItem="zxe-oD-63E" secondAttribute="trailing" constant="16" id="jve-Lc-UTE"/>
-                            <constraint firstItem="Wm0-lw-XZn" firstAttribute="top" secondItem="GQL-kB-jQa" secondAttribute="bottom" constant="40" id="kUj-bZ-6L4"/>
+                            <constraint firstItem="Wm0-lw-XZn" firstAttribute="top" secondItem="GQL-kB-jQa" secondAttribute="bottom" constant="27" id="kUj-bZ-6L4"/>
                             <constraint firstItem="h4b-RW-VWj" firstAttribute="centerX" secondItem="3ig-4V-Eoa" secondAttribute="centerX" id="to5-a3-U9h"/>
                             <constraint firstItem="c8Z-ck-HPy" firstAttribute="bottom" secondItem="MTD-lo-Hdl" secondAttribute="bottom" constant="23" id="x9E-TP-kRg"/>
                             <constraint firstItem="3ig-4V-Eoa" firstAttribute="leading" secondItem="9WI-3n-CCJ" secondAttribute="leading" id="xh8-ZI-dM9"/>
@@ -3024,11 +3024,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background2" translatesAutoresizingMaskIntoConstraints="NO" id="gFV-Ik-7mb">
-                                <rect key="frame" x="0.0" y="0.0" width="648" height="709"/>
+                                <rect key="frame" x="0.0" y="0.0" width="1080" height="709"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N0R-bu-e8U" customClass="shapedButton" customModule="AnchorApplication" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N0R-bu-e8U" customClass="shapedButton" customModule="AnchorApplication" customModuleProvider="target">
                                 <rect key="frame" x="20" y="130" width="339" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="YiU-kL-aEG"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title=" Controlled Release" image="drugIcon">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -3051,29 +3053,26 @@
                                     <action selector="controlledReleaseBtnClicked:" destination="OTB-ph-hSt" eventType="touchUpInside" id="aeJ-Zq-peo"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Select your levedopa formulation:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S1J-vI-iW1">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select your levedopa formulation:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S1J-vI-iW1">
                                 <rect key="frame" x="20" y="88" width="290" height="24"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Input your levodopa dosage:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ghk-J7-OUc">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Input your levodopa dosage:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ghk-J7-OUc">
                                 <rect key="frame" x="20" y="404" width="339" height="24"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="mg/tablet" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="91z-Nb-dMf">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="mg/tablet" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="91z-Nb-dMf">
                                 <rect key="frame" x="201" y="483" width="88" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z4U-wM-izN" customClass="shapedButton" customModule="AnchorApplication" customModuleProvider="target">
-                                <rect key="frame" x="20" y="605" width="127" height="37"/>
+                                <rect key="frame" x="20" y="592" width="114" height="50"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title=" Back" image="backIcon">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -3082,8 +3081,8 @@
                                     <segue destination="BYZ-38-t0r" kind="show" id="9lh-dJ-GAU"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pEf-ca-3S0">
-                                <rect key="frame" x="127" y="476" width="66" height="28"/>
+                            <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pEf-ca-3S0">
+                                <rect key="frame" x="127" y="463" width="66" height="28"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="66" id="Ia0-bK-Car"/>
                                 </constraints>
@@ -3095,7 +3094,7 @@
                                 </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q7r-sg-Gws" customClass="shapedButton" customModule="AnchorApplication" customModuleProvider="target">
-                                <rect key="frame" x="245" y="605" width="114" height="37"/>
+                                <rect key="frame" x="232" y="592" width="127" height="50"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Proceed " image="forward">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -3105,9 +3104,8 @@
                                     <segue destination="XpN-ob-qJ4" kind="show" id="8R5-Z8-XZk"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7fU-CO-AVy" customClass="shapedButton" customModule="AnchorApplication" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7fU-CO-AVy" customClass="shapedButton" customModule="AnchorApplication" customModuleProvider="target">
                                 <rect key="frame" x="20" y="242" width="339" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title=" Immediate Release" image="drugIcon">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -3137,14 +3135,30 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="q7r-sg-Gws" firstAttribute="leading" secondItem="z4U-wM-izN" secondAttribute="trailing" constant="98" id="0gH-jt-Wzx"/>
+                            <constraint firstItem="ghk-J7-OUc" firstAttribute="trailing" secondItem="7fU-CO-AVy" secondAttribute="trailing" id="2H3-9x-uhK"/>
+                            <constraint firstItem="ghk-J7-OUc" firstAttribute="leading" secondItem="N0R-bu-e8U" secondAttribute="leading" id="32p-CW-W3q"/>
                             <constraint firstItem="q7r-sg-Gws" firstAttribute="trailing" secondItem="5ZI-71-0wO" secondAttribute="trailingMargin" id="6Kp-jY-rBe"/>
+                            <constraint firstItem="ghk-J7-OUc" firstAttribute="trailing" secondItem="N0R-bu-e8U" secondAttribute="trailing" id="6mC-zm-kUv"/>
+                            <constraint firstItem="ghk-J7-OUc" firstAttribute="leading" secondItem="7fU-CO-AVy" secondAttribute="leading" id="7hG-b1-dZB"/>
                             <constraint firstItem="HY6-kR-IeO" firstAttribute="bottom" secondItem="q7r-sg-Gws" secondAttribute="bottom" constant="25" id="98J-9z-bEl"/>
+                            <constraint firstItem="N0R-bu-e8U" firstAttribute="top" secondItem="5ZI-71-0wO" secondAttribute="top" constant="130" id="Cf5-yd-rQy"/>
+                            <constraint firstItem="ghk-J7-OUc" firstAttribute="trailing" secondItem="q7r-sg-Gws" secondAttribute="trailing" id="LEz-oc-Hqw"/>
+                            <constraint firstItem="7fU-CO-AVy" firstAttribute="top" secondItem="N0R-bu-e8U" secondAttribute="bottom" constant="32" id="SLq-Py-tPO"/>
                             <constraint firstItem="pEf-ca-3S0" firstAttribute="leading" secondItem="HY6-kR-IeO" secondAttribute="leading" constant="127" id="VZP-ik-7SB"/>
+                            <constraint firstItem="91z-Nb-dMf" firstAttribute="leading" secondItem="pEf-ca-3S0" secondAttribute="trailing" constant="8" symbolic="YES" id="VfO-Ic-atw"/>
                             <constraint firstItem="z4U-wM-izN" firstAttribute="top" secondItem="pEf-ca-3S0" secondAttribute="bottom" constant="101" id="Vmd-XS-jkQ"/>
+                            <constraint firstItem="HY6-kR-IeO" firstAttribute="trailing" secondItem="91z-Nb-dMf" secondAttribute="trailing" constant="86" id="XZS-Mj-Yfl"/>
                             <constraint firstItem="z4U-wM-izN" firstAttribute="leading" secondItem="HY6-kR-IeO" secondAttribute="leading" constant="20" id="aKX-8K-uRR"/>
                             <constraint firstItem="gFV-Ik-7mb" firstAttribute="top" secondItem="5ZI-71-0wO" secondAttribute="top" id="f27-Qn-Nl1"/>
+                            <constraint firstItem="N0R-bu-e8U" firstAttribute="top" secondItem="S1J-vI-iW1" secondAttribute="bottom" constant="18" id="fze-in-fT8"/>
+                            <constraint firstItem="ghk-J7-OUc" firstAttribute="top" secondItem="7fU-CO-AVy" secondAttribute="bottom" constant="82" id="jZD-Xk-Bfx"/>
+                            <constraint firstItem="ghk-J7-OUc" firstAttribute="leading" secondItem="z4U-wM-izN" secondAttribute="leading" id="mFD-Vd-fAJ"/>
+                            <constraint firstItem="ghk-J7-OUc" firstAttribute="leading" secondItem="S1J-vI-iW1" secondAttribute="leading" id="mYm-dm-Z68"/>
                             <constraint firstItem="HY6-kR-IeO" firstAttribute="bottom" secondItem="z4U-wM-izN" secondAttribute="bottom" constant="25" id="pW9-hC-p79"/>
                             <constraint firstItem="gFV-Ik-7mb" firstAttribute="leading" secondItem="5ZI-71-0wO" secondAttribute="leading" id="rNi-nv-Yhh"/>
+                            <constraint firstItem="HY6-kR-IeO" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="S1J-vI-iW1" secondAttribute="trailing" symbolic="YES" id="riq-Pc-qp8"/>
+                            <constraint firstItem="pEf-ca-3S0" firstAttribute="top" secondItem="ghk-J7-OUc" secondAttribute="bottom" constant="35" id="s9l-Au-Q8A"/>
+                            <constraint firstItem="91z-Nb-dMf" firstAttribute="top" secondItem="ghk-J7-OUc" secondAttribute="bottom" constant="55" id="tv2-fi-gdl"/>
                             <constraint firstItem="gFV-Ik-7mb" firstAttribute="bottom" secondItem="HY6-kR-IeO" secondAttribute="bottom" constant="42" id="vlU-Re-OvB"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="HY6-kR-IeO"/>
@@ -3164,21 +3178,21 @@
         </scene>
     </scenes>
     <resources>
-        <image name="backIcon" width="37.5" height="37.5"/>
-        <image name="background2" width="648" height="1152"/>
-        <image name="calendar" width="19.5" height="19.5"/>
-        <image name="checkmark" width="37.5" height="37.5"/>
-        <image name="drugIcon" width="37.5" height="37.5"/>
-        <image name="forward" width="37.5" height="37.5"/>
-        <image name="homeIcon" width="37.5" height="37.5"/>
-        <image name="inData" width="37.5" height="37.5"/>
+        <image name="backIcon" width="50" height="50"/>
+        <image name="background2" width="1080" height="1920"/>
+        <image name="calendar" width="26" height="26"/>
+        <image name="checkmark" width="50" height="50"/>
+        <image name="drugIcon" width="25" height="25"/>
+        <image name="forward" width="50" height="50"/>
+        <image name="homeIcon" width="50" height="50"/>
+        <image name="inData" width="50" height="50"/>
         <image name="logoWithColor" width="163" height="58"/>
-        <image name="noButton" width="37.5" height="37.5"/>
-        <image name="progressMonitorIcon" width="37.5" height="37.5"/>
-        <image name="save" width="37.5" height="37.5"/>
-        <image name="surveyBack" width="37.5" height="37.5"/>
-        <image name="surveyIcon" width="37.5" height="37.5"/>
-        <image name="yesButton" width="37.5" height="37.5"/>
+        <image name="noButton" width="50" height="50"/>
+        <image name="progressMonitorIcon" width="25" height="25"/>
+        <image name="save" width="50" height="50"/>
+        <image name="surveyBack" width="50" height="50"/>
+        <image name="surveyIcon" width="25" height="25"/>
+        <image name="yesButton" width="50" height="50"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="G8x-rj-DGG"/>
@@ -3194,9 +3208,9 @@
         <segue reference="fyO-zg-fIF"/>
         <segue reference="oXg-9r-b1M"/>
         <segue reference="B8d-TE-cR3"/>
-        <segue reference="oPL-hB-4rm"/>
+        <segue reference="K1c-D4-AL9"/>
         <segue reference="4OT-9g-Stl"/>
         <segue reference="eXH-tz-EEz"/>
-        <segue reference="vRo-tc-sll"/>
+        <segue reference="9lh-dJ-GAU"/>
     </inferredMetricsTieBreakers>
 </document>
