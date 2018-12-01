@@ -1,0 +1,6 @@
+framework module Pods_AnchorApplication {
+  umbrella header "Pods-AnchorApplication-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -14,6 +14,7 @@
 
 
 import UIKit
+import FirebaseDatabase
 
 extension UIViewController {
     func hideKeyboardWhenTappedAround() {
@@ -25,10 +26,11 @@ extension UIViewController {
     @objc func dismissKeyboard() {
         view.endEditing(true)
     }
+    
 }
 
 class dataPointViewController: UIViewController {
-
+    
     @IBOutlet weak var dosageText: UILabel!
     
     @IBOutlet weak var mgPerTablet: UILabel!
@@ -41,10 +43,21 @@ class dataPointViewController: UIViewController {
     
     @IBOutlet weak var nextPageButton: bounceButton!
     
+    // Indicate which button has been pressed (immediate or controlledrelease
+    var button: Int = 0
+    
+    // initialize dosage variable
+    var currentDosage: Int = 0
+    
+    // declare reference variable for firebase realtime database
+    var ref: DatabaseReference!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        assignbackground()
+        
+        // create instance for database
+        ref = Database.database().reference()
+        
         print("Data point View Loaded")
         // Hides dosage per tablet input prior to choosing a levodopa formulation
         dosageText.isHidden = true
@@ -60,21 +73,27 @@ class dataPointViewController: UIViewController {
         //tap.cancelsTouchesInView = false
         
         view.addGestureRecognizer(tap)
-        }
         
+        // perform the button action to wrtie to database
+        //self.nextPageBtnClicked(sender: nextPageButton)
+        
+    }
     
-    
+    //self.nextPageBtnClicked(nextPageButton)
     
     @IBAction func immediateReleaseBtnClicked(_ sender: shapedButton) {
-            print("Immediate release button clicked")
+        print("Immediate release button clicked")
         
-            controlledReleaseButton.borderColor = UIColor.lightGray
-            immediateReleaseButton.borderColor = UIColor.green
+        controlledReleaseButton.borderColor = UIColor.lightGray
+        immediateReleaseButton.borderColor = UIColor.green
         
-            // Reveal dosage per tablet input once immediate release formulation is selected
-            dosageText.isHidden = false
-            mgPerTablet.isHidden = false
-            mgPerTabletInput.isHidden = false
+        // Set a value for firebase to take in
+        button = 1
+        
+        // Reveal dosage per tablet input once immediate release formulation is selected
+        dosageText.isHidden = false
+        mgPerTablet.isHidden = false
+        mgPerTabletInput.isHidden = false
     }
     
     @IBAction func controlledReleaseBtnClicked(_ sender: shapedButton) {
@@ -85,13 +104,16 @@ class dataPointViewController: UIViewController {
         // Indicate the selected formulation by green border
         controlledReleaseButton.borderColor = UIColor.green
         
+        //Set a value for firebase to take in
+        button = 2
+        
         // Reveal dosage per tablet input once controlled release formulation is selected
         dosageText.isHidden = false
         mgPerTablet.isHidden = false
         mgPerTabletInput.isHidden = false
     }
     
-   
+    
     @IBAction func textFieldEditingChanged(_ sender: Any) {
         // inputToInt converts UITextField mgPerTabletInput into an integer
         let inputToInt = Int(mgPerTabletInput.text!)
@@ -100,7 +122,7 @@ class dataPointViewController: UIViewController {
         if mgPerTabletInput.text == "" {
             nextPageButton.isEnabled = false
         }
-        // An alert message is presented when the user inputs a dosage below 0 mg/tablet
+            // An alert message is presented when the user inputs a dosage below 0 mg/tablet
         else if inputToInt! <= 0 {
             nextPageButton.isEnabled = false
             let alert = UIAlertController(title: "", message: "Levedopa dosage must not be under 0 mg/tablet.", preferredStyle: .alert)
@@ -110,38 +132,39 @@ class dataPointViewController: UIViewController {
                 alert.dismiss(animated: true, completion: nil)
             }
         }
-        
+            
         else {
+            currentDosage = inputToInt!
             nextPageButton.isEnabled = true
         }
     }
-    func assignbackground(){
-        //Importing Main Background
-        let background = UIImage(named: "background2")
-        var imageView : UIImageView!
-        //Setting the background within the bounds
-        imageView = UIImageView(frame: view.bounds)
-        //Setting the background to fill the whole screen
-        imageView.contentMode =  UIViewContentMode.scaleAspectFill
-        //A boolean value that determines whether subviews are confined to the bounds
-        imageView.clipsToBounds = true
-        imageView.image = background
-        //Center Aligning the Background image
-        imageView.center = view.center
-        view.addSubview(imageView)
-        //Setting Background Image to the Back
-        self.view.sendSubview(toBack: imageView)
+    
+    // writing to database when button is clicked
+    @IBAction func nextPressed(_ sender: bounceButton) {
+        // set the current date to use as key for database
+        let currentDate = Date()
+        // format Date() as to only include the date and not time
+        let formatter = DateFormatter()
+        //****use "yyyy-MM-dd" for actual, use "yyyy-MM-dd HH:mm:ss" to test multiple data
+        formatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+        // note that it is now string, to compare dates later convert back to date()
+        var dateString = formatter.string(from: currentDate)
+        //*****check date ->print("current date ", dateString)
+        
+        // dictionary with currentDosage, button as its values
+        let values = ["dosage": currentDosage, "type": button]
+        
+        // child reference to sort by date
+        let timeRef = ref.child("progress").child(dateString)
+        // write to database using current date as key
+        timeRef.updateChildValues(values, withCompletionBlock: { (err, ref) in
+            // check if error while writing
+            if err != nil {
+                print(err)
+                return
+            }
+            print("saved successfully into firebasedb")
+        })
     }
     
-    
 }
-
-
-        
-    
-
-        
-    
-   
-
-
