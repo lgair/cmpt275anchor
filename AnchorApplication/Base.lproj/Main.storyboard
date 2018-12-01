@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -69,7 +69,7 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="homeIcon" translatesAutoresizingMaskIntoConstraints="NO" id="Ved-Zn-BWc">
-                                <rect key="frame" x="39" y="54" width="50" height="48"/>
+                                <rect key="frame" x="39" y="54" width="37" height="48"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="wF3-1d-0pF"/>
                                 </constraints>
@@ -131,7 +131,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PAL-Dl-gC7">
-                                <rect key="frame" x="97" y="54" width="108" height="48"/>
+                                <rect key="frame" x="84" y="54" width="108" height="48"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="40"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -3024,55 +3024,125 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background2" translatesAutoresizingMaskIntoConstraints="NO" id="gFV-Ik-7mb">
-                                <rect key="frame" x="0.0" y="0.0" width="1080" height="709"/>
+                                <rect key="frame" x="0.0" y="0.0" width="648" height="709"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N0R-bu-e8U" customClass="shapedButton" customModule="AnchorApplication" customModuleProvider="target">
-                                <rect key="frame" x="20" y="130" width="339" height="80"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aLu-oB-0M4">
+                                <rect key="frame" x="0.0" y="68" width="379" height="456"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N0R-bu-e8U" customClass="shapedButton" customModule="AnchorApplication" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="62" width="339" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="YiU-kL-aEG"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title=" Controlled Release" image="drugIcon">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <state key="disabled">
+                                            <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="25"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="controlledReleaseBtnClicked:" destination="OTB-ph-hSt" eventType="touchUpInside" id="aeJ-Zq-peo"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select your levedopa formulation:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S1J-vI-iW1">
+                                        <rect key="frame" x="20" y="20" width="290" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7fU-CO-AVy" customClass="shapedButton" customModule="AnchorApplication" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="174" width="339" height="84"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="84" id="zbS-eV-akT"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title=" Immediate Release" image="drugIcon">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <state key="disabled">
+                                            <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <state key="selected">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="25"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" cocoaTouchSystemColor="darkTextColor"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="immediateReleaseBtnClicked:" destination="OTB-ph-hSt" eventType="touchUpInside" id="kVQ-cx-Tdk"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" misplaced="YES" text="Input your levodopa dosage:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ghk-J7-OUc">
+                                        <rect key="frame" x="8" y="293" width="339" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pEf-ca-3S0">
+                                        <rect key="frame" x="122" y="352" width="66" height="28"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="66" id="726-oK-4OY"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" returnKeyType="done" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                        <connections>
+                                            <action selector="textFieldEditingChanged:" destination="OTB-ph-hSt" eventType="editingChanged" id="OGh-Ld-JbW"/>
+                                        </connections>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="mg/tablet" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="91z-Nb-dMf">
+                                        <rect key="frame" x="196" y="358" width="88" height="22"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="88" id="YUD-Ie-dWH"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="80" id="YiU-kL-aEG"/>
+                                    <constraint firstItem="N0R-bu-e8U" firstAttribute="centerX" secondItem="aLu-oB-0M4" secondAttribute="centerX" id="AbQ-IC-iLY"/>
+                                    <constraint firstItem="7fU-CO-AVy" firstAttribute="trailing" secondItem="N0R-bu-e8U" secondAttribute="trailing" id="AyN-UL-o6P"/>
+                                    <constraint firstAttribute="trailing" secondItem="91z-Nb-dMf" secondAttribute="trailing" constant="95" id="CCI-12-Thm"/>
+                                    <constraint firstItem="ghk-J7-OUc" firstAttribute="top" secondItem="7fU-CO-AVy" secondAttribute="bottom" constant="35" id="FRM-ZP-OhW"/>
+                                    <constraint firstItem="91z-Nb-dMf" firstAttribute="top" secondItem="ghk-J7-OUc" secondAttribute="bottom" constant="41" id="JgM-AK-2AJ"/>
+                                    <constraint firstItem="pEf-ca-3S0" firstAttribute="top" secondItem="ghk-J7-OUc" secondAttribute="bottom" constant="35" id="NIa-5C-xIf"/>
+                                    <constraint firstItem="pEf-ca-3S0" firstAttribute="bottom" secondItem="91z-Nb-dMf" secondAttribute="bottom" id="R8V-D6-DuT"/>
+                                    <constraint firstItem="91z-Nb-dMf" firstAttribute="leading" secondItem="pEf-ca-3S0" secondAttribute="trailing" constant="8" symbolic="YES" id="Sor-vA-HqZ"/>
+                                    <constraint firstItem="7fU-CO-AVy" firstAttribute="leading" secondItem="N0R-bu-e8U" secondAttribute="leading" id="YnN-Cw-6Th"/>
+                                    <constraint firstItem="S1J-vI-iW1" firstAttribute="leading" secondItem="aLu-oB-0M4" secondAttribute="leading" constant="20" id="ZwG-wW-3EJ"/>
+                                    <constraint firstItem="7fU-CO-AVy" firstAttribute="top" secondItem="N0R-bu-e8U" secondAttribute="bottom" constant="32" id="c24-qZ-4Vb"/>
+                                    <constraint firstItem="ghk-J7-OUc" firstAttribute="leading" secondItem="S1J-vI-iW1" secondAttribute="leading" id="e53-Dw-lrl"/>
+                                    <constraint firstAttribute="bottom" secondItem="pEf-ca-3S0" secondAttribute="bottom" constant="76" id="fgq-UL-niJ"/>
+                                    <constraint firstItem="N0R-bu-e8U" firstAttribute="top" secondItem="aLu-oB-0M4" secondAttribute="top" constant="62" id="jaS-F1-pQu"/>
+                                    <constraint firstAttribute="trailing" secondItem="N0R-bu-e8U" secondAttribute="trailing" constant="20" id="l3M-rP-h1X"/>
+                                    <constraint firstItem="N0R-bu-e8U" firstAttribute="top" secondItem="S1J-vI-iW1" secondAttribute="bottom" constant="18" id="lMB-Ui-Oj6"/>
+                                    <constraint firstItem="ghk-J7-OUc" firstAttribute="trailing" secondItem="N0R-bu-e8U" secondAttribute="trailing" id="uXp-K4-OZ8"/>
+                                    <constraint firstItem="ghk-J7-OUc" firstAttribute="leading" secondItem="N0R-bu-e8U" secondAttribute="leading" id="ztN-8f-Q7T"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title=" Controlled Release" image="drugIcon">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                </state>
-                                <state key="disabled">
-                                    <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="25"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                        <real key="value" value="3"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="controlledReleaseBtnClicked:" destination="OTB-ph-hSt" eventType="touchUpInside" id="aeJ-Zq-peo"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select your levedopa formulation:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S1J-vI-iW1">
-                                <rect key="frame" x="20" y="88" width="290" height="24"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Input your levodopa dosage:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ghk-J7-OUc">
-                                <rect key="frame" x="20" y="404" width="339" height="24"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="mg/tablet" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="91z-Nb-dMf">
-                                <rect key="frame" x="201" y="483" width="88" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            </scrollView>
                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z4U-wM-izN" customClass="shapedButton" customModule="AnchorApplication" customModuleProvider="target">
-                                <rect key="frame" x="20" y="592" width="114" height="50"/>
+                                <rect key="frame" x="20" y="605" width="127" height="37"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title=" Back" image="backIcon">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -3081,20 +3151,8 @@
                                     <segue destination="BYZ-38-t0r" kind="show" id="9lh-dJ-GAU"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pEf-ca-3S0">
-                                <rect key="frame" x="127" y="463" width="66" height="28"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="66" id="Ia0-bK-Car"/>
-                                </constraints>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" returnKeyType="done" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
-                                <connections>
-                                    <action selector="textFieldEditingChanged:" destination="OTB-ph-hSt" eventType="editingChanged" id="OGh-Ld-JbW"/>
-                                </connections>
-                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q7r-sg-Gws" customClass="shapedButton" customModule="AnchorApplication" customModuleProvider="target">
-                                <rect key="frame" x="232" y="592" width="127" height="50"/>
+                                <rect key="frame" x="245" y="605" width="114" height="37"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Proceed " image="forward">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -3104,61 +3162,20 @@
                                     <segue destination="XpN-ob-qJ4" kind="show" id="8R5-Z8-XZk"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7fU-CO-AVy" customClass="shapedButton" customModule="AnchorApplication" customModuleProvider="target">
-                                <rect key="frame" x="20" y="242" width="339" height="80"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title=" Immediate Release" image="drugIcon">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                </state>
-                                <state key="disabled">
-                                    <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <state key="selected">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="25"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" cocoaTouchSystemColor="darkTextColor"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                        <real key="value" value="3"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="immediateReleaseBtnClicked:" destination="OTB-ph-hSt" eventType="touchUpInside" id="kVQ-cx-Tdk"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="q7r-sg-Gws" firstAttribute="leading" secondItem="z4U-wM-izN" secondAttribute="trailing" constant="98" id="0gH-jt-Wzx"/>
-                            <constraint firstItem="ghk-J7-OUc" firstAttribute="trailing" secondItem="7fU-CO-AVy" secondAttribute="trailing" id="2H3-9x-uhK"/>
-                            <constraint firstItem="ghk-J7-OUc" firstAttribute="leading" secondItem="N0R-bu-e8U" secondAttribute="leading" id="32p-CW-W3q"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="aLu-oB-0M4" secondAttribute="trailing" constant="-20" id="4pT-tY-Tae"/>
                             <constraint firstItem="q7r-sg-Gws" firstAttribute="trailing" secondItem="5ZI-71-0wO" secondAttribute="trailingMargin" id="6Kp-jY-rBe"/>
-                            <constraint firstItem="ghk-J7-OUc" firstAttribute="trailing" secondItem="N0R-bu-e8U" secondAttribute="trailing" id="6mC-zm-kUv"/>
-                            <constraint firstItem="ghk-J7-OUc" firstAttribute="leading" secondItem="7fU-CO-AVy" secondAttribute="leading" id="7hG-b1-dZB"/>
                             <constraint firstItem="HY6-kR-IeO" firstAttribute="bottom" secondItem="q7r-sg-Gws" secondAttribute="bottom" constant="25" id="98J-9z-bEl"/>
-                            <constraint firstItem="N0R-bu-e8U" firstAttribute="top" secondItem="5ZI-71-0wO" secondAttribute="top" constant="130" id="Cf5-yd-rQy"/>
-                            <constraint firstItem="ghk-J7-OUc" firstAttribute="trailing" secondItem="q7r-sg-Gws" secondAttribute="trailing" id="LEz-oc-Hqw"/>
-                            <constraint firstItem="7fU-CO-AVy" firstAttribute="top" secondItem="N0R-bu-e8U" secondAttribute="bottom" constant="32" id="SLq-Py-tPO"/>
-                            <constraint firstItem="pEf-ca-3S0" firstAttribute="leading" secondItem="HY6-kR-IeO" secondAttribute="leading" constant="127" id="VZP-ik-7SB"/>
-                            <constraint firstItem="91z-Nb-dMf" firstAttribute="leading" secondItem="pEf-ca-3S0" secondAttribute="trailing" constant="8" symbolic="YES" id="VfO-Ic-atw"/>
-                            <constraint firstItem="z4U-wM-izN" firstAttribute="top" secondItem="pEf-ca-3S0" secondAttribute="bottom" constant="101" id="Vmd-XS-jkQ"/>
-                            <constraint firstItem="HY6-kR-IeO" firstAttribute="trailing" secondItem="91z-Nb-dMf" secondAttribute="trailing" constant="86" id="XZS-Mj-Yfl"/>
+                            <constraint firstItem="z4U-wM-izN" firstAttribute="top" secondItem="aLu-oB-0M4" secondAttribute="bottom" constant="81" id="RBJ-gE-wya"/>
                             <constraint firstItem="z4U-wM-izN" firstAttribute="leading" secondItem="HY6-kR-IeO" secondAttribute="leading" constant="20" id="aKX-8K-uRR"/>
                             <constraint firstItem="gFV-Ik-7mb" firstAttribute="top" secondItem="5ZI-71-0wO" secondAttribute="top" id="f27-Qn-Nl1"/>
-                            <constraint firstItem="N0R-bu-e8U" firstAttribute="top" secondItem="S1J-vI-iW1" secondAttribute="bottom" constant="18" id="fze-in-fT8"/>
-                            <constraint firstItem="ghk-J7-OUc" firstAttribute="top" secondItem="7fU-CO-AVy" secondAttribute="bottom" constant="82" id="jZD-Xk-Bfx"/>
-                            <constraint firstItem="ghk-J7-OUc" firstAttribute="leading" secondItem="z4U-wM-izN" secondAttribute="leading" id="mFD-Vd-fAJ"/>
-                            <constraint firstItem="ghk-J7-OUc" firstAttribute="leading" secondItem="S1J-vI-iW1" secondAttribute="leading" id="mYm-dm-Z68"/>
+                            <constraint firstItem="aLu-oB-0M4" firstAttribute="leading" secondItem="gFV-Ik-7mb" secondAttribute="leading" id="moM-tm-GZa"/>
                             <constraint firstItem="HY6-kR-IeO" firstAttribute="bottom" secondItem="z4U-wM-izN" secondAttribute="bottom" constant="25" id="pW9-hC-p79"/>
                             <constraint firstItem="gFV-Ik-7mb" firstAttribute="leading" secondItem="5ZI-71-0wO" secondAttribute="leading" id="rNi-nv-Yhh"/>
-                            <constraint firstItem="HY6-kR-IeO" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="S1J-vI-iW1" secondAttribute="trailing" symbolic="YES" id="riq-Pc-qp8"/>
-                            <constraint firstItem="pEf-ca-3S0" firstAttribute="top" secondItem="ghk-J7-OUc" secondAttribute="bottom" constant="35" id="s9l-Au-Q8A"/>
-                            <constraint firstItem="91z-Nb-dMf" firstAttribute="top" secondItem="ghk-J7-OUc" secondAttribute="bottom" constant="55" id="tv2-fi-gdl"/>
+                            <constraint firstItem="aLu-oB-0M4" firstAttribute="top" secondItem="HY6-kR-IeO" secondAttribute="top" constant="48" id="rk8-F0-cgl"/>
                             <constraint firstItem="gFV-Ik-7mb" firstAttribute="bottom" secondItem="HY6-kR-IeO" secondAttribute="bottom" constant="42" id="vlU-Re-OvB"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="HY6-kR-IeO"/>
@@ -3178,21 +3195,21 @@
         </scene>
     </scenes>
     <resources>
-        <image name="backIcon" width="50" height="50"/>
-        <image name="background2" width="1080" height="1920"/>
-        <image name="calendar" width="26" height="26"/>
-        <image name="checkmark" width="50" height="50"/>
-        <image name="drugIcon" width="25" height="25"/>
-        <image name="forward" width="50" height="50"/>
-        <image name="homeIcon" width="50" height="50"/>
-        <image name="inData" width="50" height="50"/>
+        <image name="backIcon" width="37.5" height="37.5"/>
+        <image name="background2" width="648" height="1152"/>
+        <image name="calendar" width="19.5" height="19.5"/>
+        <image name="checkmark" width="37.5" height="37.5"/>
+        <image name="drugIcon" width="37.5" height="37.5"/>
+        <image name="forward" width="37.5" height="37.5"/>
+        <image name="homeIcon" width="37.5" height="37.5"/>
+        <image name="inData" width="37.5" height="37.5"/>
         <image name="logoWithColor" width="163" height="58"/>
-        <image name="noButton" width="50" height="50"/>
-        <image name="progressMonitorIcon" width="25" height="25"/>
-        <image name="save" width="50" height="50"/>
-        <image name="surveyBack" width="50" height="50"/>
-        <image name="surveyIcon" width="25" height="25"/>
-        <image name="yesButton" width="50" height="50"/>
+        <image name="noButton" width="37.5" height="37.5"/>
+        <image name="progressMonitorIcon" width="37.5" height="37.5"/>
+        <image name="save" width="37.5" height="37.5"/>
+        <image name="surveyBack" width="37.5" height="37.5"/>
+        <image name="surveyIcon" width="37.5" height="37.5"/>
+        <image name="yesButton" width="37.5" height="37.5"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="G8x-rj-DGG"/>
