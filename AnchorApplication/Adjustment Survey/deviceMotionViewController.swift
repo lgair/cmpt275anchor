@@ -53,7 +53,7 @@ class deviceMotionViewController: UIViewController {
         startMotionManager()
         
         // Device motion data collection runtime of 10 seconds
-        timer = Timer.scheduledTimer(withTimeInterval: 10.0, repeats: false, block: { (timer) in
+        timer = Timer.scheduledTimer(withTimeInterval: 5.0, repeats: false, block: { (timer) in
             self.stopMotionManager()
             
             // Summing elements of device motion arrays
@@ -96,7 +96,7 @@ class deviceMotionViewController: UIViewController {
                     // Condition: absolute average of user acceleration is greater than rotation rate
                     // Result: Predominant dyskinesia
                     // Action: +1 to globalDyskinesia
-                    if avgDiff > 0.01 {
+                    if avgAcc > avgRot {
                         adjustmentSurveyQ1ViewController.globalDyskinesia = adjustmentSurveyQ1ViewController.globalDyskinesia + 1
                         self.processImage.isHidden = true
                         self.processInfo.isHidden = true
