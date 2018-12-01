@@ -29,11 +29,11 @@ class ProgressMonitorViewController: UIViewController {
     // link line chart view
     @IBOutlet weak var chartView: LineChartView!
     
-    @IBOutlet weak var startDate: UIButton!
+    @IBOutlet weak var startDate: shapedButton!
     
-    @IBOutlet weak var endDate: UIButton!
+    @IBOutlet weak var endDate: shapedButton!
     
-    @IBOutlet weak var generateButton: UIButton!
+    @IBOutlet weak var generateButton: shapedButton!
     
     // configure UIDatePicker
     
@@ -57,6 +57,7 @@ class ProgressMonitorViewController: UIViewController {
         super.viewDidLoad()
         print("progress monitor loaded")
         
+        assignbackground()
         // create instance for database
         ref = Database.database().reference()
         
@@ -149,7 +150,7 @@ class ProgressMonitorViewController: UIViewController {
             return dataEntry1
         }
         
-        let set1 = LineChartDataSet(values: dataSets, label: "immediate release(mg)")
+        let set1 = LineChartDataSet(values: dataSets, label: "Immediate Release(mg)")
         allLineChartDataSets.append(set1)
         
         var dataSets2 = [ChartDataEntry]()
@@ -175,7 +176,7 @@ class ProgressMonitorViewController: UIViewController {
             return dataEntry2
         }
         
-        let set2 = LineChartDataSet(values: dataSets2, label: "controlled release(mg)")
+        let set2 = LineChartDataSet(values: dataSets2, label: "Controlled Release(mg)")
         allLineChartDataSets.append(set2)
         
 
@@ -203,16 +204,24 @@ class ProgressMonitorViewController: UIViewController {
         self.chartView.xAxis.labelRotationAngle = -12.0
         self.chartView.drawGridBackgroundEnabled = true
         self.chartView.gridBackgroundColor = UIColor(red:0.86, green:0.83, blue:0.83, alpha:1.0)
-        chartView.chartDescription?.text = "dosage progress"
+        chartView.chartDescription?.text = "Dosage Progress"
     }
     
-    
-    @IBAction func saveGraph(_ sender: UIButton) {
+    // Saves graph to photo album
+    @IBAction func saveGraph(_ sender: shapedButton) {
         UIImageWriteToSavedPhotosAlbum(chartView.getChartImage(transparent: false)!, nil, nil, nil)
+        // Present alert message
+        let alert = UIAlertController(title: "", message: "Saved to Photos Album", preferredStyle: .alert)
+        self.present(alert, animated: true, completion: nil)
+        // Alert message lasts for 2 seconds
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+            alert.dismiss(animated: true, completion: nil)
+        
+        }
     }
     
     // allow user to choose a range of data to graph
-    @IBAction func selectStartDate(_ sender: UIButton) {
+    @IBAction func selectStartDate(_ sender: shapedButton) {
         // set the style of alert controller as action sheet
         let alert = UIAlertController(title: "Start Date", message: "Choose starting date", preferredStyle: .actionSheet)
         
@@ -267,5 +276,23 @@ class ProgressMonitorViewController: UIViewController {
     // generate graph with selected time range
     @IBAction func generateNewGraph(_ sender: UIButton) {
         setChartValues()
+    }
+    
+    func assignbackground(){
+        //Importing Main Background
+        let background = UIImage(named: "background2")
+        var imageView : UIImageView!
+        //Setting the background within the bounds
+        imageView = UIImageView(frame: view.bounds)
+        //Setting the background to fill the whole screen
+        imageView.contentMode =  UIViewContentMode.scaleAspectFill
+        //A boolean value that determines whether subviews are confined to the bounds
+        imageView.clipsToBounds = true
+        imageView.image = background
+        //Center Aligning the Background image
+        imageView.center = view.center
+        view.addSubview(imageView)
+        //Setting Background Image to the Back
+        self.view.sendSubview(toBack: imageView)
     }
 }

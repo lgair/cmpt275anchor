@@ -41,7 +41,7 @@ class dataPointViewController: UIViewController {
     
     @IBOutlet weak var controlledReleaseButton: shapedButton!
     
-    @IBOutlet weak var nextPageButton: bounceButton!
+    @IBOutlet weak var nextPageButton: shapedButton!
     
     // Indicate which button has been pressed (immediate or controlledrelease
     var button: Int = 0
@@ -140,7 +140,7 @@ class dataPointViewController: UIViewController {
     }
     
     // writing to database when button is clicked
-    @IBAction func nextPressed(_ sender: bounceButton) {
+    @IBAction func nextPressed(_ sender: shapedButton) {
         // set the current date to use as key for database
         let currentDate = Date()
         // format Date() as to only include the date and not time

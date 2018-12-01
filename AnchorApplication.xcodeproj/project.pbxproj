@@ -170,6 +170,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		53315E7E21B23B7A00714171 /* Progress Monitor */ = {
+			isa = PBXGroup;
+			children = (
+				49FDB0E421B20EA70056FAC5 /* ProgressMonitorViewController.swift */,
+				53CF2A6E219E3A4D00B6381B /* dataPointViewController.swift */,
+			);
+			path = "Progress Monitor";
+			sourceTree = "<group>";
+		};
 		53F538DE21A149F700229536 /* Adjustment Survey */ = {
 			isa = PBXGroup;
 			children = (
@@ -233,6 +242,7 @@
 		6BB4A6142182852000EF6829 /* AnchorApplication */ = {
 			isa = PBXGroup;
 			children = (
+				53315E7E21B23B7A00714171 /* Progress Monitor */,
 				53F538EC21A1593B00229536 /* Decision Survey */,
 				53F538EB21A1590100229536 /* Button Enhancement */,
 				53F538DE21A149F700229536 /* Adjustment Survey */,
@@ -240,8 +250,6 @@
 				6BB4A6172182852000EF6829 /* HomeViewController.swift */,
 				E93DE02B2183E5F700931BA7 /* DataTableViewController.swift */,
 				6BB4A6192182852000EF6829 /* Main.storyboard */,
-				49FDB0E421B20EA70056FAC5 /* ProgressMonitorViewController.swift */,
-				53CF2A6E219E3A4D00B6381B /* dataPointViewController.swift */,
 				5345E160219D78720024DEE7 /* disclaimerViewController.swift */,
 				6BB4A61C2182852100EF6829 /* Assets.xcassets */,
 				6BB4A61E2182852100EF6829 /* LaunchScreen.storyboard */,
