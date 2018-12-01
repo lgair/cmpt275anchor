@@ -360,7 +360,6 @@
                             <constraint firstItem="pD9-rQ-pwe" firstAttribute="centerX" secondItem="2MC-pr-h9f" secondAttribute="centerX" id="hmq-jw-9Kh"/>
                             <constraint firstItem="5Wa-yb-2qu" firstAttribute="leading" secondItem="B4s-Ow-x0s" secondAttribute="leading" constant="41" id="i2G-OQ-gvL"/>
                             <constraint firstItem="mLt-R8-dhX" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6WP-Hy-3fO" secondAttribute="trailing" constant="8" symbolic="YES" id="kgc-Xl-3Cf"/>
-                            <constraint firstItem="6WP-Hy-3fO" firstAttribute="top" secondItem="5Wa-yb-2qu" secondAttribute="bottom" constant="228.5" id="sQP-CR-C9J"/>
                             <constraint firstItem="B4s-Ow-x0s" firstAttribute="trailing" secondItem="5Wa-yb-2qu" secondAttribute="trailing" constant="42" id="vDY-25-6fE"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="B4s-Ow-x0s"/>
@@ -1229,7 +1228,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <navigationBar key="tableHeaderView" contentMode="scaleToFill" id="URg-s5-Dbl">
-                            <rect key="frame" x="0.0" y="0.0" width="336" height="44"/>
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             <items>
                                 <navigationItem title="Levodopa" id="KWE-Fo-aUf">
@@ -1270,7 +1269,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <navigationBar key="tableHeaderView" contentMode="scaleToFill" id="G3t-cb-Ejb">
-                            <rect key="frame" x="0.0" y="0.0" width="336" height="44"/>
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             <items>
                                 <navigationItem title="Dopamine Agonists" id="Xsi-1N-BVi">
@@ -2982,7 +2981,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="GQL-kB-jQa" firstAttribute="leading" secondItem="c8Z-ck-HPy" secondAttribute="leading" constant="16" id="3mF-aA-exv"/>
-                            <constraint firstItem="zxe-oD-63E" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="GQL-kB-jQa" secondAttribute="trailing" symbolic="YES" id="6ZF-vb-1zS"/>
+                            <constraint firstItem="zxe-oD-63E" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="GQL-kB-jQa" secondAttribute="trailing" constant="8" symbolic="YES" id="6ZF-vb-1zS"/>
                             <constraint firstItem="c8Z-ck-HPy" firstAttribute="bottom" secondItem="Kig-oh-V9T" secondAttribute="bottom" constant="23" id="6wh-uX-L1S"/>
                             <constraint firstItem="c8Z-ck-HPy" firstAttribute="trailing" secondItem="MTD-lo-Hdl" secondAttribute="trailing" constant="41" id="8w6-RC-AnU"/>
                             <constraint firstItem="3ig-4V-Eoa" firstAttribute="top" secondItem="h4b-RW-VWj" secondAttribute="bottom" constant="8" symbolic="YES" id="Cr4-0L-bz9"/>

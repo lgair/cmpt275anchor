@@ -42,6 +42,9 @@ class adjustmentSurveyQ11ViewController: UIViewController {
             print("No adjustments")
             performSegue(withIdentifier: "toResultFour", sender: self)
         }
+        //resetting results
+        adjustmentSurveyQ1ViewController.globalDyskinesia = 0;
+        adjustmentSurveyQ1ViewController.globalWearingOff = 0;
     }
     
     @IBAction func backClicked(_ sender: Any) {
