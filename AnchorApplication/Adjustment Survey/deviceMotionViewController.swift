@@ -96,7 +96,7 @@ class deviceMotionViewController: UIViewController {
                     // Condition: absolute average of user acceleration is greater than rotation rate
                     // Result: Predominant dyskinesia
                     // Action: +1 to globalDyskinesia
-                    if avgAcc > avgRot {
+                    if avgAcc > avgRot && avgDiff >= 0.01{
                         adjustmentSurveyQ1ViewController.globalDyskinesia = adjustmentSurveyQ1ViewController.globalDyskinesia + 1
                         self.processImage.isHidden = true
                         self.processInfo.isHidden = true
