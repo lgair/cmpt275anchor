@@ -16,7 +16,7 @@ public class DateValueFormatter: NSObject, IAxisValueFormatter {
 
     override init() {
         super.init()
-        dateFormatter.dateFormat = "MM-dd HH:mm"
+        dateFormatter.dateFormat = "MMM-dd"// HH:mm"
     }
 
     public func stringForValue(_ value: Double, axis: AxisBase?) -> String {
@@ -78,8 +78,8 @@ class ProgressMonitorViewController: UIViewController {
     }
     
     func queryDB() {
-        // query database for the recent 7 data
-        ref.child("progress").queryLimited(toLast: UInt(queryLimit)).observeSingleEvent(of: .value, with: { (snapshot) in
+        // query database for all the data
+        ref.child("progress").observeSingleEvent(of: .value, with: { (snapshot) in
             
             for child in snapshot.children {
                 let snap = child as! DataSnapshot
@@ -87,7 +87,7 @@ class ProgressMonitorViewController: UIViewController {
                 let dateString = snap.key
                 let formatter = DateFormatter()
                 // make sure the format is just yyyy-MM-dd in actual version
-                formatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+                formatter.dateFormat = "yyyy-MM-dd"// HH:mm:ss"
                 var date = formatter.date(from: dateString)
                 // since value is of type Any use firebaseResponse to get specific values
                 guard let firebaseResponse = snap.value as? [String:Any] else
@@ -108,7 +108,11 @@ class ProgressMonitorViewController: UIViewController {
             // firebase query is asynchronous so functions using the new values must be called here
             //self.printArr()
             self.count = self.dosageArr.count
+            if self.count > 10 {
+                self.startIndex = self.dosageArr.count - 10
+            }
             self.endIndex = self.dosageArr.count
+            // this should make a default chart that shows exatly 10 data points
             self.setChartValues()
         })// end of query for snapshot
         
@@ -131,7 +135,8 @@ class ProgressMonitorViewController: UIViewController {
         let values = (startIndex..<endIndex).map { (i) -> ChartDataEntry in
             
             let val = Double(self.dosageArr[i])
-            let timeRange = dateArr[i].timeIntervalSince1970
+            // add 12 hours as to make the graph more accurate in terms of date
+            let timeRange = dateArr[i].timeIntervalSince1970 + 43200
             let xval = Double(timeRange)
             
             // immediate release type will be blue
@@ -157,7 +162,7 @@ class ProgressMonitorViewController: UIViewController {
         let values2 = (startIndex..<endIndex).map { (i) -> ChartDataEntry in
             
             let val2 = Double(self.dosageArr[i])
-            let timeRange = dateArr[i].timeIntervalSince1970
+            let timeRange = dateArr[i].timeIntervalSince1970 + 43200
             let xval2 = Double(timeRange)
             
             // immediate release type will be blue
@@ -186,7 +191,7 @@ class ProgressMonitorViewController: UIViewController {
         set1.circleColors = colorArr
         set2.circleColors = colorArr
         // configure the graphics for the line graph
-        set1.circleRadius = 5
+        set1.circleRadius = 7
         set1.circleHoleRadius = 0
         set1.lineWidth = 2
         // give the illusion of second graph not existing
@@ -203,6 +208,7 @@ class ProgressMonitorViewController: UIViewController {
         self.chartView.data = data
         self.chartView.xAxis.labelRotationAngle = -12.0
         self.chartView.drawGridBackgroundEnabled = true
+        self.chartView.animate(xAxisDuration: 2, easingOption: .linear)
         self.chartView.gridBackgroundColor = UIColor(red:0.86, green:0.83, blue:0.83, alpha:1.0)
         chartView.chartDescription?.text = "Dosage Progress"
     }
@@ -229,7 +235,7 @@ class ProgressMonitorViewController: UIViewController {
         for i in (0..<(count-1)) {
             // format the variable from date to string
             let dateFormatter = DateFormatter()
-            dateFormatter.dateFormat = "yyyy-MM-dd HH:mm"
+            dateFormatter.dateFormat = "yyyy-MM-dd"
             var dateString = dateFormatter.string(from:dateArr[i])
             let action = UIAlertAction(title: dateString, style: .default) { (action:UIAlertAction) in
                 // set the starting index for custom view
@@ -255,7 +261,7 @@ class ProgressMonitorViewController: UIViewController {
         for i in ((startIndex+1)..<count) {
             // format the variable from date to string
             let dateFormatter = DateFormatter()
-            dateFormatter.dateFormat = "yyyy-MM-dd HH:mm"
+            dateFormatter.dateFormat = "yyyy-MM-dd"
             var dateString = dateFormatter.string(from:dateArr[i])
             let action = UIAlertAction(title: dateString, style: .default) { (action:UIAlertAction) in
                 // set the starting index for custom view
@@ -275,7 +281,16 @@ class ProgressMonitorViewController: UIViewController {
     
     // generate graph with selected time range
     @IBAction func generateNewGraph(_ sender: UIButton) {
-        setChartValues()
+        
+        // check for invalid range of dates
+        if startIndex > endIndex {
+            let alert = UIAlertController(title: "Invalid range", message: "Please choose the ocrrect range", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Confirm", style: .cancel, handler: nil))
+            self.present(alert, animated: true)
+        }
+        else {
+            setChartValues()
+        }
     }
     
     func assignbackground(){

@@ -146,7 +146,7 @@ class dataPointViewController: UIViewController {
         // format Date() as to only include the date and not time
         let formatter = DateFormatter()
         //****use "yyyy-MM-dd" for actual, use "yyyy-MM-dd HH:mm:ss" to test multiple data
-        formatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+        formatter.dateFormat = "yyyy-MM-dd"
         // note that it is now string, to compare dates later convert back to date()
         var dateString = formatter.string(from: currentDate)
         //*****check date ->print("current date ", dateString)
