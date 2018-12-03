@@ -80,7 +80,6 @@ class AnchorApplicationUITests: XCTestCase {
         let proceedButton = app.buttons["Proceed "]
         let bilateralButton = app.buttons[" Bilateral"]
         let noButton = app.buttons[" NO"]
-        let homeButton = app.buttons["Home"]
         let yesButton = app.buttons[" YES"]
         let textView = app.children(matching: .window).element(boundBy: 0).children(matching: .other).element(boundBy: 2).children(matching: .other).element.children(matching: .textView).element
         
@@ -89,8 +88,8 @@ class AnchorApplicationUITests: XCTestCase {
         proceedButton.tap()
         app.buttons[" Unilateral"].tap()
         XCTAssertTrue(textView.exists)
-        homeButton.tap()
-        
+        XCUIApplication().buttons[" Home"].tap()
+
         decisionSurveyButton.tap()
         app.switches.element(boundBy: 0).tap()
         proceedButton.tap()
@@ -138,5 +137,4 @@ class AnchorApplicationUITests: XCTestCase {
         XCTAssertTrue(app.buttons["Levodopa"].exists)
         app.buttons[" Home"].tap()
     }
-    
-}
+ }

@@ -20,46 +20,36 @@ class Survey2Tests: XCTestCase {
         super.tearDown()
     }
     
-    func testImmediateA() {
+    func testA() {
         let app = XCUIApplication()
         app.buttons[" Adjustment Survey"].tap()
         app.switches.element(boundBy: 0).tap()
         app.buttons["Proceed "].tap()
-        app.buttons[" Immediate Release"].tap()
-        let textField = app.children(matching: .window).element(boundBy: 0).children(matching: .other).element(boundBy: 1).children(matching: .other).element.children(matching: .textField).element
-        textField.tap()
-        textField.typeText("1")
-        XCUIApplication().children(matching: .window).element(boundBy: 0).children(matching: .other).element(boundBy: 1).children(matching: .other).element.tap()
-        let forwardButton = app.buttons["forward"]
-        forwardButton.tap()
-        forwardButton.tap()
+        app.buttons["Start Assessment"].tap()
+        // app.alerts["Assessment Result"].buttons["Continue to survey"].tap()
         app.buttons[" No"].tap()
         app.buttons[" Yes"].tap()
         app.buttons[" No tremor post-dosing"].tap()
         app.buttons[" No stiffness post-dosing"].tap()
-        app.buttons[" No painful spasms post-dosing"].tap()
+        app.buttons[" No spasms post-dosing"].tap()
         app.buttons[" No anxiety attacks post-dosing"].tap()
-        app.buttons[" No movement slowness post-dosing"].tap()
+        app.buttons[" No motion slowness post-dosing"].tap()
         app.buttons[" No reduced dexterity post-dosing"].tap()
         app.buttons[" No mood changes post-dosing"].tap()
         app.buttons[" No muscle cramps post-dosing"].tap()
         app.buttons[" No cognitive impairment post-dosing"].tap()
-        XCTAssertTrue(app.staticTexts["Decrease Levodopa dosage"].exists)
+        let element = XCUIApplication().children(matching: .window).element(boundBy: 0).children(matching: .other).element(boundBy: 13).children(matching: .other).element
+        XCTAssertTrue(element.children(matching: .textView).element(boundBy: 0).exists)
+        XCTAssertTrue(element.children(matching: .textView).element(boundBy: 1).exists)
     }
     
-    func testImmediateB() {
+    func testB() {
         let app = XCUIApplication()
         app.buttons[" Adjustment Survey"].tap()
         app.switches.element(boundBy: 0).tap()
         app.buttons["Proceed "].tap()
-        app.buttons[" Immediate Release"].tap()
-        let textField = app.children(matching: .window).element(boundBy: 0).children(matching: .other).element(boundBy: 1).children(matching: .other).element.children(matching: .textField).element
-        textField.tap()
-        textField.typeText("10000")
-        XCUIApplication().children(matching: .window).element(boundBy: 0).children(matching: .other).element(boundBy: 1).children(matching: .other).element.tap()
-        let forwardButton = app.buttons["forward"]
-        forwardButton.tap()
-        forwardButton.tap()
+        app.buttons["Start Assessment"].tap()
+        // app.alerts["Assessment Result"].buttons["Continue to survey"].tap()
         let yesButton = app.buttons[" Yes"]
         yesButton.tap()
         yesButton.tap()
@@ -74,22 +64,18 @@ class Survey2Tests: XCTestCase {
         usuallyImprovesButton.tap()
         usuallyRelievedButton.tap()
         usuallyRelievedButton.tap()
-        XCTAssertTrue(app.children(matching: .window).element(boundBy: 0).children(matching: .other).element(boundBy: 14).children(matching: .other).element.children(matching: .textView).element.exists)
+        XCTAssertTrue(app.staticTexts["Increase frequency of Levodopa"].exists)
+        XCTAssertTrue(app.staticTexts["Change to slow-release Levodopa"].exists)
+        XCTAssertTrue(app.staticTexts["Add Dopamine Agonists"].exists)
     }
     
-    func testImmediateC() {
+    func testC() {
         let app = XCUIApplication()
         app.buttons[" Adjustment Survey"].tap()
         app.switches.element(boundBy: 0).tap()
         app.buttons["Proceed "].tap()
-        app.buttons[" Immediate Release"].tap()
-        let textField = app.children(matching: .window).element(boundBy: 0).children(matching: .other).element(boundBy: 1).children(matching: .other).element.children(matching: .textField).element
-        textField.tap()
-        textField.typeText("999999")
-        XCUIApplication().children(matching: .window).element(boundBy: 0).children(matching: .other).element(boundBy: 1).children(matching: .other).element.tap()
-        let forwardButton = app.buttons["forward"]
-        forwardButton.tap()
-        forwardButton.tap()
+        app.buttons["Start Assessment"].tap()
+        // app.alerts["Assessment Result"].buttons["Continue to survey"].tap()
         let yesButton = app.buttons[" Yes"]
         yesButton.tap()
         yesButton.tap()
@@ -107,146 +93,27 @@ class Survey2Tests: XCTestCase {
         XCTAssertTrue(app.staticTexts["Increase frequency of Levodopa"].exists)
     }
     
-    func testImmediateD() {
+    func testD() {
         let app = XCUIApplication()
         app.buttons[" Adjustment Survey"].tap()
         app.switches.element(boundBy: 0).tap()
         app.buttons["Proceed "].tap()
-        app.buttons[" Immediate Release"].tap()
-        let textField = app.children(matching: .window).element(boundBy: 0).children(matching: .other).element(boundBy: 1).children(matching: .other).element.children(matching: .textField).element
-        textField.tap()
-        textField.typeText("12345")
-        XCUIApplication().children(matching: .window).element(boundBy: 0).children(matching: .other).element(boundBy: 1).children(matching: .other).element.tap()
-        let forwardButton = app.buttons["forward"]
-        forwardButton.tap()
-        forwardButton.tap()
+        app.buttons["Start Assessment"].tap()
+        // app.alerts["Assessment Result"].buttons["Continue to survey"].tap()
         let noButton = app.buttons[" No"]
         noButton.tap()
         noButton.tap()
         app.buttons[" No tremor post-dosing"].tap()
         app.buttons[" No stiffness post-dosing"].tap()
-        app.buttons[" No painful spasms post-dosing"].tap()
+        app.buttons[" No spasms post-dosing"].tap()
         app.buttons[" No anxiety attacks post-dosing"].tap()
-        app.buttons[" No movement slowness post-dosing"].tap()
+        app.buttons[" No motion slowness post-dosing"].tap()
         app.buttons[" No reduced dexterity post-dosing"].tap()
         app.buttons[" No mood changes post-dosing"].tap()
         app.buttons[" No muscle cramps post-dosing"].tap()
         app.buttons[" No cognitive impairment post-dosing"].tap()
-        XCTAssertTrue(app.staticTexts["No adjustments required"].exists)
-    }
-    
-    func testControlledA() {
-        let app = XCUIApplication()
-        app.buttons[" Adjustment Survey"].tap()
-        app.switches.element(boundBy: 0).tap()
-        app.buttons["Proceed "].tap()
-        app.buttons[" Controlled Release"].tap()
-        let textField = app.children(matching: .window).element(boundBy: 0).children(matching: .other).element(boundBy: 1).children(matching: .other).element.children(matching: .textField).element
-        textField.tap()
-        textField.typeText("500")
-        XCUIApplication().children(matching: .window).element(boundBy: 0).children(matching: .other).element(boundBy: 1).children(matching: .other).element.tap()
-        let forwardButton = app.buttons["forward"]
-        forwardButton.tap()
-        forwardButton.tap()
-        app.buttons[" No"].tap()
-        app.buttons[" Yes"].tap()
-        app.buttons[" No tremor post-dosing"].tap()
-        app.buttons[" No stiffness post-dosing"].tap()
-        app.buttons[" No painful spasms post-dosing"].tap()
-        app.buttons[" No anxiety attacks post-dosing"].tap()
-        app.buttons[" No movement slowness post-dosing"].tap()
-        app.buttons[" No reduced dexterity post-dosing"].tap()
-        app.buttons[" No mood changes post-dosing"].tap()
-        app.buttons[" No muscle cramps post-dosing"].tap()
-        app.buttons[" No cognitive impairment post-dosing"].tap()
-        XCTAssertTrue(app.staticTexts["Decrease Levodopa dosage"].exists)
-    }
-    
-    func testControlledB() {
-        let app = XCUIApplication()
-        app.buttons[" Adjustment Survey"].tap()
-        app.switches.element(boundBy: 0).tap()
-        app.buttons["Proceed "].tap()
-        app.buttons[" Controlled Release"].tap()
-        let textField = app.children(matching: .window).element(boundBy: 0).children(matching: .other).element(boundBy: 1).children(matching: .other).element.children(matching: .textField).element
-        textField.tap()
-        textField.typeText("100")
-        XCUIApplication().children(matching: .window).element(boundBy: 0).children(matching: .other).element(boundBy: 1).children(matching: .other).element.tap()
-        let forwardButton = app.buttons["forward"]
-        forwardButton.tap()
-        forwardButton.tap()
-        let yesButton = app.buttons[" Yes"]
-        yesButton.tap()
-        yesButton.tap()
-        let usuallyImprovesButton = app.buttons[" Usually improves"]
-        usuallyImprovesButton.tap()
-        let usuallyRelievedButton = app.buttons[" Usually relieved"]
-        usuallyRelievedButton.tap()
-        usuallyRelievedButton.tap()
-        usuallyRelievedButton.tap()
-        usuallyRelievedButton.tap()
-        usuallyRelievedButton.tap()
-        usuallyImprovesButton.tap()
-        usuallyRelievedButton.tap()
-        usuallyRelievedButton.tap()
-        XCTAssertTrue(app.children(matching: .window).element(boundBy: 0).children(matching: .other).element(boundBy: 14).children(matching: .other).element.children(matching: .textView).element.exists)
-    }
-    
-    func testControlledC() {
-        let app = XCUIApplication()
-        app.buttons[" Adjustment Survey"].tap()
-        app.switches.element(boundBy: 0).tap()
-        app.buttons["Proceed "].tap()
-        app.buttons[" Controlled Release"].tap()
-        let textField = app.children(matching: .window).element(boundBy: 0).children(matching: .other).element(boundBy: 1).children(matching: .other).element.children(matching: .textField).element
-        textField.tap()
-        textField.typeText("99")
-        XCUIApplication().children(matching: .window).element(boundBy: 0).children(matching: .other).element(boundBy: 1).children(matching: .other).element.tap()
-        let forwardButton = app.buttons["forward"]
-        forwardButton.tap()
-        forwardButton.tap()
-        let yesButton = app.buttons[" Yes"]
-        yesButton.tap()
-        yesButton.tap()
-        let unimprovedButton = app.buttons[" Unimproved"]
-        unimprovedButton.tap()
-        let unrelievedButton = app.buttons[" Unrelieved"]
-        unrelievedButton.tap()
-        unrelievedButton.tap()
-        unrelievedButton.tap()
-        unrelievedButton.tap()
-        unrelievedButton.tap()
-        unimprovedButton.tap()
-        unrelievedButton.tap()
-        unrelievedButton.tap()
         XCTAssertTrue(app.staticTexts["Increase frequency of Levodopa"].exists)
-    }
-    
-    func testControlledD() {
-        let app = XCUIApplication()
-        app.buttons[" Adjustment Survey"].tap()
-        app.switches.element(boundBy: 0).tap()
-        app.buttons["Proceed "].tap()
-        app.buttons[" Controlled Release"].tap()
-        let textField = app.children(matching: .window).element(boundBy: 0).children(matching: .other).element(boundBy: 1).children(matching: .other).element.children(matching: .textField).element
-        textField.tap()
-        textField.typeText("123")
-        XCUIApplication().children(matching: .window).element(boundBy: 0).children(matching: .other).element(boundBy: 1).children(matching: .other).element.tap()
-        let forwardButton = app.buttons["forward"]
-        forwardButton.tap()
-        forwardButton.tap()
-        let noButton = app.buttons[" No"]
-        noButton.tap()
-        noButton.tap()
-        app.buttons[" No tremor post-dosing"].tap()
-        app.buttons[" No stiffness post-dosing"].tap()
-        app.buttons[" No painful spasms post-dosing"].tap()
-        app.buttons[" No anxiety attacks post-dosing"].tap()
-        app.buttons[" No movement slowness post-dosing"].tap()
-        app.buttons[" No reduced dexterity post-dosing"].tap()
-        app.buttons[" No mood changes post-dosing"].tap()
-        app.buttons[" No muscle cramps post-dosing"].tap()
-        app.buttons[" No cognitive impairment post-dosing"].tap()
-        XCTAssertTrue(app.staticTexts["No adjustments required"].exists)
+        XCTAssertTrue(app.staticTexts["Change to slow-release Levodopa"].exists)
+        XCTAssertTrue(app.staticTexts["Add Dopamine Agonists"].exists)
     }
 }

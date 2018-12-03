@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00059CCDDABE029F1AB8ECA57A43C2EB /* Pods-AnchorApplicationUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7795590E6F40F18CD2342AF2BF7B60CF /* Pods-AnchorApplicationUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0076BACC2F0AF36E15FB247AA005CF60 /* FWriteRecord.h in Headers */ = {isa = PBXBuildFile; fileRef = F63FFC73B61696855F530734457E6BD1 /* FWriteRecord.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		012CB4ADBBAA7DE57CCC7983D4F8BEEB /* ChartBaseDataSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0724D56F6D60AB3E4FBF56AFB3DCBE27 /* ChartBaseDataSet.swift */; };
 		0132E8FA0B087817E143D26CC57D53B5 /* FUIPasswordSignInViewController_Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 42EE52CA42389F712E4BAC0F6635A2DE /* FUIPasswordSignInViewController_Internal.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -69,6 +68,7 @@
 		0FDFE740DA1A6F43C206A4F288125BDC /* ko.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 8287A9BDD3347A063932A7C585F1D5F5 /* ko.lproj */; };
 		104244E88379C26E770372034B3E4071 /* FUIAuthBaseViewController_Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 98EAB2B31E0224DC758BA47810790CB9 /* FUIAuthBaseViewController_Internal.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		1056F4C5B4C9CC5FC5D07D83E0320E0B /* FSnapshotUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 12A687DED141DE9EF5BEC814F8B9AA5E /* FSnapshotUtilities.m */; };
+		10624993309095FA77D4D35B1AB9D5CD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DB28C82A8806631F2B6239665049D58 /* Foundation.framework */; };
 		10F553A9D4A50CF6D0927B943A14A7F7 /* FAckUserWrite.h in Headers */ = {isa = PBXBuildFile; fileRef = 54642EA0B414695615787C13D72D54BF /* FAckUserWrite.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		11BE6E509507F45B9DA7B611BE8887FC /* sk.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 473E8359804EAB0BE1393220CC4E1A93 /* sk.lproj */; };
 		11C0446A534BD7B800C6E756CFE527A7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DB28C82A8806631F2B6239665049D58 /* Foundation.framework */; };
@@ -187,7 +187,6 @@
 		2AD5EE3218D56C5ED8897E65DEB3FF97 /* HorizontalBarHighlighter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8FFE392F2724A94A1BD65B115057BA7 /* HorizontalBarHighlighter.swift */; };
 		2B33033105ADA4F143B04458B93D18B4 /* FOverwrite.m in Sources */ = {isa = PBXBuildFile; fileRef = 4485585F16C29170FF21FEB9EB225BB3 /* FOverwrite.m */; };
 		2B6F3BEE96392D80BCC4E9406AD08A91 /* FUIPhoneEntryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4323EBE113A365C65A3D42ABC38DFFD /* FUIPhoneEntryViewController.xib */; };
-		2B8ADC9CBF01AB63647A189A0470BED0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DB28C82A8806631F2B6239665049D58 /* Foundation.framework */; };
 		2BBB0CA7C91BB9BC4B331E638BC09095 /* LineScatterCandleRadarChartDataSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEAFE3FA9D317E80560E2FC0C0D6A8AC /* LineScatterCandleRadarChartDataSet.swift */; };
 		2BD4EC2CD7828EF0066F41272AF11B01 /* ar.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 06C2B2E4A3AC3F7C9DC849AEBB24E23D /* ar.lproj */; };
 		2C9F89DCDBB9E734E89660600A581E69 /* FUIAccountSettingsOperationForgotPassword.h in Headers */ = {isa = PBXBuildFile; fileRef = 3070DD79A3DE273EB1CBAF9A06FCAB6E /* FUIAccountSettingsOperationForgotPassword.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -495,6 +494,7 @@
 		75E5E60C0A55E5A92414D25BF82E68D8 /* ChartHighlighter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62AE3109146B8EA97C7237C58876813 /* ChartHighlighter.swift */; };
 		763B16AA87CA8B9A9264EF5D49B3AF37 /* YAxisRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B458FDE36678632E54AA1642581655B /* YAxisRenderer.swift */; };
 		766BDFFDCB9B2858FAD81F730F04EA3E /* FIRAuthRPCRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 7401C37D51652606607E24C996D89132 /* FIRAuthRPCRequest.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		76EEAEFED80C9CAE5C516478B235A947 /* Pods-AnchorApplicationUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7795590E6F40F18CD2342AF2BF7B60CF /* Pods-AnchorApplicationUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7715E1FCF6A9484238A8613B2AE5693F /* FPruneForest.m in Sources */ = {isa = PBXBuildFile; fileRef = 48CF21C5B20A1BCFECB6862F9A7AED1B /* FPruneForest.m */; };
 		7717B5640053075E16FD82AD2C31FDD7 /* FQuerySpec.m in Sources */ = {isa = PBXBuildFile; fileRef = B59F5BAA5053D06743F5ABC8183BC62D /* FQuerySpec.m */; };
 		7726A13DF5D2AD5EF0C6D484CDC66B02 /* XAxisRendererHorizontalBarChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758F0BB1D0E3E4DB43DF0C6E9446EFBE /* XAxisRendererHorizontalBarChart.swift */; };
@@ -545,6 +545,7 @@
 		8107EEDC4B09BD766329079F9105625F /* es-PR.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 5671790CFB82CDBCC3DB05C615ED79AD /* es-PR.lproj */; };
 		8125922A100B8582C4F5AE3D4DAD82C3 /* iterator.h in Headers */ = {isa = PBXBuildFile; fileRef = 143D7079D40BD56DEE446B4C348EB029 /* iterator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		815B420155D152F459183C5015310078 /* lt.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 2D33AF8DBE18819E38EE50C91BA1C199 /* lt.lproj */; };
+		816E796D0B825ED710272CCD6D17310B /* Pods-AnchorApplicationUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC64CB376B2BEEA4785C615949E1952 /* Pods-AnchorApplicationUITests-dummy.m */; };
 		819E20E2A312D0589B713D8AA9C88192 /* FIREmailAuthProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F68E2AAA59F5ECF775802052F7A3B3E /* FIREmailAuthProvider.m */; };
 		81FAF3417BAF45B6A80EDBBFF50938D6 /* FirebaseDatabase-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 091653BC911C63419A59E248EFE41BE0 /* FirebaseDatabase-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		825583CECA15F17165FC92308321598D /* FKeepSyncedEventRegistration.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F42B644E1AB780693E1A896AB0477DD /* FKeepSyncedEventRegistration.m */; };
@@ -914,7 +915,6 @@
 		D9E0E0467B39824678C1A89077710D7B /* zh.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 2DAF8E04732008FEACA9A44C40CF8DC7 /* zh.lproj */; };
 		DA48EAEA3408DCB5DD524CA5BE706D59 /* histogram.h in Headers */ = {isa = PBXBuildFile; fileRef = 66B2B2808323A3C35140AF65E075BADF /* histogram.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		DAC8BE12E570B2159414328B47A3A95A /* FUIStaticContentTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 16C2B36C0FB15E8028A97B811B61A585 /* FUIStaticContentTableViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		DADFBEDBDA5F78B924801DFF5D0A6877 /* Pods-AnchorApplicationUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC64CB376B2BEEA4785C615949E1952 /* Pods-AnchorApplicationUITests-dummy.m */; };
 		DB6087F592F4433CE52A0A81AC5DA710 /* FImmutableTree.h in Headers */ = {isa = PBXBuildFile; fileRef = 2ED64749FA40D7CE12506514A17F742D /* FImmutableTree.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		DB8E8DA095D2FDFDA906A34B3C421DCF /* FUIPasswordSignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36D184ED3D87DA50AF6ED64CDD0E35C6 /* FUIPasswordSignInViewController.m */; };
 		DBFB159ACE2329AC247FC05CD4C1FCA6 /* FCachePolicy.h in Headers */ = {isa = PBXBuildFile; fileRef = B28CA8CAD84836E08383827D113716C4 /* FCachePolicy.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -1167,13 +1167,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = 12FAB6ECC34A1DB4CC57A4358149BA65;
 			remoteInfo = GoogleUtilities;
-		};
-		B29D1BB5C09F8C2AE6458345FE567A4D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 907293D4A982E9FC5A2BACBCC640A138;
-			remoteInfo = "Pods-AnchorApplication";
 		};
 		B476F376A2A5CF960B73209150DB9670 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -2389,6 +2382,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		10B3B2CFFA087134FB39BBEA6DFE9BC0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10624993309095FA77D4D35B1AB9D5CD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		17C2B717705C0123EBC05F0547323C6A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -2439,14 +2440,6 @@
 				9FE75116501BC89C7BA45C0E6CC8E764 /* Foundation.framework in Frameworks */,
 				6419A5C0B1C40E2EE4BCD10CA89878BE /* Security.framework in Frameworks */,
 				D93DA9B3BC5BE57D404E533A8719929E /* SystemConfiguration.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8F86C1B4CFC302C799D2244F22AFA5D3 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2B8ADC9CBF01AB63647A189A0470BED0 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4322,6 +4315,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3BA583D20EA911DCF27F4399503EB028 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76EEAEFED80C9CAE5C516478B235A947 /* Pods-AnchorApplicationUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4A34A8C4C4BFB14D6E0504833C9159DA /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -4400,14 +4401,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				3958978424A7F6C485D26294012EF3D0 /* Pods-AnchorApplication-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B3FC33DB6E260B870DC8B2371C1477B3 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				00059CCDDABE029F1AB8ECA57A43C2EB /* Pods-AnchorApplicationUITests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4524,25 +4517,6 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		0096AE46FA35234E9B065E6130E2514C /* Pods-AnchorApplicationUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = EF8F3794CD3BE3DBECE2F22F9EEA2E67 /* Build configuration list for PBXNativeTarget "Pods-AnchorApplicationUITests" */;
-			buildPhases = (
-				B3FC33DB6E260B870DC8B2371C1477B3 /* Headers */,
-				0AC936C129A61977E08F008BCDA9F824 /* Sources */,
-				8F86C1B4CFC302C799D2244F22AFA5D3 /* Frameworks */,
-				FB3879DE5F0D0CC924E9F92BFA15CC62 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				C857667ED11C388AC379DBAC37887AAF /* PBXTargetDependency */,
-			);
-			name = "Pods-AnchorApplicationUITests";
-			productName = "Pods-AnchorApplicationUITests";
-			productReference = 44A0E2E8597CBEB0DE25721E9467E8B5 /* Pods_AnchorApplicationUITests.framework */;
-			productType = "com.apple.product-type.framework";
-		};
 		0D8470FA2C68262E156C856774A97751 /* FirebaseUI-FirebaseAuthUI */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = ABBAF51BF5CD7AF76C2B29C6DA4A6C45 /* Build configuration list for PBXNativeTarget "FirebaseUI-FirebaseAuthUI" */;
@@ -4675,6 +4649,24 @@
 			name = GTMSessionFetcher;
 			productName = GTMSessionFetcher;
 			productReference = 7B1656D8E98B8C025BA79C5899570331 /* GTMSessionFetcher.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A73F75412016BAB1F309B3DD45F70383 /* Pods-AnchorApplicationUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A96B9519773E5541D8196235EAB0CF68 /* Build configuration list for PBXNativeTarget "Pods-AnchorApplicationUITests" */;
+			buildPhases = (
+				3BA583D20EA911DCF27F4399503EB028 /* Headers */,
+				96B3EA0A44C1B644117C966064CB870E /* Sources */,
+				10B3B2CFFA087134FB39BBEA6DFE9BC0 /* Frameworks */,
+				54C2B2898FF7449DD5653535431BDDFC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-AnchorApplicationUITests";
+			productName = "Pods-AnchorApplicationUITests";
+			productReference = 44A0E2E8597CBEB0DE25721E9467E8B5 /* Pods_AnchorApplicationUITests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		ADD82F5A385384601161C4B7B3305B7E /* FirebaseCore */ = {
@@ -4832,7 +4824,7 @@
 				8364BB258018143B83798DE31C13546D /* nanopb */,
 				907293D4A982E9FC5A2BACBCC640A138 /* Pods-AnchorApplication */,
 				978C96ACE76AA29EEB5DDF373074BE5F /* Pods-AnchorApplicationTests */,
-				0096AE46FA35234E9B065E6130E2514C /* Pods-AnchorApplicationUITests */,
+				A73F75412016BAB1F309B3DD45F70383 /* Pods-AnchorApplicationUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -5072,6 +5064,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		54C2B2898FF7449DD5653535431BDDFC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7966A32160B1285877823777E254592A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -5116,13 +5115,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FB3879DE5F0D0CC924E9F92BFA15CC62 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		FC5B91F3AD653B97BF402F244F710096 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -5144,14 +5136,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0AC936C129A61977E08F008BCDA9F824 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DADFBEDBDA5F78B924801DFF5D0A6877 /* Pods-AnchorApplicationUITests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -5550,6 +5534,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		96B3EA0A44C1B644117C966064CB870E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				816E796D0B825ED710272CCD6D17310B /* Pods-AnchorApplicationUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BD92B6A6691AF19354E045BDEB751825 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -5798,12 +5790,6 @@
 			name = Charts;
 			target = EBFD1DA8DB9C5E9C282BBCAD1778A64A /* Charts */;
 			targetProxy = 69288CB406D7E805A403A942C70FC825 /* PBXContainerItemProxy */;
-		};
-		C857667ED11C388AC379DBAC37887AAF /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-AnchorApplication";
-			target = 907293D4A982E9FC5A2BACBCC640A138 /* Pods-AnchorApplication */;
-			targetProxy = B29D1BB5C09F8C2AE6458345FE567A4D /* PBXContainerItemProxy */;
 		};
 		DA422E7E63C42C63889036B675FDF54D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -6127,44 +6113,6 @@
 			};
 			name = Release;
 		};
-		269C10CAE1EDCEEB685E998F867AF89E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A6A3B1CE180B0A666ECC5DA6CAE37B3C /* Pods-AnchorApplicationUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-AnchorApplicationUITests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-AnchorApplicationUITests/Pods-AnchorApplicationUITests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		3CD34FACE362CADA0964C2BC3C99E286 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 110A99EA7C75E81D6DAEC013AE8A8E8D /* FirebaseUI.xcconfig */;
@@ -6284,6 +6232,44 @@
 			};
 			name = Debug;
 		};
+		533DB8EAF8884AB535C574D41F305E44 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6A3B1CE180B0A666ECC5DA6CAE37B3C /* Pods-AnchorApplicationUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AnchorApplicationUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AnchorApplicationUITests/Pods-AnchorApplicationUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		5DB0BF6608E8287F1F8550670E600042 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D1FACBDCE5F2B14A154D60EC004533CF /* GoogleUtilities.xcconfig */;
@@ -6320,7 +6306,7 @@
 			};
 			name = Release;
 		};
-		63BC007D7233570C2ED45CD78D815BFF /* Release */ = {
+		5F52272ABCD9D45880172581FCD13EA0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E12642BE4E72DE3405AF7FD43806A710 /* Pods-AnchorApplicationUITests.release.xcconfig */;
 			buildSettings = {
@@ -6978,6 +6964,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		A96B9519773E5541D8196235EAB0CF68 /* Build configuration list for PBXNativeTarget "Pods-AnchorApplicationUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				533DB8EAF8884AB535C574D41F305E44 /* Debug */,
+				5F52272ABCD9D45880172581FCD13EA0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		AB4BD257E192090A8420385FCB248422 /* Build configuration list for PBXNativeTarget "Pods-AnchorApplicationTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -7010,15 +7005,6 @@
 			buildConfigurations = (
 				1B1FBD2E3FAE25BEC54E5724E16E1A87 /* Debug */,
 				5DB0BF6608E8287F1F8550670E600042 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		EF8F3794CD3BE3DBECE2F22F9EEA2E67 /* Build configuration list for PBXNativeTarget "Pods-AnchorApplicationUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				269C10CAE1EDCEEB685E998F867AF89E /* Debug */,
-				63BC007D7233570C2ED45CD78D815BFF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
