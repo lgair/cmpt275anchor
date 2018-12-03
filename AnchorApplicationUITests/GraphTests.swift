@@ -59,12 +59,15 @@ class GraphTests: XCTestCase {
     func testPop(){
         
         let app = XCUIApplication()
+        app.buttons[" Adjustment Survey"].tap()
+        app.switches.element(boundBy: 0).tap()
+        app.buttons["Proceed "].tap()
         app.buttons["Start Assessment"].tap()
-        
-        let assessmentResultAlert = app.alerts["Assessment Result"]
-        assessmentResultAlert.staticTexts["Assessment Result"].tap()
-        assessmentResultAlert.staticTexts["Predominant problem is end-of-dose \"wearing off\"."].tap()
-        assessmentResultAlert.buttons["Continue to survey"].tap()
+        app.buttons["Continue to survey"].tap()
+//        let assessmentResultAlert = app.alerts["Assessment Result"]
+//        assessmentResultAlert.staticTexts["Assessment Result"].tap()
+//        assessmentResultAlert.staticTexts["Predominant problem is end-of-dose \"wearing off\"."].tap()
+// assessmentResultAlert.buttons["Continue to survey"].tap()
                 
     }
  }

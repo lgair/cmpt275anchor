@@ -360,13 +360,16 @@
 				TargetAttributes = {
 					6BB4A6112182852000EF6829 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1010;
 					};
 					6BB4A6252182852100EF6829 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1010;
 						TestTargetID = 6BB4A6112182852000EF6829;
 					};
 					6BB4A6302182852200EF6829 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1010;
 						TestTargetID = 6BB4A6112182852000EF6829;
 					};
 				};

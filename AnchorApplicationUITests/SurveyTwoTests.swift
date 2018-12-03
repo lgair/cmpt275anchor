@@ -27,6 +27,7 @@ class Survey2Tests: XCTestCase {
         app.buttons["Proceed "].tap()
         app.buttons["Start Assessment"].tap()
         // app.alerts["Assessment Result"].buttons["Continue to survey"].tap()
+        app.buttons["Continue to survey"].tap()
         app.buttons[" No"].tap()
         app.buttons[" Yes"].tap()
         app.buttons[" No tremor post-dosing"].tap()
@@ -50,6 +51,7 @@ class Survey2Tests: XCTestCase {
         app.buttons["Proceed "].tap()
         app.buttons["Start Assessment"].tap()
         // app.alerts["Assessment Result"].buttons["Continue to survey"].tap()
+        app.buttons["Continue to survey"].tap()
         let yesButton = app.buttons[" Yes"]
         yesButton.tap()
         yesButton.tap()
@@ -76,6 +78,7 @@ class Survey2Tests: XCTestCase {
         app.buttons["Proceed "].tap()
         app.buttons["Start Assessment"].tap()
         // app.alerts["Assessment Result"].buttons["Continue to survey"].tap()
+        app.buttons["Continue to survey"].tap()
         let yesButton = app.buttons[" Yes"]
         yesButton.tap()
         yesButton.tap()
@@ -100,6 +103,7 @@ class Survey2Tests: XCTestCase {
         app.buttons["Proceed "].tap()
         app.buttons["Start Assessment"].tap()
         // app.alerts["Assessment Result"].buttons["Continue to survey"].tap()
+        app.buttons["Continue to survey"].tap()
         let noButton = app.buttons[" No"]
         noButton.tap()
         noButton.tap()
